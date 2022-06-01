@@ -1,0 +1,554 @@
+/* =============================================================================
+BEGIN SHEET tabletstijlen vanaf schermbreedte 768px en lager */
+
+@media screen and (max-width: 768px) {
+
+    /* body relatief positioneren zodat children absoluut kunnen worden gepositioneerd */
+    body {
+        position: relative;
+    }
+
+    /* breedte topmenu-logo */
+    header div #logo3 {
+        width: 45px;
+    }
+
+    /* het grote logo uit de desktop-weergave verbergen */
+    #menulogo {
+        display: none;
+    }
+
+    /* font-grootte van de items in het mobiele-weergave-menu */
+    nav ul li {
+        font-size: 1rem
+    }
+
+    /* === BEGIN tabletstijlen header ======================================
+    BEGIN stijlen hamburger-menu
+    hier komt de hamburger-menu-knop */
+    header nav #showMenu {
+        display: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+        top: 1.0rem;
+        left: 3%;
+        width: 2rem;
+        outline: 0;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    /* het uiterlijk van de hamburger-menu-knop aanpassen */
+    header nav #showMenu::after {
+        color: #684F40;
+        display: block;
+        content: "\2630";
+        font-size: 1.4rem;
+        text-align: center;
+        border-radius: 2px;
+        background-color: #F4F3F1;
+        border: 1px solid white;
+        width: 1.7rem;
+        height: 2rem;
+        padding-top: 5px;
+        transform: translateY(-10%);
+        box-shadow: 1px 1px 2px 1px #999;
+    }
+
+    /* verspringing hamburger-menu-knop wanneer aangeklikt */
+    header nav #showMenu:active {
+        transform: translateY(3px);
+    }
+
+    /* hoogte menu wanneer uitgeklapt */
+    header nav #showMenu:checked + ul {
+        height: 28rem;
+    }
+
+    /* het uitklap-menu animeren */
+    header nav ul {
+        height: 60px;
+        transition-property: height;
+        transition-duration: 400ms;
+    }
+
+    /* ervoor zorgen dat het menu niet zichtbaar is wanneer ingeklapt */
+    header nav {
+        overflow: hidden;
+    }
+
+    /* EINDE stijlen hamburger-menu */
+
+
+    /* marges header op 0 */
+    header {
+        margin: 0;
+    }
+
+    /* positionering menu-items */
+    header nav ul li {
+        position: relative;
+        display: block;
+        text-align: left;
+        top: 40px;
+    }
+
+    /* topmarge eerste menu-item */
+    header nav ul li:first-of-type {
+        padding-top: 50px;
+    }
+
+    /* verwijderen menu-item-randen */
+    header nav ul li {
+        border: 0;
+    }
+
+    /* positionering en aanpassing top-menu-logo */
+    header #logo3 {
+        top: 10px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    /* positionering top-menu-icons rechts */
+    header div.user-icons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* === EINDE tabletstijlen header ====================================== */
+
+
+
+
+    /* === BEGIN tabletstijlen nieuwste boeken ============================= */
+
+    /* het wrappen van de boekencards */
+    section:nth-of-type(2) div.container {
+        flex-wrap: wrap
+    }
+
+    /* flexbreedte, hoogte en marges van de individuele boekencards */
+    section:nth-of-type(2) div.container > div {
+        flex-basis: 42vw;
+        margin: 20px 10px 0 10px;
+        min-height: 280px;
+    }
+
+    /* de 4e boek-card laten zien */
+    section:nth-of-type(2) div.container > div:nth-of-type(4) {
+        display: block;
+        margin-bottom: 10px
+    }
+
+    /* relatieve positie van het boekplaatjes aanpassen */
+    section:nth-of-type(2) div.container > div:nth-of-type(1),
+    section:nth-of-type(2) div.container > div:nth-of-type(2),
+    section:nth-of-type(2) div.container > div:nth-of-type(3),
+    section:nth-of-type(2) div.container > div:nth-of-type(4) {
+        background-position: 0 15%;
+    }
+
+    /* aanpassen positie van de boekplaatjes-info-divs */
+    section:nth-of-type(2) div.container > div > div {
+        top: 5vw;
+    }
+
+    /* === EINDE tabletstijlen nieuwste boeken ============================= */
+
+
+
+
+    /* === BEGIN tabletstijlen het laatste nieuws ========================== */
+
+    /* nieuws-items in kolom-richting flexen */
+    section:nth-of-type(3) div.container {
+        flex-direction: column;
+    }
+
+    /* verwijderen bottom-marge op eerste nieuws-item */
+    section:nth-of-type(3) div.container > div:nth-of-type(1) {
+        margin-bottom: 0
+    }
+
+    /* verwijderen top-marge op eerste nieuws-item */
+    section:nth-of-type(3) div.container > div:nth-of-type(2) {
+        margin-top: 0
+    }
+
+    /* === EINDE tabletstijlen het laatste nieuws ========================== */
+
+
+
+
+    /* === BEGIN tabletstijlen nieuwe recepten ============================= */
+    /* receptencards wrappen naar twee op een rij */
+    section:nth-of-type(4) div.container {
+        flex-wrap: wrap;
+    }
+
+    /* flexbreedte aanpassen + margin en bottom-padding op 0 */
+    section:nth-of-type(4) div.container > div {
+        flex-basis: 48%;
+        margin: 0;
+        padding-bottom: 0
+    }
+
+    /* laatste recept-card nu wel tonen */
+    section:nth-of-type(4) div.container > div:last-of-type {
+        display: block;
+    }
+
+    /* === EINDE tabletstijlen nieuwe recepten ============================= */
+
+
+
+
+    /* === BEGIN tabletstijlen over cuisine ============================= */
+
+    /* aanpassen positionering over-cuisine-plaatje */
+    section:nth-of-type(5) div.container > div:first-of-type {
+        width: 90%;
+        padding: 100px;
+        position: relative;
+        margin: 20px auto;
+        margin-bottom: 0;
+    }
+
+    /* top-marge op over-cuisine-titel */
+    section:nth-of-type(5) h2 {
+        margin-top: 30px
+    }
+
+    /* inhoud naar kolom flexen */
+    section:nth-of-type(5) div.container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* lees verder over cuisine knop verschalen naar 100% van de parent */
+    section:nth-of-type(5) div.container .button {
+        width: 100%
+    }
+
+    /* === EINDE tabletstijlen over cuisine ============================= */
+
+
+
+
+    /* === BEGIN tabletstijlen campagne======================================= */
+
+    /* flexen naar kolom */
+    #campagne .container2 {
+        flex-direction: column;
+    }
+
+    /* top-marge op video */
+    #campagne .container2 > div:nth-of-type(2) {
+        margin-top: 15px
+    }
+
+    /* === EINDE tabletstijlen campagne======================================= */
+
+
+
+
+    /* === BEGIN tabletstijlen recepten======================================= */
+
+    /* top-marge opheffen op 'nieuwe recepten'-titel */
+    #recepten section:nth-of-type(4) h2 {
+        margin-top: 0;
+    }
+
+    /* weghalen hero-image */
+    #recepten .recept-item section:nth-of-type(4) > div:first-of-type {
+        display: none
+    }
+
+    /* flexbreedte van de individuele receptencards */
+    #recepten section:nth-of-type(4) .container > div {
+        flex-basis: 50%;
+    }
+
+    /* breedte en marge recept */
+    #recepten .recept-item section:nth-of-type(4) {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    /* flex-richting aanpassen naar omgekeerde kolom en breedte op 100% */
+    #recepten .recept-item section:nth-of-type(4) .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    /* aanpassingen 1e paragraaf */
+    #recepten .recept-item section:nth-of-type(4) .container > div:first-of-type {
+        max-width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    /* het naar rechts floaten van de info-icons */
+    #recepten .recept-item section:nth-of-type(4) .container > div > .icons {
+        margin: 10px;
+        float: right;
+    }
+
+    /* aanpassingen 2e paragraaf */
+    #recepten .recept-item section:nth-of-type(4) .container > div:nth-of-type(2) {
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    /* === EINDE tabletstijlen recepten======================================= */
+
+
+
+
+    /* === BEGIN tabletstijlen nieuwspagina ======================================= */
+
+    /* toon welk deel van de koe project */
+    #nieuws section:nth-of-type(3) > div:first-of-type {
+        display: block;
+    }
+
+    /* flexbreedte nieuws-cards */
+    #nieuws section:nth-of-type(3) .container > div {
+        flex-basis: 45%;
+    }
+
+    /* het laatste nieuws-item tonen */
+    #nieuws section:nth-of-type(3) .container > div:nth-of-type(10) {
+        display: block;
+    }
+
+    /* === EINDE tabletstijlen nieuwspagina ======================================= */
+
+
+
+
+    /* === BEGIN .nieuws-item stijlen ============================================= */
+
+    /* flexbreedte en top-marge aanpassen */
+    #nieuws .nieuws-item section:nth-of-type(3) .container > div {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    /* top-marge tweede div aanpassen */
+    #nieuws .nieuws-item section:nth-of-type(3) .container > div:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    /* EINDE .nieuws-item stijlen ================================================= */
+
+
+
+
+    /* === BEGIN tabletstijlen #over-ons ======================================= */
+
+    /* hero image weghalen */
+    #over-ons section:nth-of-type(1) .hero2 {
+        display: none;
+    }
+
+    /* marges opheffen */
+    #over-ons main section:nth-of-type(5) {
+        margin: 0;
+    }
+
+    /* === EINDE tabletstijlen #over-ons ======================================= */
+
+
+
+
+    /* === BEGIN tabletstijlen contact ======================================= */
+
+    /* breedte van het formulier aanpassen */
+    #contact section:first-of-type form {
+        max-width: 80vw;
+    }
+
+    /* === EINDE tabletstijlen contact ======================================= */
+
+
+
+
+    /* === BEGIN #shop stijlen =============================================== */
+
+    /* hero image weghalen */
+    #shop section:nth-of-type(1) .shophero {
+        display: none;
+    }
+
+    /* extra marge uitgelichte-boeken-container */
+    #shop section:nth-of-type(2) .book-container {
+        margin-left: 20px
+    }
+
+    /* aanpassen flex-breedte marge uitgelichte-boeken-container */
+    #shop section:nth-of-type(2) .book-container > div {
+        flex-basis: 50%;
+    }
+
+    /* nog maar 2 uitgelichte boeken tonen */
+    #shop section:nth-of-type(2) .book-container > div:nth-of-type(3) {
+        display: none;
+    }
+
+    /* flex-breedte en padding van boeken-cards in boeken-container2 aanpassen */
+    #shop section:nth-of-type(2) .book-container2 .bookswrapper > div {
+        flex-basis: 50%;
+        padding: 10px;
+    }
+
+    /* marges boektitel aanpassen */
+    #shop .boek-item section:nth-of-type(2) > h2:first-of-type {
+        margin-bottom: 10px;
+        margin-left: 15px
+    }
+
+    /* flex-richting naar omgekeerde kolom en linkermarge aanpassen */
+    #shop .boek-item section:nth-of-type(2) .container3 {
+        margin-left: 15px;
+        flex-direction: column-reverse
+    }
+
+    /* max-breedte omschrijving aanpassen */
+    #shop .boek-item section:nth-of-type(2) .container3 > div:first-of-type {
+        max-width: 80%
+    }
+
+    /* linkermarge van plaatje afhalen */
+    #shop .boek-item section:nth-of-type(2) .container3 > div:nth-of-type(2) img {
+        margin-left: 0;
+    }
+
+    /* aanpassing max-breedte boekplaatje */
+    #shop .boek-item section:nth-of-type(2) .container3 > div:nth-of-type(2) {
+        max-width: 60%
+    }
+
+    /* === EINDE #shop stijlen =============================================== */
+
+
+
+    /* === BEGIN tabletstijlen #registreer ==================================== */
+
+    /* alle invoervelden flexen naar kolom-richting */
+    #registreer .container #naamcontainer,
+    #registreer .container #adrescontainer,
+    #registreer .container #landcontainer,
+    #registreer .container #wachtwoordcontainer {
+        flex-direction: column;
+    }
+
+    /* het opnieuw uitlijnen van de rij met de landselectie */
+    #registreer main section:first-of-type .container #landcontainer {
+        align-items: flex-start;
+        display: block;
+        margin-top: 40px;
+    }
+
+    /* extra top-marge op formulier */
+    #registreer main section:first-of-type .container h2:first-of-type {
+        margin-top: 50px !important;
+    }
+
+    /* === EINDE tabletstijlen #registreer ==================================== */
+
+
+
+    /* === BEGIN tabletstijlen #winkelwagen =================================== */
+
+    /* het wrappen van de winkelwagen-items */
+    #winkelwagen main section:first-of-type .containerww .wwitem {
+        flex-wrap: wrap;
+    }
+
+    /* flexbreedte aanpassen */
+    #winkelwagen main section:first-of-type .containerww .wwitem > div {
+        flex-basis: 50%;
+    }
+
+    /* interlinie aanpassen */
+    #winkelwagen .containerww .wwitem {
+        line-height: 1.2rem
+    }
+
+    /* volgorde van items in de totaal-prijs-flexbox aanpassen */
+    #winkelwagen main section:first-of-type .containerww .wwitem:nth-last-of-type(2) > div:nth-of-type(2),
+    #winkelwagen main section:first-of-type .containerww .wwitem:nth-last-of-type(2) > div:nth-of-type(3) {
+        order: 2;
+    }
+
+    /* extra top-padding op de totaalprijs */
+    #winkelwagen main section:first-of-type .containerww .wwitem:nth-last-of-type(2) > div:nth-of-type(4) {
+        padding-top: 10px;
+    }
+
+    /* === EINDE tabletstijlen #winkelwagen =================================== */
+
+
+
+    /* === BEGIN tabletstijlen footer ===================================== */
+
+    /* extra padding onder footer */
+    footer {
+        padding-bottom: 50px;
+    }
+
+    /* de copyright-tekst naar beneden verschuiven */
+    footer > p {
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+
+    /* === EINDE tabletstijlen footer======================================= */
+}
+
+
+/* extra breakpoint voor goede verschaling recepten-items op campagne-site */
+@media screen and (max-width: 400px) {
+    #campagne section:nth-of-type(4) .container {
+        flex-direction: column
+    }
+}
+
+
+/* extra breakpoint voor goede verschaling shop-items */
+@media screen and (max-width: 480px) {
+    #shop section:nth-of-type(2) .book-container2 .bookswrapper > div {
+        flex-basis: 100%;
+    }
+}
+
+
+/* extra breakpoint voor goede verschaling nieuwskaartjes */
+@media screen and (max-width: 500px) {
+    #nieuws section:nth-of-type(3) .container {
+        flex-direction: column;
+    }
+}
+
+
+/* extra breakpoint voor goede verschaling receptenkaartjes */
+@media screen and (max-width: 475px) {
+    #recepten section:nth-of-type(4) .container > div {
+        flex-basis: 100%;
+    }
+}
+
+/* == EINDE SHEET tabletstijlen vanaf schermbreedte 768px en lager == */

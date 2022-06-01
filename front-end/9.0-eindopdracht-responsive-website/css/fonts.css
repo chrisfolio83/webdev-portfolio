@@ -1,0 +1,46 @@
+/* code om Merriweather bold italic weer te geven */
+@font-face {
+    font-family: 'merriweatherbold_italic';
+    src: url('../fonts/merriweather-bolditalic-webfont.eot'); /* IE9 */
+    src: url('../fonts/merriweather-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/merriweather-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic') format('svg');
+}
+
+
+/* code om Raleway bold weer te geven */
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.eot'); /* IE9 */
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+}
+
+
+/* code om Raleway extrabold weer te geven */
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold-webfont.eot'); /* IE9 */
+    src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff'),
+         url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+}
+
+
+/* code om Raleway medium weer te geven */
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.eot'); /* IE9 */
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+}

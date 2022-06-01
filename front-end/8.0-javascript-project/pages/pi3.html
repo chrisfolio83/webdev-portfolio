@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- meta-stuff tbv goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raspberry Pi 3</title>
+    <!-- koppeling met root-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="../css/root.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- de hoofdtitel -->
+        <h1>Raspberry Pi 3</h1>
+        <div id="imgcontainer">
+            <!-- foto raspberry Pi 3  -->
+            <img src="../images/rp3-normal.png" alt="A Raspberry Pi 3 mainboard" usemap="#rp3imageMap" id="rp3image">
+            <!-- de imagemap met hierop de areas die de knoppen tbv imageswaps gaan vormen -->
+            <map name="rp3imageMap">
+                <area id="rp3csi" shape="rect" coords="264,202,310,356" href="#" alt="csi">
+                <area id="rp3av" shape="rect" coords="317,276,368,374" href="#" alt="avjack">
+                <area id="rp3gpio" shape="rect" coords="41,2,374,46" href="#" alt="gpio">
+                <area id="rp3cpu" shape="rect" coords="121,105,225,204" href="#" alt="cpu">
+                <area id="rp3hdmi" shape="rect" coords="151,279,257,372" href="#" alt="hdmi">
+                <area id="rp3lan" shape="rect" coords="411,232,558,348" href="#" alt="lan">
+                <area id="rp3micro" shape="rect" coords="38,312,99,366" href="#" alt="micro usb">
+                <area id="rp3usbgb" shape="rect" coords="441,4,558,218" href="#" alt="usb and gigabit">
+                <area id="rp3sddsi" shape="rect" coords="2,94,50,259" href="#" alt="sdcard and dsi">
+            </map>
+            <br>
+            <br>
+            <small>Click on mainboard-parts to see individual specifications.</small>
+        </div>
+        <div>
+            <!-- de subheader/h2 die met een klik op een element meeveranderd naar de bijbehorende tekst -->
+            <h2 id="rp3sub">WELCOME TO THE NEW WORLD OF PROGRAMMING</h2>
+            <!-- de paragraaftekst/p die met een klik op een element meeveranderd naar de bijbehorende tekst -->
+            <p id="rp3txt">Our mission is to put the power of computing and digital making into the hands of people all over the world. We do this so that more people are able to harness the power of computing and digital technologies for work, to solve problems that matter to them, and to express themselves creatively. Click on individual elements to get more info about our hardware.</p>            
+            <a href="../index.html">go back</a>
+        </div>
+
+        <div id="extraRp3">
+            <!-- BEGIN -- de tekst die zichtbaar blijft indien javascript niet wordt geladen; javascript laat deze div dus verdwijnen = graceful degredation -- BEGIN -->
+            <h2>USB2 &amp; GIGABIT ETHERNET OVER USB (300 MBPS MAX.)</h2>
+            <p>Your Raspberry Pi 3 comes with 4 USB2-ports which can also be used for networking. USB 2.0 transmits data at a maximum speed of 480 Mbps. This is faster than the older USB 1.1 standard but much slower than the newer USB 3.0 standard. There are numerous protocols for Ethernet-style networking over USB. The main motivation for these protocols is to allow application-independent exchange of data with USB devices, instead of specialized protocols such as video or MTP. Even though USB is not a physical Ethernet, the networking stacks of all major operating systems are set up to transport IEEE 802.3 frames, without caring much what the underlying transport really is.</p>
+
+            <h2>10/100 LAN PORT</h2>
+            <p>Fast Ethernet provides up to 100 Mbps data transmission speeds. It was initially designed for copper-based twisted pair cable networks and included the 100 Base-TX, 100 Base-T4 and 100 Base-T2 standards. The length of the cable in copper-based fast Ethernet was restricted to 100 meters and supported different cable categories. The fiber-based fast Ethernet standards 100 Base-FX, 100 Base SX, 100 Base BX and 100 Base LX10 use one or more strands and modes of fiber optics to transmit data. The range of fast Ethernet for fiber mode can be from 400 yards to up to 25 miles.</p>
+
+            <h2>FULL SIZE HDMI OUTPUT</h2>
+            <p>Raspberry Pi 3 features one HDMI 1.4 port up to 1080p60. HDMI (High-Definition Multimedia Interface) makes it simple to get high-quality sound and video from a system. HDMI is an all-digital connection capable of carrying multi-channel audio and video signals in just one cable. HDMI also supports high-definition video and high-resolution audio, and is the only connection compatible with formats, including Dolby TrueHD, DTS-HD Master Audio and 3D video.</p>
+
+            <h2>MICRO USB POWER INPUT</h2>
+            <p>The Raspberry Pi 3 is powered by a +5.1V micro USB supply. Exactly how much current (mA) the Raspberry Pi requires is dependent on what you connect to it. We have found that purchasing a 2.5A power supply from a reputable retailer will provide you with ample power to run your Raspberry Pi.</p>
+
+            <h2>CPU</h2>
+            <p>The Quad Core 1.2GHz Broadcom BCM2837 64bit CPU is the Broadcom chip used in the Raspberry Pi 3, and in later models of the Raspberry Pi 2. The underlying architecture of the BCM2837 is identical to the BCM2836. The only significant difference is the replacement of the ARMv7 quad core cluster with a quad-core ARM Cortex A53 (ARMv8) cluster. The ARM cores run at 1.2GHz, making the device about 50% faster than the Raspberry Pi 2. The VideoCore IV runs at 400MHz.</p>
+
+            <h2>MICROSD CARD SLOT &amp; DSI DISPLAY PORT</h2>
+            <p>Raspberry Pi 3 supports 1 microSD card. Above the microSD card slot, is the MIPI DSISM. The MIPI Display Serial Interface (MIPI DSISM) defines a high-speed serial interface between a host processor and a display module. The interface enables manufacturers to integrate displays to achieve high performance, low power, and low electromagnetic interference (EMI) while reducing pin count and maintaining compatibility across different vendors. Designers can use MIPI DSI to facilitate brilliant color rendering for the most demanding imagery and video scenes and to support transmission of stereoscopic content.</p>
+
+            <h2>40-PIN GPIO HEADER</h2>
+            <p>A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board. A 40-pin GPIO header is found on all current Raspberry Pi boards (unpopulated on Pi Zero and Pi Zero W). Prior to the Pi 1 Model B+ (2014), boards comprised a shorter 26-pin header. Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes.</p>
+
+            <h2>3.5MM 4-POLE COMPOSITE VIDEO AND AUDIO OUTPUT JACK</h2>
+            <p>The Pi Model B+, Pi 2, Pi 3 and Pi 4 features a 4-pole 3.5mm audio jack which also includes the composite video signal. This has allowed for the removal of the composite video socket found on the original Model B. The new jack is a 4-pole socket which carries both audio and video signals. It’s similar to sockets found on other multimedia devices such as iPods, MP3 players and smartphones. It now used on the A+, B+, Pi 2, Pi 3 and Pi 4.</p>
+
+            <h2>CSI CAMERA PORT</h2>
+            <p>Your Raspberry Pi comes with a MIPI CSI connector. MIPI CSI is the most widely used camera interface in the mobile industry. It has achieved widespread adoption for its ease of use and ability to support a broad range of high-performance applications, including 1080p, 4K, 8K and beyond video, and high-resolution photography. Designers should feel comfortable using MIPI CSI-2 for any single- or multi-camera implementation in mobile devices. The interface can also be used to interconnect cameras in head-mounted virtual reality devices; automotive smart-car applications for infotainment, safety, or gesture-based controls; camera drones; IoT appliances; wearables; and 3D facial recognition security or surveillance systems.</p>
+            <!-- EINDE -- de tekst die zichtbaar blijft indien javascript niet wordt geladen; javascript laat deze div dus verdwijnen = graceful degredation -- EINDE -->
+        </div>
+    </main>
+    <!-- jQuery library tbv de plugin kunnen laden tbv responsive imagemap -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- de responsive-imagemap-plugin zelf (Matt Stow) -->
+    <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <!-- custom script voor de functions, eventlisteners, imageswaps, etc. -->
+    <script src="../js/rp3.js"></script>
+    <!-- associative array met de data voor de h2's en p's -->
+    <script src="../js/database.js"></script>
+</body></html>

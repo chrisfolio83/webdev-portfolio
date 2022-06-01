@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- meta-stuff tbv goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raspberry Pi 4</title>
+    <!-- koppeling met root-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="../css/root.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- de hoofdtitel -->
+        <h1>Raspberry Pi 4</h1>
+        <div id="imgcontainer">
+            <!-- foto raspberry Pi 4  -->
+            <img src="../images/rp4-normal.png" alt="A Raspberry Pi 4 mainboard" usemap="#rp4imageMap" id="rp4image">
+            <!-- de imagemap met hierop de areas die de knoppen tbv imageswaps gaan vormen -->
+            <map name="rp4imageMap">
+                <area id="rp4av" shape="rect" coords="329,272,380,371" href="#" alt="avjack">
+                <area id="rp4sddsi" shape="rect" coords="3,105,58,253" href="#" alt="sd card and dsi">
+                <area id="rp4csi" shape="rect" coords="285,211,328,355" href="#" alt="csi">
+                <area id="rp4gb" shape="rect" coords="431,10,572,123" href="#" alt="native gigabit ethernet">
+                <area id="rp4gpio" shape="rect" coords="57,6,380,42" href="#" alt="gpio">
+                <area id="rp4hdmi" shape="rect" coords="152,308,284,370" href="#" alt="hdmi">
+                <area id="rp4ram" shape="rect" coords="259,103,332,199" href="#" alt="ram">
+                <area id="rp4usbc" shape="rect" coords="57,309,115,368" href="#" alt="usb-c">
+                <area id="rp4usb" shape="rect" coords="457,144,571,347" href="#" alt="usb">
+                <area id="rp4cpu" shape="rect" coords="150,101,247,200" href="#" alt="cpu">
+            </map>
+            <br>
+            <br>
+            <small>Click on mainboard-parts to see individual specifications.</small>
+        </div>
+        <div>
+            <!-- de subheader/h2 die met een klik op een element meeveranderd naar de bijbehorende tekst -->
+            <h2 id="rp4sub">WELCOME TO THE NEW WORLD OF PROGRAMMING</h2>
+            <!-- de paragraaftekst/p die met een klik op een element meeveranderd naar de bijbehorende tekst -->
+            <p id="rp4txt">Our mission is to put the power of computing and digital making into the hands of people all over the world. We do this so that more people are able to harness the power of computing and digital technologies for work, to solve problems that matter to them, and to express themselves creatively. Click on individual elements to get more info about our hardware.</p>
+            <a href="../index.html">go back</a>
+        </div>
+
+        <div id="extraRp4">
+            <!-- BEGIN -- de tekst die zichtbaar blijft indien javascript niet wordt geladen; javascript laat deze div dus verdwijnen = graceful degredation -- BEGIN -->
+            <h2>NATIVE GIGABIT ETHERNET</h2>
+            <p>Fast networking! Raspberry Pi 4 comes with Gigabit Ethernet, along with onboard wireless networking and Bluetooth. In computer networking, Gigabit Ethernet (GbE or 1 GigE) is the various technologies for transmitting Ethernet frames at a rate of a gigabit per second (1,000,000,000 bits per second), as defined by the IEEE 802.3-2008 standard. It came into use beginning in 1999, gradually supplanting Fast Ethernet in wired local networks, as a result of being considerably faster. The cables and equipment are very similar to previous standards and have been very common and economical since 2010.</p>
+
+            <h2>USB2 &amp; USB3</h2>
+            <p>Your new Raspberry Pi 4 has upgraded USB capacity: along with two USB 2 ports you'll find two USB 3 ports. USB 3.0 is the third major version of the Universal Serial Bus (USB) standard for interfacing computers and electronic devices. Among other improvements, USB 3.0 adds the new transfer rate referred to as SuperSpeed USB (SS) that can transfer data at up to 5 Gbit/s (625 MB/s), which is about 10 times faster than the USB 2.0 standard. It is recommended that manufacturers distinguish USB 3.0 connectors from their USB 2.0 counterparts by using blue color for the Standard-A receptacles and plugs, and by the initials SS.</p>
+
+            <h2>MICRO HDMI PORTS</h2>
+            <p>Dual displays. 4K output. We've listened to your feedback: with Raspberry Pi 4, you can run two monitors at once - and in 4K, too! The Micro connector shrinks the connector size to something resembling a micro-USB connector, measuring only 5.83 mm × 2.20 mm. For comparison, a micro-USB connector is 6.85 mm × 1.8 mm and a USB Type-A connector is 11.5 mm × 4.5 mm. It keeps the standard 19 pins of types A and C, but the pin assignment is different from both.</p>
+
+            <h2>USB-C POWER SUPPLY INPUT</h2>
+            <p>We recommend the official Raspberry Pi USB-C power supply, which is designed to power the latest Raspberry Pi 4 Model B boards, which were released in June 2019. Available in four different models to suit different international power sockets in either white or black.</p>
+
+            <h2>MORE POWERFUL CPU</h2>
+            <p>Raspberry Pi 4 features the new Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz CPU. The architecture of the BCM2711 is a considerable upgrade on that used by the SoCs in earlier Pi models. It continues the quad-core CPU design of the BCM2837, but uses the more powerful ARM A72 core. It has a greatly improved GPU feature set with much faster input/output, due to the incorporation of a PCIe link that connects the USB 2 and USB 3 ports, and a natively attached Ethernet controller. It is also capable of addressing more memory than the SoCs used before.</p>
+
+            <h2>CHOICE OF RAM</h2>
+            <p>We're making different variants of the Raspberry Pi 4 available, depending on how much RAM you need - 1GB, 2GB or 4GB LPDDR4-2400 SDRAM. LPDDR RAM stands for low power double data rate random access memory, and is the memory used to store short term data used by applications. Unlike its desktop equivalent, low power RAM comes with a smaller bit bus, but this helps when it comes to power efficiency. The LPDDR4 specification aims to double data rates (up to 3200 Mb/s) over last generation RAM and to save on energy consumption for mobile devices.</p>
+
+            <h2>MICROSD CARD SLOT &amp; DSI DISPLAY PORT</h2>
+            <p>Raspberry Pi 4 supports 1 microSD card. Above the microSD card slot, is the MIPI DSISM. The MIPI Display Serial Interface (MIPI DSISM) defines a high-speed serial interface between a host processor and a display module. The interface enables manufacturers to integrate displays to achieve high performance, low power, and low electromagnetic interference (EMI) while reducing pin count and maintaining compatibility across different vendors. Designers can use MIPI DSI to facilitate brilliant color rendering for the most demanding imagery and video scenes and to support transmission of stereoscopic content.</p>
+
+            <h2>40-PIN GPIO HEADER</h2>
+            <p>A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board. A 40-pin GPIO header is found on all current Raspberry Pi boards (unpopulated on Pi Zero and Pi Zero W). Prior to the Pi 1 Model B+ (2014), boards comprised a shorter 26-pin header. Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes.</p>
+
+            <h2>3.5MM 4-POLE COMPOSITE VIDEO AND AUDIO OUTPUT JACK</h2>
+            <p>The Pi Model B+, Pi 2, Pi 3 and Pi 4 features a 4-pole 3.5mm audio jack which also includes the composite video signal. This has allowed for the removal of the composite video socket found on the original Model B. The new jack is a 4-pole socket which carries both audio and video signals. It’s similar to sockets found on other multimedia devices such as iPods, MP3 players and smartphones. It now used on the A+, B+, Pi 2, Pi 3 and Pi 4.</p>
+
+            <h2>CSI CAMERA PORT</h2>
+            <p>Your Raspberry Pi comes with a MIPI CSI connector. MIPI CSI is the most widely used camera interface in the mobile industry. It has achieved widespread adoption for its ease of use and ability to support a broad range of high-performance applications, including 1080p, 4K, 8K and beyond video, and high-resolution photography. Designers should feel comfortable using MIPI CSI-2 for any single- or multi-camera implementation in mobile devices. The interface can also be used to interconnect cameras in head-mounted virtual reality devices; automotive smart-car applications for infotainment, safety, or gesture-based controls; camera drones; IoT appliances; wearables; and 3D facial recognition security or surveillance systems.</p>
+            <!-- EINDE -- de tekst die zichtbaar blijft indien javascript niet wordt geladen; javascript laat deze div dus verdwijnen = graceful degredation -- EINDE -->
+        </div>
+    </main>
+    <!-- jQuery library tbv de plugin kunnen laden tbv responsive imagemap -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- de responsive-imagemap-plugin zelf (Matt Stow) -->
+    <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <!-- custom script voor de functions, eventlisteners, imageswaps, etc. -->
+    <script src="../js/rp4.js"></script>
+    <!-- associative array met de data voor de h2's en p's -->
+    <script src="../js/database.js"></script>
+</body></html>

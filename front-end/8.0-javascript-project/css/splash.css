@@ -1,0 +1,31 @@
+#splashpage {
+    margin:0px;
+    background-image: none;
+}
+
+#splashpage #animation_container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1.00);
+    width: 1218px;
+    height: 1000px;
+}
+
+#splashpage #animation_container #canvas {
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 1.00);
+}
+
+#splashpage #animation_container #dom_overlay_container {
+    pointer-events: none;
+    overflow: hidden;
+    width: 1218px;
+    height: 1000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+}

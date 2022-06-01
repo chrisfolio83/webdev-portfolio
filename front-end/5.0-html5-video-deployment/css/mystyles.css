@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* begin styling t.b.v. body en achtergrond */
+body {
+	background-color: #000000;
+	width: 1200px;
+	margin: 0 auto;
+	height: 957px;
+	background-image: url(../images/original-lion-king-background.jpg);
+	background-repeat: no-repeat;
+}
+
+/* begin styling t.b.v. SMALL-button */
+#small-button  {
+	display: inline-block;
+	text-transform: uppercase;
+	color: white;
+	font-family: Soleil, sans-serif;
+	font-weight: lighter;
+	border-radius: 6px;
+	font-size: 16px;
+	border: 0.66px solid #ffffff;
+	padding-top: 18px;
+	padding-right: 60px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+	margin-right: 32px;
+}
+
+/* begin styling t.b.v. SMALL-button wanneer gehoverd */
+#small-button:hover  {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #FAC332;
+	font-family: Soleil, sans-serif;
+	font-weight: lighter;
+	border-radius: 6px;
+	font-size: 16px;
+	border: 0.66px solid #FAC332;
+	padding-top: 18px;
+	padding-right: 60px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+	margin-right: 32px;
+}
+
+/* begin styling t.b.v. MEDIUM-button */
+#medium-button {
+	display: inline-block;
+	text-transform: uppercase;
+	color: white;
+	font-family: Soleil, sans-serif;
+	border-radius: 6px;
+	font-weight: lighter;
+	border: 0.66px solid #ffffff;
+	font-size: 16px;
+	padding-top: 18px;
+	padding-right: 60px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+	margin-right: 32px;
+}
+
+/* begin styling t.b.v. MEDIUM-button wanneer gehoverd */
+#medium-button:hover {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #FAC332;
+	font-family: Soleil, sans-serif;
+	border-radius: 6px;
+	font-weight: lighter;
+	border: 0.66px solid #FAC332;
+	font-size: 16px;
+	padding-top: 18px;
+	padding-right: 60px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+	margin-right: 32px;
+}
+
+/* begin styling t.b.v. LARGE-button */
+#large-button {
+	display: inline-block;
+	text-transform: uppercase;
+	color: white;
+	font-family: Soleil, sans-serif;
+	border-radius: 6px;
+	font-weight: lighter;
+	border: 0.66px solid #ffffff;
+	font-size: 16px;
+	padding-top: 18px;
+	padding-right: 60px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+}
+
+/* begin styling t.b.v. LARGE-button wanneer gehoverd */
+#large-button:hover {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #FAC332;
+	font-family: Soleil, sans-serif;
+	border-radius: 6px;
+	font-weight: lighter;
+	border: 0.66px solid #FAC332;
+	font-size: 16px;
+	padding-top: 18px;
+	padding-right: 60px;
+	padding-bottom: 18px;
+	padding-left: 60px;
+}
+
+/* begin positionering main */
+main {
+	position: relative;
+	top: 5vh;
+}
+
+/* begin opmaak en positionering 'choose trailer quality'-tekst */
+#choose-text {
+	position: absolute;
+	top: 546px;
+	left: 517px;
+	font-family: Soleil, sans-serif;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: lighter;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.86);
+	clear: both;
+}
+
+/* positionering bottom navigatie menu */
+nav {
+	position: absolute;
+	left: 305px;
+	bottom: 15px;
+}
+
+/* positionering en opmaak bottom navigatie menu achtergrond */
+#nav-bg {
+	width: 1200px;
+	background-color: #000000;
+	height: 82px;
+	position: absolute;
+	bottom: 3px;
+	opacity: 0.53;
+}
+
+/* opmaak actieve SMALL-button */
+#small-button.active {
+	background-color: rgba(250,195,50,0.23);
+	border-color: rgba(250,195,50,1.00);
+}
+
+/* opmaak actieve MEDIUM-button */
+#medium-button.active {
+	background-color: rgba(250,195,50,0.23);
+	border-color: rgba(250,195,50,1.00);
+}
+
+/* opmaak actieve LARGE-button */
+#large-button.active {
+	background-color: rgba(250,195,50,0.23);
+	border-color: rgba(250,195,50,1.00);
+}
+
+/* opmaak fallback-tekst indien video-tag not supported */
+#fallback-text {
+	font-family: Soleil, sans-serif;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: lighter;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.86);
+}
+
+/* positionering en grootte SMALL-size video */
+#video-small {
+	position: absolute;
+	top: 230px;
+	left: 258px;
+	width: 684px;
+	height: 360px;
+}
+
+/* positionering en grootte MEDIUM-size video */
+#video-medium {
+	position: absolute;
+	top: 230px;
+	left: 143px;
+	width: 912px;
+	height: 480px;
+}
+
+/* positionering en grootte LARGE-size video */
+#video-large {
+	position: absolute;
+	top: 230px;
+	left: 32px;
+	width: 1136px;
+	height: 600px;
+}

@@ -1,0 +1,1949 @@
+/* van toepassing op alle elementen */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+
+    /* alle elementen voorzien van zachte hoeken */
+    border-radius: 3px !important;
+}
+
+
+/* het permanent weergeven van de verticale scrollbalk zodat bepaalde relatief aan de rechterkant van de browser-window gepositioneerde items niet lelijk verspringen */
+html {
+    overflow-y: scroll;
+}
+
+/* het centreren en maximum breedte van de body */
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* button stijlen */
+section:nth-of-type(2) div.container .button p,
+section:nth-of-type(3) div.container .button p,
+section:nth-of-type(4) div.container .button p,
+section:nth-of-type(5) div.container .button p,
+.boek-item .container3 > div:first-of-type > div:last-of-type img,
+#winkelwagen .wwitem .button {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* button hover stijlen */
+section:nth-of-type(2) div.container > div div.button:hover p,
+section:nth-of-type(3) div.container .button:hover p,
+section:nth-of-type(4) div.container .button:hover p,
+section:nth-of-type(5) div.container .button:hover p,
+#winkelwagen .wwitem .button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+/* button active (terwijl aangeklikt) stijlen */
+section:nth-of-type(2) div.container > div div.button:active p,
+section:nth-of-type(3) div.container .button:active p,
+section:nth-of-type(4) div.container .button:active p,
+section:nth-of-type(5) div.container .button:active p {
+    background-color: #418c9f;
+}
+
+/* oranje padding rondom actief menu-icon */
+#account #active2,
+#registreer #active2,
+#winkelwagen #active2 {
+    background-color: orange;
+}
+
+/* shame-hide */
+main section h2.hideme {
+    display: none !important;
+}
+
+
+/* =============================================================== */
+/* =========    BEGIN homepage stijlen =========================== */
+/* =============================================================== */
+
+/* === BEGIN header stijlen ======================================*/
+
+/* het verbergen van in deze weergave onnodige componenten */
+header h1,
+header #logo3,
+header nav #showMenuLabel,
+header nav #showMenu,
+main section:nth-of-type(1) h2 {
+    display: none;
+}
+
+/* centreren topmenu-items-teksten en padding menu */
+header nav ul {
+    text-align: center;
+    padding: 0 1vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+}
+
+/* vormgeving en plaatsing individuele topmenu-items */
+header nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'ralewaybold';
+    font-weight: normal;
+    padding: 20px 1.5vw;
+    border-left: 1px solid black;
+}
+
+/* weergave topmenu icons */
+header nav div.user-icons img {
+    padding: 5px;
+    box-sizing: content-box;
+    margin: 0;
+}
+
+/* oranje menu-item-kleur actieve pagina */
+header nav ul li a#active {
+    color: orange;
+}
+
+/* lijntje topmenu-item opheffen */
+header nav ul li:nth-of-type(4),
+header nav ul li:first-of-type {
+    border-left: 0;
+}
+
+/* padding weghalen van lijst-item waar top-logo in genest zit */
+header nav ul li:nth-of-type(4) {
+    padding: 0;
+}
+
+/* lijntje topmenu-item laten zien */
+header nav ul li:nth-of-type(3) {
+    border-right: 1px solid black;
+}
+
+/* positionering top-menu */
+header nav ul {
+    position: relative;
+}
+
+/* plaatsing en verschaling topmenu-cuisine-logo */
+header nav ul img {
+    position: absolute;
+    vertical-align: top;
+    max-width: 7vw;
+}
+
+/* grootte en plaatsing van de top-menu-logo-container */
+header nav ul #menulogo {
+    width: 7vw;
+    transform: translateX(-50%);
+}
+
+/* opheffen marge top-menu-logo */
+header nav ul li:nth-of-type(4) {
+    margin: 0;
+}
+
+/* de kleur van de topmenu-links */
+header nav ul li a {
+    color: white;
+}
+
+/* topmenu-itemkleur wanneer gehoverd */
+header nav ul a:hover {
+    color: #bbb
+}
+
+/* het relatief positioneren van de parent zodat de children absoluut kunnen positioneren */
+header nav {
+    position: relative;
+}
+
+/* plaatsing div met winkelwagen- en account-icon */
+header div.user-icons {
+    position: absolute;
+    top: 15px;
+    right: 10px
+}
+
+/* grootte en plaatsing winkelwagen- en account-icon */
+header div.user-icons img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* oranje randje rondom top-menu-icons rechts, wanneer gehoverd */
+header nav .user-icons img:hover {
+    border: 2px solid #d98a3f;
+    padding: 3px;
+}
+
+/* EINDE header stijlen
+=================================================================================*/
+
+
+
+
+/*================================================================================= 
+BEGIN image carroussel stijlen */
+
+/* positionering en grootte van de individuele start-image */
+section:nth-of-type(1) .rotator div.foto img {
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    height: 40vh;
+    object-fit: cover
+}
+
+/* weergave en positionering van de image stack */
+section:nth-of-type(1) div.rotator {
+    max-width: 1280px;
+    width: 100%;
+    height: 40vh;
+    max-height: 650px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* EINDE image carroussel stijlen 
+====================================================================== */
+
+
+
+/* =====================================================================
+BEGIN stijlen nieuwste boeken sectie */
+
+/* stijling titel h2 */
+section:nth-of-type(2) h2 {
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 30px 20px 0px 20px;
+}
+
+/* flexen, positionering en styling nieuwste boeken container */
+section:nth-of-type(2) div.container {
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    background-position: center;
+}
+
+/* flexen en positionering nieuwste boek div */
+section:nth-of-type(2) div.container > div {
+    margin: 20px;
+    flex-basis: 30vw;
+    height: 35vw;
+    max-height: 450px;
+    min-height: 350px;
+}
+
+
+/* 
+BEGIN positionering individuele boek-foto's 
+*/
+section:nth-of-type(2) div.container > div:nth-of-type(1) {
+    background-image: url(../images/boeken/boek-03-big.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section:nth-of-type(2) div.container > div:nth-of-type(2) {
+    background-image: url(../images/boeken/boek-05-big.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section:nth-of-type(2) div.container > div:nth-of-type(3) {
+    background-image: url(../images/boeken/boek-04-big.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section:nth-of-type(2) div.container > div:nth-of-type(4) {
+    background-image: url(../images/boeken/boek-10-big.jpg);
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+/* 
+EINDE positionering individuele boek-foto's 
+*/
+
+/* fontstyling en positionering boeken-card-quotes */
+section:nth-of-type(2) div.container > div p:nth-of-type(1) {
+    color: white;
+    font-family: 'merriweatherbold_italic';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* fontstyling boeken-card-auteurnamen */
+section:nth-of-type(2) div.container > div p:nth-of-type(2) {
+    font-family: 'ralewaymedium';
+}
+
+/* fontstyling en positionering boeken-card-buttons en buttonteksten */
+section:nth-of-type(2) div.container > div div.button p {
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #d98a4f;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+/* blauwe boekencard-dividers */
+section:nth-of-type(2) div.container > div div > hr {
+    width: 20vw;
+    border: 1px #418C9F solid;
+    max-width: 250px
+}
+
+/* relatieve positionering boekencard */
+section:nth-of-type(2) div.container > div {
+    position: relative;
+}
+
+/* relatieve positionering boekencard-tekst-container */
+section:nth-of-type(2) div.container > div > div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vw;
+}
+
+/* het oprekken van de boekencard-opdruk */
+section:nth-of-type(2) div.container > div > div * {
+    margin-top: 30px
+}
+
+/* EINDE stijlen nieuwste boeken sectie 
+================================================================================= */
+
+
+
+
+/* =================================================================================
+BEGIN stijlen het laatste nieuws sectie */
+
+/* styling titel 'het laatste nieuws' */
+section:nth-of-type(3) h2 {
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 30px 20px 0px 20px;
+}
+
+/* het flexen van de laatste-nieuws-items-container */
+section:nth-of-type(3) div.container {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* flexsettings en positionering individuele nieuws-items */
+section:nth-of-type(3) div.container > div {
+    flex-basis: 48%;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 0
+}
+
+/* opmaak individuele nieuws-item-titels */
+section:nth-of-type(3) h3 {
+    font-family: 'ralewaybold';
+    font-size: 0.9em;
+    color: #D98A3F;
+}
+
+/* opmaak p-tekst nieuwsitems */
+section:nth-of-type(3) p {
+    font-family: 'ralewaymedium';
+    font-size: 0.9em;
+    line-height: 1.3rem;
+}
+
+/* styling tbv plaatje eerste nieuwsitem */
+section:nth-of-type(3) div.container div.background-image1 {
+    background-image: url("../images/nieuws/nieuws-steak-big.jpg");
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+
+/* styling tbv plaatje tweede nieuwsitem */
+section:nth-of-type(3) div.container div.background-image2 {
+    background-image: url("../images/nieuws/nieuws-2.jpg");
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+
+/* styling en positionering nieuws-item-buttons */
+section:nth-of-type(3) div.button p {
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #d98a4f;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+}
+
+/* === EINDE stijlen het laatste nieuws sectie =============*/
+
+
+
+
+/* === BEGIN stijlen nieuwe recepten sectie ============== */
+
+/* 'nieuwe recepten' hoofdtitel styling */
+section:nth-of-type(4) h2 {
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 30px 20px 0px 20px;
+}
+
+/* styling individuele receptentitels */
+section:nth-of-type(4) h3 {
+    font-family: 'ralewaybold';
+    font-size: 0.9em;
+    color: #D98A3F;
+    text-transform: uppercase;
+    display: inline
+}
+
+/* het flexen en positioneren van de recepten-container */
+section:nth-of-type(4) div.container {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 1280px;
+}
+
+/* het flexen en positioneren van de individuele recepten-cards */
+section:nth-of-type(4) div.container > div {
+    flex-basis: 33%;
+    margin: 10px;
+    padding: 20px
+}
+
+/* het weghalen van de laatste recepten-card */
+section:nth-of-type(4) div.container > div:last-of-type {
+    display: none;
+}
+
+/* max breedte van de receptencard-icons */
+section:nth-of-type(4) div.container > div img:last-of-type {
+    max-width: 100%;
+}
+
+/* max grootte p-tekst recepten-card */
+section:nth-of-type(4) div.container p {
+    font-family: 'ralewaymedium';
+    font-size: 0.8em;
+}
+
+/* opmaak en positionering ingrediëntenlijsten */
+section:nth-of-type(4) div.container ul {
+    text-align: left;
+    font-family: 'ralewaymedium';
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-left: 15px;
+    padding-left: 0;
+}
+
+/* opmaak en positionering van de receptencard-buttons */
+section:nth-of-type(4) div.container div.button p {
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #d98a4f;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* positionering receptencard-icons-container */
+section:nth-of-type(4) div.container .icons {
+    float: right;
+    display: flex;
+    position: relative;
+}
+
+/* positionering en grootte van de individuele receptencard-icons */
+section:nth-of-type(4) div.container .icons img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-left: 5px;
+}
+
+/* extra marge laatste icons */
+section:nth-of-type(4) div.container .icons img:last-of-type {
+    margin-right: 5px;
+}
+
+/* positionering kooktijd t.o.v. klokje-icon */
+section:nth-of-type(4) div.container .icons .kooktijd {
+    position: absolute;
+    right: 0px;
+    margin-top: 0;
+    font-size: 0.6em;
+    color: #418c9f;
+}
+
+/* EINDE stijlen nieuwe recepten sectie
+================================================================== */
+
+
+
+
+/* ==================================================================
+BEGIN stijlen over cuisine */
+
+/* marge en regelafstand van de over-cuisine-sectie */
+section:nth-of-type(5) {
+    line-height: 1.5rem;
+    margin-top: 40px;
+}
+
+/* opmaak hoofdtitel 'over cuisine' */
+section:nth-of-type(5) h2 {
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 10px 20px 0px 20px;
+}
+
+/* flexen, grootte en positionering van de over-cuisine-container */
+section:nth-of-type(5) div.container {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1280px;
+    position: relative;
+    margin: 50px 15px;
+    margin-top: 10px
+}
+
+/* styling image */
+section:nth-of-type(5) div.container > div:first-of-type {
+    background-image: url(../images/hero-en-slider/hero-slide-02.jpg);
+    overflow: hidden;
+    background-size: cover;
+    max-height: 100%
+}
+
+/* lettertype, flexen en positionering van de divs in de container */
+section:nth-of-type(5) div.container > div {
+    font-family: 'ralewaymedium';
+    vertical-align: top;
+    margin-top: 0;
+    padding-top: 0;
+    flex-basis: 50%;
+    margin: 10px;
+    padding: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* styling en positionering 'lees verder'-button */
+section:nth-of-type(5) div.container > div div p {
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #d98a4f;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* EINDE stijlen over cuisine
+================================================================== */
+
+
+
+
+/* ==================================================================
+BEGIN footer stijlen */
+
+/* flexen, positionering en bg-color van de footer-container */
+footer {
+    background-color: #418C9f;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px
+}
+
+/* marges footer-nav-menu */
+footer div:first-of-type {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* grootte cuisine-footer-logo */
+footer div:first-of-type > img {
+    width: 100px;
+}
+
+/* marges op nul voor de footer-nav-lijst */
+footer ul {
+    margin: 0;
+    padding: 0
+}
+
+/* marge tussen eerste footer-menu-item en footer-logo */
+footer ul li:first-of-type {
+    margin-top: 20px;
+}
+
+/* opmaak en positionering individuele footer-menu-items */
+footer ul li {
+    list-style-type: none;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+/* styling adres-container */
+footer ul li a,
+footer address {
+    color: white;
+    font-family: 'ralewaybold';
+}
+
+/* verkleuring footer-menu-item bij hover */
+footer ul li a:hover {
+    color: #d98a3f
+}
+
+/* verkleuring footer-menu-item bij click */
+footer ul li a:active {
+    color: white
+}
+
+/* marges social-media-icons-container */
+footer #socialmedia-icons {
+    margin-bottom: 50px;
+    margin-left: 60px
+}
+
+/* oranje randje rondom socialmedia-icons bij hover */
+footer #socialmedia-icons a:hover img {
+    border: 2px solid #d98a3f;
+    border-radius: 7px !important;
+}
+
+/* grootte individuele socialmedia-icons */
+footer #socialmedia-icons img {
+    width: 30px;
+}
+
+/* opmaak en marge copyright-tekst */
+footer > p {
+    font-family: 'ralewaymedium';
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* opmaak en positionering adres-items */
+footer address {
+    text-align: right;
+    font-style: normal;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* EINDE footer stijlen */
+
+/* =============================================================== */
+/* =========    EINDE homepage-stijlen =========================== */
+/* =============================================================== */
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #campagne stijlen ========================== */
+/* =============================================================== */
+
+/* positionering en verschaling hero-image */
+#campagne section:nth-of-type(1) .hero2 div.foto img {
+    width: 100%;
+    z-index: -100;
+    height: 40vh;
+    object-fit: cover
+}
+
+/* niet nodig */
+#campagne section:nth-of-type(3) {
+    display: none;
+}
+
+/* positionering foto Nigella Lawson */
+#campagne section:nth-of-type(5) div.container > div:first-of-type {
+    background-image: url(../images/hero-en-slider/hero-slide-12.jpg);
+    background-position: top center;
+}
+
+/* styling en positionering 'over nigella'-titel */
+#campagne h2 {
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 30px 20px 0px 20px;
+}
+
+/* flex-container nigella's kookvideo selectie */
+#campagne .container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 50px
+}
+
+/* breedte divs in flex-container nigella's kookvideo selectie */
+#campagne .container2 > div {
+    flex-basis: 47%
+}
+
+/* styling p-tekst in nigella's kookvideo selectie */
+#campagne .container2 > div p {
+    margin-left: 25px;
+    margin-right: 10px;
+    font-family: 'ralewaymedium';
+    line-height: 1.5rem
+}
+
+/* het dikgedrukt maken van de eerste paragraaf in nigella's kookvideo selectie */
+#campagne .container2 > div > p:first-of-type {
+    padding-top: 20px;
+    font-family: 'ralewaybold';
+}
+
+/* styling handtekening */
+#campagne .container2 > div > img {
+    max-width: 350px;
+    width: 80%;
+    padding-left: 50px;
+}
+
+/* padding op de video */
+#campagne .container2 > div:nth-of-type(2) {
+    padding: 15px
+}
+
+/* extra marge op 'nigella's recepten'-container */
+#campagne section:nth-of-type(4) {
+    margin-top: 50px
+}
+
+/* extra marge op 'over nigella'-container */
+#campagne section:nth-of-type(5) {
+    margin-bottom: 50px;
+}
+
+/* interlinie laatste paragraaf 'over nigella'-section */
+#campagne section:nth-of-type(5) p:nth-of-type(2) {
+    line-height: 1.5rem;
+}
+
+/* =============================================================== */
+/* =========    EINDE #campagne stijlen ========================== */
+/* =============================================================== */
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #over-ons stijlen ========================== */
+/* =============================================================== */
+
+/* andere content naar achteren verplaatsen */
+#over-ons section:nth-of-type(1) .hero2 div.fotoover img {
+    width: 100%;
+    z-index: -100;
+}
+
+/* positionering en oproepen hero-image */
+#over-ons section:nth-of-type(1) .hero2 {
+    background-image: url("../images/hero-en-slider/hero-slide-13.jpg");
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    min-height: 200px;
+}
+
+/* extra marge over-cuisine-section */
+#over-ons section:nth-of-type(5) {
+    margin: 40px 0 60px 0;
+}
+
+/* font-grootte 'over cuisine'-titel */
+#over-ons section:nth-of-type(5) h2 {
+    font-size: 1.5rem;
+}
+
+/* styling 'het cuisine team' */
+#over-ons .container div:last-of-type p:last-of-type {
+    margin-top: 30px;
+    color: #418c9f;
+    font-family: 'ralewaybold';
+    font-size: 1.1rem;
+}
+
+/* =============================================================== */
+/* =========    EINDE #over-ons stijlen ========================== */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN alle recepten stijlen ====================== */
+/* =============================================================== */
+
+/* ========= BEGIN styles recepten hoofdpagina ============= */
+
+/* extra padding zodat er geen overlap is met het header-menu-logo */
+#recepten section:nth-of-type(4) {
+    padding-top: 50px;
+}
+
+/* flexen en marges van het recepten-filter */
+#recepten section:nth-of-type(4) .receptenfilter {
+    margin: 30px 0;
+    line-height: 20px;
+    display: flex;
+}
+
+/* extra marge rechts */
+#recepten section:nth-of-type(4) .receptenfilter > div:nth-of-type(4) {
+    margin-right: 50px;
+}
+
+/* styling label */
+#recepten section:nth-of-type(4) .receptenfilter label {
+    margin-left: 5px;
+    font-family: 'ralewaymedium';
+    color: #418C9F;
+}
+
+/* positionering helften van het recepten-filter */
+#recepten section:nth-of-type(4) .receptenfilter > div {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+
+/* marges tussen individuele filter-opties */
+#recepten section:nth-of-type(4) .receptenfilter > div > div {
+    margin: 10px;
+}
+
+/* positionering tweede helft recepten-filter */
+#recepten section:nth-of-type(4) .receptenfilter > div:nth-of-type(2) {
+    position: relative;
+    top: -10px;
+}
+
+/* aanpassing bereidings-plaatjes recepten-filter */
+#recepten section:nth-of-type(4) .receptenfilter > div img {
+    width: 24px;
+    height: auto;
+}
+
+/* verschuiving oven-icon */
+#recepten section:nth-of-type(4) .receptenfilter > div > div:nth-of-type(2) label img {
+    position: relative;
+    top: 2px;
+}
+
+/* terugloop/wrap recepten-items in recepten-container */
+#recepten section:nth-of-type(4) .container {
+    flex-wrap: wrap;
+}
+
+/* breedte individuele recepten-cards */
+#recepten section:nth-of-type(4) .container > div {
+    flex-basis: 30%;
+}
+
+/* alleen de eerste 5 ingrediënten tonen */
+#recepten section:nth-of-type(4) .container > div ul li:nth-of-type(6),
+#recepten section:nth-of-type(4) .container > div ul li:nth-of-type(7),
+#recepten section:nth-of-type(4) .container > div ul li:nth-of-type(8),
+#recepten section:nth-of-type(4) .container > div ul li:nth-of-type(9),
+#recepten section:nth-of-type(4) .container > div ul li:nth-of-type(10) {
+    display: none;
+}
+
+/* ========= EINDE styles recepten hoofdpagina ============= */
+
+
+
+/* ========= BEGIN styles van de recepten-sub-pagina's  ==== */
+
+/* nu wél alle ingrediënten tonen */
+#recepten .recept-item section:nth-of-type(4) .container > div ul li:nth-of-type(6),
+#recepten .recept-item section:nth-of-type(4) .container > div ul li:nth-of-type(7),
+#recepten .recept-item section:nth-of-type(4) .container > div ul li:nth-of-type(8),
+#recepten .recept-item section:nth-of-type(4) .container > div ul li:nth-of-type(9),
+#recepten .recept-item section:nth-of-type(4) .container > div ul li:nth-of-type(10) {
+    display: list-item;
+}
+
+/* padding op hero-image intrekken */
+#recepten .recept-item section:nth-of-type(4) {
+    padding-top: 0;
+}
+
+/* positionering en oproepen hero-image Nigella */
+#recepten .recept-item section:nth-of-type(4) > div:first-of-type {
+    height: 400px;
+    background-image: url("../images/hero-en-slider/hero-slide-10.jpg");
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* opmaak recept-titel */
+#recepten .recept-item section:nth-of-type(4) h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+/* centreren recept-container */
+#recepten .recept-item section:nth-of-type(4) div {
+    margin: 0 auto;
+}
+
+/* positionering kooktijd t.o.v. klokje */
+#recepten .recept-item section:nth-of-type(4) .container .kooktijd {
+    position: absolute;
+    right: 0px;
+    margin-top: 0;
+    font-size: 0.6em;
+    color: #418c9f;
+    line-height: 0.8rem;
+}
+
+/* breedte aanpassen bereidingswijze/linkerkolom */
+#recepten .recept-item section:nth-of-type(4) .container > div:first-of-type {
+    max-width: 65%;
+    flex-grow: 4;
+}
+
+/* breedte aanpassen icons en ingrediënten/rechterkolom */
+#recepten .recept-item section:nth-of-type(4) .container > div:nth-of-type(2) {
+    max-width: 25%;
+    flex-grow: 1;
+}
+
+/* styling receptplaatje */
+#recepten .recept-item section:nth-of-type(4) .container > div:first-of-type img {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* grootte en interlinie p-tekst */
+#recepten .recept-item section:nth-of-type(4) .container p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+/* styling subtitels */
+#recepten .recept-item section:nth-of-type(4) .container p.subtitel {
+    text-transform: uppercase;
+    font-family: 'ralewaybold';
+}
+
+/* positionering icons */
+#recepten .recept-item section:nth-of-type(4) .container div .icons {
+    float: none;
+    position: relative;
+    left: -10px;
+    margin-bottom: 70px;
+}
+
+/* icons inline plaatsen */
+#recepten .recept-item section:nth-of-type(4) .container div .icons div {
+    display: inline;
+    position: relative;
+}
+
+/* centreren kooktijd tov klokje */
+#recepten .recept-item section:nth-of-type(4) .container div .icons div .kooktijd {
+    position: absolute;
+    text-align: center;
+}
+
+/* breedte en positionering divs in recept-container */
+#recepten .recept-item section:nth-of-type(4) .container div {
+    display: block;
+    flex-basis: 47%;
+    flex-direction: row;
+}
+
+/* styling terug-knop */
+#recepten .recept-item section:nth-of-type(4) a > p {
+    margin-left: 25px;
+    text-decoration: underline;
+    font-family: 'ralewaymedium';
+    font-size: 0.9rem;
+}
+
+/* ========= EINDE styles van de recepten-sub-pagina's  ==== */
+
+/* =============================================================== */
+/* =========    EINDE alle recepten stijlen ====================== */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #nieuws stijlen ============================ */
+/* =============================================================== */
+
+/* positionering welk deel van de koe project */
+#nieuws #animation_container {
+    position: relative;
+    margin: 3vw auto 0 auto;
+    left: 0;
+    right: 0;
+}
+
+/* grootte 'het laatste nieuws'-titel */
+#nieuws section:nth-of-type(3) h2 {
+    font-size: 1.5rem
+}
+
+/* flexsettings en bottom-marge nieuws-artikel-container */
+#nieuws section:nth-of-type(3) .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+/* flex-breedte en padding van de individuele nieuws-artikel-cards */
+#nieuws section:nth-of-type(3) .container > div {
+    flex-basis: 30%;
+    padding: 0 2vw;
+}
+
+/* laatste artikelcard niet tonen */
+#nieuws section:nth-of-type(3) .container > div:nth-of-type(10) {
+    display: none;
+}
+
+/* grootte en positionering nieuws-item-plaatje */
+#nieuws section:nth-of-type(3) .container div div.newsbg {
+    height: 150px;
+    background-size: cover;
+    position: relative;
+}
+
+/* nieuws-artikel-titel grootte en interlinie */
+#nieuws section:nth-of-type(3) .container div > h3 {
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+/* nieuws-artikel-tekst grootte en interlinie */
+#nieuws section:nth-of-type(3) .container div > p {
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+/* === BEGIN het oproepen van alle nieuws-artikel-plaatjes */
+
+/* plaatje artikel 1 */
+#nieuws section:nth-of-type(3) .container div div.background-image1 {
+    background-image: url("../images/nieuws/nieuws-1.jpg");
+}
+
+/* plaatje artikel 2 */
+#nieuws section:nth-of-type(3) .container div div.background-image2 {
+    background-image: url("../images/nieuws/nieuws-2.jpg");
+}
+
+/* plaatje artikel 3 */
+#nieuws section:nth-of-type(3) .container div div.background-image3 {
+    background-image: url("../images/nieuws/nieuws-3.jpg");
+}
+
+/* plaatje artikel 4 */
+#nieuws section:nth-of-type(3) .container div div.background-image4 {
+    background-image: url("../images/nieuws/nieuws-4.jpg");
+    height: 200px;
+}
+
+/* plaatje artikel 5 */
+#nieuws section:nth-of-type(3) .container div div.background-image5 {
+    background-image: url("../images/nieuws/nieuws-5.jpg");
+    height: 200px;
+}
+
+/* plaatje artikel 6 */
+#nieuws section:nth-of-type(3) .container div div.background-image6 {
+    background-image: url("../images/nieuws/nieuws-6.jpg");
+    height: 200px;
+}
+
+/* plaatje artikel 7 */
+#nieuws section:nth-of-type(3) .container div div.background-image7 {
+    background-image: url("../images/nieuws/nieuws-7.jpg");
+    height: 200px;
+}
+
+/* plaatje artikel 8 */
+#nieuws section:nth-of-type(3) .container div div.background-image8 {
+    background-image: url("../images/nieuws/nieuws-8.jpg");
+    height: 200px;
+}
+
+/* plaatje artikel 9 */
+#nieuws section:nth-of-type(3) .container div div.background-image9 {
+    background-image: url("../images/nieuws/nieuws-9.jpg");
+    height: 200px;
+}
+
+/* plaatje artikel 10 */
+#nieuws section:nth-of-type(3) .container div div.background-image10 {
+    background-image: url("../images/nieuws/nieuws-10.jpg");
+    height: 200px;
+}
+
+/* === EINDE het oproepen van alle nieuws-artikel-plaatjes */
+
+/* =============================================================== */
+/* =========    EINDE #nieuws stijlen ============================ */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN .nieuws-item stijlen ======================= */
+/* =============================================================== */
+
+/* hero-image-div weghalen */
+#nieuws .nieuws-item section:nth-of-type(3) > div:first-of-type {
+    display: none;
+}
+
+/* geen marge op het-laatste-nieuws-container */
+#nieuws .nieuws-item section .container {
+    margin: 0;
+}
+
+/* breedte individuele child-divs in geflexte container */
+#nieuws .nieuws-item section:nth-of-type(3) .container > div {
+    flex-basis: 45%;
+}
+
+/* styling nieuwsartikel-plaatje */
+#nieuws .nieuws-item section:nth-of-type(3) .container img {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* interlinie artikeltekst */
+#nieuws .nieuws-item section:nth-of-type(3) .container p {
+    line-height: 1.5rem
+}
+
+/* styling terug-knop */
+#nieuws .nieuws-item section:nth-of-type(3) a > p {
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+/* geërfde button weghalen */
+#nieuws .nieuws-item section:nth-of-type(3) .container .button {
+    display: none;
+}
+
+/* =============================================================== */
+/* =========    EINDE .nieuws-item stijlen ======================= */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #contact stijlen =========================== */
+/* =============================================================== */
+
+/* styling contact-titel */
+#contact section:first-of-type h2 {
+    display: block;
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 30px 20px 0px 20px;
+    font-size: 1.25rem;
+}
+
+/* max-breedte contact-container */
+#contact section:first-of-type .container {
+    max-width: 1280px;
+}
+
+/* max-breedte en centreren formulier */
+#contact section:first-of-type form {
+    margin: 5vw auto;
+    max-width: 500px;
+}
+
+/* styling labels */
+#contact section:first-of-type form p {
+    font-family: 'ralewaybold';
+    margin-bottom: 5px;
+    color: #418C9F;
+}
+
+/* styling nieuwsbrief-label */
+#contact section:first-of-type form label {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'ralewaybold';
+    margin-bottom: 5px;
+    color: #418C9F;
+}
+
+/* styling van de input */
+#contact section:first-of-type form input[type="text"],
+#contact section:first-of-type form input[type="password"] {
+    text-indent: 5px;
+    width: 100%;
+    height: 30px;
+    font-family: 'ralewaymedium';
+    font-size: 0.8rem;
+}
+
+/* styling bericht-input */
+#contact section:first-of-type form textarea {
+    margin-bottom: 20px;
+    min-height: 100px;
+    width: 100%;
+    font-family: 'ralewaymedium';
+    font-size: 0.8rem;
+    padding: 0 5px;
+    line-height: 1.2rem;
+}
+
+/* styling verstuur-knop */
+#contact section:first-of-type form input[type="submit"] {
+    background-color: #418C9F;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'ralewaybold';
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* styling verstuur-knop bij hover */
+#contact section:first-of-type form input[type="submit"]:hover {
+    background-color: #d98a3f;
+}
+
+/* styling verstuur-knop wanneer aangeklikt */
+#contact section:first-of-type form input[type="submit"]:active {
+    background-color: #d98a3f;
+    position: relative;
+    top: 2px;
+}
+
+/* =============================================================== */
+/* =========    EINDE #contact stijlen =========================== */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #account stijlen =========================== */
+/* =============================================================== */
+
+/* styles 'aanmelden'-titel */
+section:first-of-type h2 {
+    display: block !important;
+    color: #418C9F;
+    text-transform: uppercase;
+    font-family: 'ralewaymedium';
+    margin: 30px 20px 0px 20px;
+    font-size: 1.25rem;
+}
+
+/* styling 'account aanmaken'-link */
+#account main section:first-of-type .container form a p {
+    text-decoration: underline;
+    text-decoration-style: dotted
+}
+
+/* grootte van de maskerende wachtwoord-bolletjes aanpassen */
+#account main section:first-of-type .container form input[type="password"] {
+    font: small-caption;
+    font-size: 16px;
+}
+
+/* extra marge footer */
+#account footer {
+    margin-top: 300px
+}
+
+/* =============================================================== */
+/* =========    EINDE #account stijlen =========================== */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #shop stijlen ============================== */
+/* =============================================================== */
+
+/* styling hero-image */
+#shop section:nth-of-type(1) .shophero {
+    height: 400px;
+    z-index: -10;
+    background-position: center;
+    background-image: url("../images/hero-en-slider/hero-slide-01.jpg");
+}
+
+/* max-breedte en padding shop-section */
+#shop section:nth-of-type(2) {
+    max-width: 1280px;
+    padding-bottom: 40px;
+}
+
+/* weghalen belangrijkste heading */
+#shop h1 {
+    display: none;
+}
+
+#shop section:nth-of-type(2) h2 {
+    font-size: 1.5rem
+}
+
+/* het flexen van de boeken-container uitgelicht-sectie */
+#shop section:nth-of-type(2) .book-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #418C9F;
+}
+
+/* het flexen van de individuele boeken-cards uitgelicht-sectie */
+#shop section:nth-of-type(2) .book-container > div {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* flex-breedte boek-card uitgelicht-sectie */
+#shop section:nth-of-type(2) .book-container > div {
+    flex-basis: 33%;
+    padding: 30px;
+}
+
+/* het flexen van de individuele boeken-cards in de tweede sectie */
+#shop section:nth-of-type(2) .book-container2 .bookswrapper > div {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+/* interlinie boek-titels */
+#shop section:nth-of-type(2) div h3 {
+    font-family: 'ralewaymedium';
+    font-size: 1rem;
+    color: #D98A3F;
+    margin-bottom: 0;
+    line-height: 1.3rem;
+}
+
+/* boven-marge op boek-cards */
+#shop section:nth-of-type(2) .book-container div h3 {
+    margin-top: 6px;
+}
+
+/* styling 'uitgelicht' */
+#shop section:nth-of-type(2) div h4 {
+    text-transform: uppercase;
+    color: #A0c5cf;
+    font-family: 'ralewaymedium';
+    font-size: 0.6rem;
+    margin-bottom: 0;
+    position: relative;
+    right: 10px;
+}
+
+/* font-settings p-tekst boek-cards */
+#shop section:nth-of-type(2) div p {
+    font-family: 'ralewaymedium';
+    font-size: 0.9rem;
+    line-height: 1.3rem
+}
+
+/* breedte en uitlijning boek-plaatjes */
+#shop section:nth-of-type(2) img {
+    max-width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+/* styling namen auteurs */
+#shop section:nth-of-type(2) div h3 ~ p:first-of-type {
+    font-size: 0.7rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* styling prijzen */
+#shop section:nth-of-type(2) div p:last-of-type {
+    font-weight: bold;
+}
+
+/* het flexen en positioneren van de tweede boeken-container */
+#shop section:nth-of-type(2) .book-container2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+/* breedte en marges van de categorieën-kolom */
+#shop section:nth-of-type(2) .book-container2 > div:first-of-type {
+    padding: 30px 0;
+    margin-right: 40px;
+    margin-left: 10px;
+    max-width: 100px;
+    flex-grow: 1;
+}
+
+/* tweede div groter maken in de flex-container */
+#shop section:nth-of-type(2) .book-container2 > div:nth-of-type(2) {
+    flex-grow: 1;
+}
+
+/* max-breedte p-teksten */
+#shop section:nth-of-type(2) .book-container > div div ~ p:first-of-type,
+#shop section:nth-of-type(2) .book-container2 > div div ~ p:first-of-type {
+    width: 80%
+}
+
+/* styling categorieën-titel */
+#shop section:nth-of-type(2) .book-container2 h2 {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* bullets weg voor categorieënlijst-items en meer padding links */
+#shop section:nth-of-type(2) .book-container2 ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* marges en styling van de individuele categorieën-menu-items */
+#shop section:nth-of-type(2) .book-container2 ul li {
+    font-family: 'ralewaymedium';
+    padding-top: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #418C9F;
+    border-top: 1px solid #418c9f;
+}
+
+/* kleur categorie-item bij hover en muis laten veranderen in pointer */
+#shop section:nth-of-type(2) .book-container2 ul li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* boeken uit container2 flexen en wrappen */
+#shop section:nth-of-type(2) .book-container2 .bookswrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+/* flexsettings, positionering en styling van de individuele boekencards in container2 */
+#shop section:nth-of-type(2) .book-container2 .bookswrapper > div {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #EEE;
+    border-radius: 0;
+}
+
+/* =============================================================== */
+/* =========    EINDE #shop stijlen ============================== */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN .boek-item stijlen ========================= */
+/* =============================================================== */
+
+/* weergave en verbergen van de 'artikel is besteld' tekst */
+#shop .boek-item section:nth-of-type(2) .container3 p.showbesteldtekst {
+    visibility: hidden;
+}
+
+/* opmaak van de 'artikel is besteld' tekst */
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel1besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel2besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel3besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel4besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel5besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel6besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel7besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel8besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel9besteld,
+#shop .boek-item section:nth-of-type(2) .container3 p#artikel10besteld {
+    font-size: 1rem;
+    font-family: "ralewaymedium";
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+/* opmaak van de links */
+#shop .boek-item section:nth-of-type(2) .container3 a:link,
+#shop .boek-item section:nth-of-type(2) .container3 a:visited {
+    color: #aaa;
+}
+
+/* opmaak is besteld link wanneer gehoverd */
+#shop .boek-item section:nth-of-type(2) .container3 a:hover {
+    color: #D98A3f;
+}
+
+/* styling boektitel */
+#shop .boek-item section:nth-of-type(2) h2:first-of-type {
+    margin-bottom: 60px
+}
+
+/* flexen van de main-artikel container */
+#shop .boek-item section:nth-of-type(2) .container3 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 30px
+}
+
+/* eventuele text-transforms opheffen */
+#shop .boek-item section:nth-of-type(2) .container3 p {
+    text-transform: none;
+}
+
+/* grootte en interlinie van de p-tekst */
+#shop .boek-item section:nth-of-type(2) .container3 > div:first-of-type > p {
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+
+/* breedte kolom links in main-artikel */
+#shop .boek-item section:nth-of-type(2) .container3 > div:first-of-type {
+    flex-grow: 3;
+}
+
+/* breedte kolom rechts in main-artikel */
+#shop .boek-item section:nth-of-type(2) .container3 > div:nth-of-type(2) {
+    flex-grow: 1;
+}
+
+/* styling eerste alinea */
+#shop .boek-item section:nth-of-type(2) .container3 > div > p:first-of-type {
+    font-weight: normal
+}
+
+/* styling auteur en taal tekst */
+#shop .boek-item section:nth-of-type(2) .container3 > div > div:first-of-type > p {
+    font-family: 'ralewaymedium';
+    font-weight: normal;
+    font-size: 0.8rem
+}
+
+/* styling prijs tekst */
+#shop .boek-item section:nth-of-type(2) .container3 > div > div:nth-of-type(2) > p {
+    font-size: 1.5rem;
+}
+
+#shop .boek-item section:nth-of-type(2) .container3 > div > div:nth-of-type(2) > p.prijs {
+    font-family: 'ralewaybold';
+    font-size: 1.6rem;
+}
+
+/* max-breedte individuele divs in flexcontainer */
+#shop .boek-item section:nth-of-type(2) .container3 > div {
+    flex-basis: 45%;
+}
+
+/* marges boek-plaatje main article */
+#shop .boek-item section:nth-of-type(2) .container3 > div:nth-of-type(2) img {
+    margin-left: 30px;
+    margin-top: 20px
+}
+
+/* het flexen van de container met auteur en taal */
+#shop .boek-item section:nth-of-type(2) .container3 div div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* styling in-winkelmandje-leggen-knop */
+#shop .boek-item section:nth-of-type(2) .container3 div div img {
+    padding: 10px 80px;
+    background-color: #418c9f;
+    width: 30px;
+    height: auto;
+    box-sizing: content-box;
+}
+
+/* styling 'anderen bekeken ook' */
+#shop .boek-item section:nth-of-type(2) h2:last-of-type {
+    font-size: 1rem
+}
+
+/* geen marges boekcontainer2 */
+#shop .boek-item section:nth-of-type(2) .book-container2 {
+    margin-top: 0;
+}
+
+/* geen padding op de wrapper met de boeken */
+#shop .boek-item section:nth-of-type(2) .book-container2 .bookswrapper {
+    padding-top: 0;
+}
+
+/* bestelknop muis veranderen in handje */
+#shop .boek-item .container3 > div:first-of-type > div:last-of-type img {
+    cursor: pointer;
+}
+
+/* bestelknop styling bij hover */
+#shop .boek-item .container3 > div:first-of-type > div:last-of-type img:hover {
+    background-color: #d98a3f;
+}
+
+/* bestelknop styling bij click */
+#shop .boek-item .container3 > div:first-of-type > div:last-of-type img:active {
+    background-color: #d98a3f;
+    position: relative;
+    transform: scale(0.97);
+}
+
+/* =============================================================== */
+/* =========    EINDE .boek-item stijlen ========================= */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #registreer stijlen ======================== */
+/* =============================================================== */
+
+/* titel-grootte aanpassen */
+#registreer main section:first-of-type > h2 {
+    font-size: 1.5rem;
+}
+
+/* het flexen van meerdere containers met invoervelden */
+#registreer main section:first-of-type .container #naamcontainer,
+#registreer main section:first-of-type .container #adrescontainer,
+#registreer main section:first-of-type .container #landcontainer,
+#registreer main section:first-of-type .container #wachtwoordcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* flex-breedte individuele invoervelden */
+#registreer main section:first-of-type .container #landcontainer > div,
+#registreer main section:first-of-type .container #wachtwoordcontainer > div {
+    flex-basis: 48%;
+}
+
+/* positionering items in landcontainer */
+#registreer main section:first-of-type .container #landcontainer {
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+/* marges op radiobutton-labels */
+#registreer main section:first-of-type .container #landcontainer div:first-of-type label:first-of-type,
+#registreer main section:first-of-type .container form > div:first-of-type > label:first-of-type {
+    margin-right: 10%
+}
+
+/* extra breedte ander land invoerveld */
+#registreer main section:first-of-type .container #landcontainer > div:last-of-type {
+    flex-grow: 5;
+}
+
+/* extra marges subtitels */
+#registreer main section:first-of-type .container form h2 {
+    margin: 75px 0 25px 0px;
+    font-size: 1.1rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #eee;
+}
+
+/* verticaal centreren radiobuttons t.o.v. labels */
+#registreer main section:first-of-type .container form input[type=radio] {
+    vertical-align: middle;
+}
+
+/* styling radiobutton-labels */
+#registreer main section:first-of-type .container form label {
+    font-family: 'ralewaymedium';
+    color: black;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+/* styling maskerende bolletjes in wachtwoord-invoerveld */
+#registreer main section:first-of-type .container form input[type="password"] {
+    font: small-caption;
+    font-size: 16px
+}
+
+/* =============================================================== */
+/* =========    EINDE #registreer stijlen ======================== */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========    BEGIN #winkelwagen stijlen ======================= */
+/* =============================================================== */
+
+/* alle boekitems verbergen */
+#winkelwagen main section:first-of-type .containerww .hidebook1,
+#winkelwagen main section:first-of-type .containerww .hidebook2,
+#winkelwagen main section:first-of-type .containerww .hidebook3,
+#winkelwagen main section:first-of-type .containerww .hidebook4,
+#winkelwagen main section:first-of-type .containerww .hidebook5,
+#winkelwagen main section:first-of-type .containerww .hidebook6,
+#winkelwagen main section:first-of-type .containerww .hidebook7,
+#winkelwagen main section:first-of-type .containerww .hidebook8,
+#winkelwagen main section:first-of-type .containerww .hidebook9,
+#winkelwagen main section:first-of-type .containerww .hidebook10 {
+    display: none;
+}
+
+/* aanpassing top-margin eerst wwitem */
+#winkelwagen main section:first-of-type .containerww > .wwitem:first-of-type {
+    margin-top: 3vw;
+}
+
+/* extra marge onderin container */
+#winkelwagen .containerww {
+    margin-bottom: 40px;
+}
+
+/* extra marge en border eerste wwitem */
+#winkelwagen .containerww .wwitem:first-of-type {
+    margin-top: 70px;
+    border-top: 1px solid #eee;
+}
+
+/* het flexen, positioneren en stylen van de individuele winkelwagen-items */
+#winkelwagen .containerww .wwitem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: 'ralewaymedium';
+    line-height: 1.5rem;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* flex-breedte van de child-divs in de wwitem-containers */
+#winkelwagen .containerww .wwitem > div {
+    flex-basis: 25%;
+}
+
+/* boektitels in hoofdletters weergeven en marge eraf halen */
+#winkelwagen .containerww .wwitem > div h3 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* positioneren en aanpassen styling boek-kenmerken-lijst */
+#winkelwagen .containerww .wwitem > div ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    font-size: 0.9rem;
+}
+
+/* breedte en uitlijning boekplaatjes */
+#winkelwagen .containerww .wwitem > div > img {
+    max-width: 80px;
+    vertical-align: top;
+}
+
+/* styling prullenbak-icon */
+#winkelwagen .containerww .wwitem > div:nth-of-type(3) img {
+    max-width: 15px;
+    display: inline-block;
+    vertical-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* aanpassing aantal-tekst */
+#winkelwagen .containerww .wwitem > div:nth-of-type(3) p {
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0px
+}
+
+/* tekst-alignment met prullenbakje-icon */
+#winkelwagen .containerww .wwitem > div:nth-of-type(3) img ~ p {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+/* styling prijs */
+#winkelwagen .containerww .wwitem > div:nth-of-type(4) p {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+/* scheidingslijn en styling 'totaal'-sectie */
+#winkelwagen .containerww .wwitem:nth-last-of-type(2) {
+    border-top: 2px solid #418c9f !important;
+    height: 120px;
+    align-items: flex-start;
+}
+
+/* geen marge op titel */
+#winkelwagen .containerww .wwitem:last-of-type h2 {
+    margin: 0;
+}
+
+/* extra marge rechts op totaalprijs */
+#winkelwagen .containerww .wwitem:nth-last-of-type(2) {
+    margin-right: 10px
+}
+
+/* extra marge onder afrekenen-knop */
+#winkelwagen .containerww .wwitem:last-of-type {
+    margin-bottom: 50px
+}
+
+/* bovenmarge, rand en padding opheffen op totaal-section */
+#winkelwagen .containerww .wwitem:last-of-type,
+#winkelwagen .containerww .wwitem:nth-last-of-type(2) {
+    border: 0;
+    padding: 0;
+    margin-top: 0
+}
+
+/* styling en positionering afrekenen-knop */
+#winkelwagen .containerww .wwitem:last-of-type .button {
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    padding: 10px 60px;
+    background-color: #418c9f;
+    max-width: 75%;
+    margin: 0 auto;
+    text-shadow: none;
+    color: white;
+}
+
+/* lelijke paarse kleur van bezochte link afrekenen-knop opheffen */
+#winkelwagen .containerww .wwitem .button a:visited {
+    color: inherit;
+}
+
+/* kleur van afrekenenknop tijdens aangeklikt */
+#winkelwagen .containerww .wwitem .button:active {
+    background-color: #d98a3f;
+}
+
+/* =============================================================== */
+/* =========    EINDE #winkelwagen stijlen ======================= */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* =========     BEGIN - EXTRA BREAKPOINTS  ====================== */
+/* =============================================================== */
+
+/* extra breekpunt zodat de nav-items niet over de floatende nav-icons (rechts) heen vallen */
+@media screen and (max-width:885px) {
+    nav ul li {
+        font-size: 0.9rem
+    }
+}
+
+/* extra breakpoint zodat het logo niet de content eronder overlapt */
+@media screen and (max-width:1280px) {
+    #recepten section:nth-of-type(4) .receptenfilter {
+        padding-top: 10px;
+    }
+}
+
+/* =============================================================== */
+/* =========     EINDE - EXTRA BREAKPOINTS  ====================== */
+/* =============================================================== */

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- primair gevoerde taal op pagina -->
+
+<html lang="nl">
+
+<head>
+    <!-- character set UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- meta-stuff t.b.v. goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welkom bij Cuisine - Campagne</title>
+    <!-- koppeling met de hoofd-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+    <link href="../css/cuisine.css" type="text/css" rel="stylesheet">    
+</head>
+
+<body id="campagne">
+    <header>
+        <!-- niet weergegeven verplichte h1 tbv document outline -->
+        <h1>cuisine cookbooks and more</h1>
+        <!-- het cuisine logo -->
+        <div>
+            <a href="../index.html"><img class="animateLogo" id="logo3" src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a>
+        </div>
+        <!-- begin topmenu -->
+        <nav>
+            <!-- menuknop mobile en tablet weergave -->
+            <label for="showMenu" id="showMenuLabel">Show menu</label>
+            <!-- vangt de actie op om menu weer te geven -->
+            <input type="checkbox" id="showMenu" role="button">
+            <ul>
+                <li><a href="../pages/campagne.html" id="active">campagne</a></li>
+                <li><a href="../pages/recepten.html">recepten</a></li>
+                <li><a href="../pages/nieuws.html">nieuws</a></li>
+                <li id="menulogo"><a href="/index.html"><img class="animateLogo" src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a></li>
+                <li><a href="../pages/over-ons.html">over ons</a></li>
+                <li><a href="../pages/contact.html">contact</a></li>
+                <li><a href="../pages/shop.html">shop</a></li>
+            </ul>
+            <!-- account en winkelwagentje icons -->
+            <div class="user-icons">
+                <a href="../pages/account.html"><img src="../images/logo-en-icons/user-icon.png" alt="gebruiker"></a>
+                <a href="../pages/winkelwagen.html"><img src="../images/logo-en-icons/cart-icon.png" alt="winkelwagentje"></a>
+            </div>
+        </nav>
+        <!-- einde topmenu -->
+    </header>
+
+
+
+
+    <main>
+        <section>
+            <h2 class="hideme">empty heading</h2>
+            <!-- BEGIN - fallback-logo voor in tablet-modus -->
+            <div></div>
+            <!-- EINDE - fallback-logo voor in tablet-modus -->
+
+            <div class="hero2">
+                <div class="foto"><img src="../images/hero-en-slider/hero-slide-10.jpg" alt=""></div>
+            </div>
+        </section>
+        <!-- EINDE - slider -->
+
+        <div class="container2">
+            <div>
+                <h2>nigella's kookvideo selectie</h2>
+                <p>Hello my dutch friends! This is Nigella Lawson from England. Cuisine asked me to pick and show you my favorite cooking-video.</p>
+                <p>This one is from my friend Yuki Osho from Japan, making ramen. Watch it till the end for something completely different! Check the Cuisine's recipe-section for more ramen-adventures.</p>
+                <p>Love,</p>
+                <img src="../images/nigella-handtekening.png" alt="handtekening nigella">
+            </div>
+            <div>
+                <video class="video-js video-js vjs-big-play-centered" autoplay muted controls loop preload="auto" data-setup='{"fluid": true}'>
+                    <source src="../video/how-to-make-ramen.mp4" type="video/mp4">
+                    <source src="../video/how-to-make-ramen.webm" type="video/webm">
+                    <source src="../video/how-to-make-ramen.ogv" type="video/ogg">
+                    <p>Uw browser heeft geen video-ondersteuning. Wij raden <a href="http://www.videolan.org/">de gratis VLC-speler</a> aan.</p>
+                </video>
+            </div>
+        </div>
+
+
+        <section>
+            <h2>nigella's boekselectie</h2>
+            <div class="container">
+                <div>
+                    <div>
+                        <p>"Relaxt, inspirerend en om te watertanden"</p>
+                        <hr>
+                        <p>Simply Nigella</p>
+                        <div class="button">
+                            <a href="../pages/boeken-items/boek-3.html">
+                                <p>simply Nigella</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>In Sweet keert Yotam Ottolenghi terug naar waar het begon</p>
+                        <hr>
+                        <p>In de patisserie</p>
+                        <div class="button">
+                            <a href="../pages/boeken-items/boek-5.html">
+                                <p>sweet</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Super food voor elke dag is het nieuwste kookboek</p>
+                        <hr>
+                        <p>van Jamie Oliver</p>
+                        <div class="button">
+                            <a href="../pages/boeken-items/boek-4.html">
+                                <p>Jamie's superfood</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Blijf fit met het nieuwste boek van Gordon Ramsay</p>
+                        <hr>
+                        <p>van Gordon Ramsay</p>
+                        <div class="button">
+                            <a href="../pages/boeken-items/boek-8.html">
+                                <p>Ultimate Fit Food</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section><h2 class="hideme">empty heading</h2>
+        </section>
+
+        <section>
+            <h2>nigella's recepten</h2>
+            <div class="container">
+                <div class="bakken deegwaren">
+                    <h3>bananenbrood</h3>
+                    <div class="icons">
+                        <img src="../images/logo-en-icons/oven-icon.png" alt="gekookt">
+                        <img src="../images/logo-en-icons/graan-icon.png" alt="kip">
+                        <div>
+                            <img src="../images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">105 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>75 ml whisky of water</li>
+                        <li>100 g rozijnen</li>
+                        <li>125 g boter</li>
+                        <li>150 g suiker</li>
+                        <li>3 eieren</li>
+                    </ul>
+                    <img src="../images/recepten/recept-03.jpg" alt="bananenbrood">
+                    <div class="button">
+                        <a href="../pages/recepten-items/recept-3.html">
+                            <p>bananenbrood maken</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="koken soep">
+                    <h3>Bietensoep</h3>
+                    <div class="icons">
+                        <img src="../images/logo-en-icons/hogepan-icon.png" alt="gekookt">
+                        <img src="../images/logo-en-icons/soep-icon.png" alt="vis">
+                        <div>
+                            <img src="../images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">80 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>4-5 rode bieten</li>
+                        <li>1 el olijfolie</li>
+                        <li>1 ui</li>
+                        <li>1 teentje knoflook</li>
+                        <li>kippenbouillon</li>
+                    </ul>
+                    <img src="../images/recepten/recept-04.jpg" alt="bami soep">
+                    <div class="button">
+                        <a href="../pages/recepten-items/recept-4.html">
+                            <p>Bietensoep maken</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="bakken deegwaren">
+                    <h3>Pita-pizza met spinazie en fontina</h3>
+                    <div class="icons">
+                        <img src="../images/logo-en-icons/oven-icon.png" alt="gekookt">
+                        <img src="../images/logo-en-icons/graan-icon.png" alt="graan">
+                        <div>
+                            <img src="../images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">20 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>3 tl olijfolie</li>
+                        <li>4 rode uien</li>
+                        <li>3 teentjes knoflook</li>
+                        <li>500 g verse spinazie</li>
+                        <li>4 volkorenpita's</li>
+                    </ul>
+                    <img src="../images/recepten/recept-05.jpg" alt="Pita-pizza met spinazie en fontina">
+                    <div class="button">
+                        <a href="../pages/recepten-items/recept-5.html">
+                            <p>Pita-pizza maken</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Super steak</h3>
+                    <div class="icons">
+                        <img src="../images/logo-en-icons/koekenpan-icon.png" alt="gekookt">
+                        <img src="../images/logo-en-icons/vlees-icon.png" alt="graan">
+                        <div>
+                            <img src="../images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">10 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>2 T-bone steaks</li>
+                        <li>olijfolie</li>
+                        <li>zout</li>
+                        <li>peper</li>
+                        <li>hot sauce</li>
+                    </ul>
+                    <img src="../images/recepten/recept-01.jpg" alt="tagliatelle">
+                    <div class="button">
+                        <a href="../pages/recepten-items/recept-1.html">
+                            <p>super steak maken</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <h2>over nigella</h2>
+            <div class="container">
+                <div>
+                </div>
+                <div id="overnigella">
+                    <p>Nigella Lawson (1960) is een culinaire en literaire sensatie en wordt beschouwd als een van de invloedrijkste foodwriters van dit moment.</p>
+
+                    <p>Nigella geniet een sterrenstatus als kok, als schrijfster en als televisiepersoonlijkheid. Van haar hand verschenen o.a. de bestsellers 'Hoe word ik een goddelijke huisvrouw', 'Nigella expressen Keuken' en 'Recepten uit het hart van het huis'. Bij Cuisine vind je alle boeken van Nigella Lawson, waaronder haar nieuwste boek.</p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <footer>
+            <div>
+                <img src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo">
+                <ul>
+                    <li><a href="../pages/campagne.html">campagne</a></li>
+                    <li><a href="../pages/recepten.html">recepten</a></li>
+                    <li><a href="../pages/nieuws.html">nieuws</a></li>
+                    <li><a href="../pages/over-ons.html">over ons</a></li>
+                    <li><a href="../pages/contact.html">contact</a></li>
+                    <li><a href="../pages/shop.html">shop</a></li>
+                </ul>
+            </div>
+            <p>Cuisine B.V. copyright 2018</p>
+            <div>
+                <div id="socialmedia-icons">
+                    <a href="https://www.facebook.com"><img src="../images/logo-en-icons/socialmedia/facebook-icon.png" alt="facebook"></a>
+                    <a href="https://www.twitter.com"><img src="../images/logo-en-icons/socialmedia/twitter-icon.png" alt="twitter"></a>
+                    <a href="https://www.youtube.com"><img src="../images/logo-en-icons/socialmedia/youtube-icon.png" alt="youtube"></a>
+                </div>
+                <address>
+                    Cuisine B.V.<br>
+                    Egelenburg 150-152<br>
+                    1081 GK | Amsterdam
+                </address>
+            </div>
+        </footer>
+
+    
+    <!-- koppelingen met javascript-bestanden en -bibliotheken -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

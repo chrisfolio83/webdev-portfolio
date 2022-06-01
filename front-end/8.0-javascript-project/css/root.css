@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* initialiseren css reset tbv uniforme weergave in alle browsers */
+@import url("normalize.css");
+/* het inladen van de gebruikte fonts */
+@import url("fonts.css");
+/* de custom styles van het gehele project */
+@import url("project.css");
+/* de custom styles van de splashpage */
+@import url("splash.css");

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- meta-stuff tbv goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to the world of raspberry Pi!</title>
+    <!-- koppeling met root-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="css/root.css" type="text/css" rel="stylesheet">
+</head>
+
+<body onload="init();" id="splashpage">
+    <!-- hieronder de containers en canvas tbv de splashpage-animatie  -->
+    <div id="animation_container">
+        <canvas id="canvas" width="1218" height="1000"></canvas>
+        <div id="dom_overlay_container"></div>
+    </div>
+    <!-- laden createJS library tbv animatie -->
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <!-- laden gsap library tbv animatie -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'></script>
+    <!-- laden custom script -->
+    <script src="js/splash.js"></script>
+</body></html>

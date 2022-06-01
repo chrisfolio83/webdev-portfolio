@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- primair gevoerde taal op pagina -->
+
+<html lang="nl" id="shop">
+
+<head>
+    <!-- character set UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- meta-stuff t.b.v. goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welkom bij Cuisine - Shop</title>
+    <!-- koppeling met de hoofd-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="../css/cuisine.css" type="text/css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- niet weergegeven verplichte h1 t.b.v. document outline -->
+        <h1>cuisine cookbooks and more</h1>
+        <!-- het cuisine logo -->
+        <div>
+            <a href="../index.html"><img class="animateLogo" id="logo3" src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a>
+        </div>
+        <!-- begin topmenu -->
+        <nav>
+            <!-- menuknop mobile en tablet weergave -->
+            <label for="showMenu" id="showMenuLabel">Show menu</label>
+            <!-- vangt de actie op om menu weer te geven -->
+            <input type="checkbox" id="showMenu" role="button">
+            <ul>
+                <li><a href="../pages/campagne.html">campagne</a></li>
+                <li><a href="../pages/recepten.html">recepten</a></li>
+                <li><a href="../pages/nieuws.html">nieuws</a></li>
+                <li id="menulogo"><a href="/index.html"><img class="animateLogo" src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a></li>
+                <li><a href="../pages/over-ons.html">over ons</a></li>
+                <li><a href="../pages/contact.html">contact</a></li>
+                <li><a href="../pages/shop.html" id="active">shop</a></li>
+            </ul>
+            <!-- account en winkelwagentje icons -->
+            <div class="user-icons">
+                <a href="../pages/account.html"><img src="../images/logo-en-icons/user-icon.png" alt="gebruiker"></a>
+                <a href="../pages/winkelwagen.html"><img src="../images/logo-en-icons/cart-icon.png" alt="winkelwagentje"></a>
+            </div>
+        </nav>
+        <!-- einde topmenu -->
+    </header>
+
+
+
+
+    <main>
+        <section>
+            <h2 class="hideme">hero image</h2>
+            <!-- BEGIN - fallback-logo voor in tablet-modus -->
+            <div></div>
+            <!-- EINDE - fallback-logo voor in tablet-modus -->
+            <div class="shophero"></div>
+        </section>
+
+
+
+
+        <section>
+            <h2>shop</h2>
+            <div class="book-container">
+                <div>
+                    <div>
+                        <h4>uitgelicht</h4>
+                        <h3>Jamie's Family Super Food</h3>
+                        <p>Jamie Oliver</p>
+                    </div>
+                    <p>Jamie's Family Super Food, een kookboek vol superfood-recepten voor het hele gezin.</p>
+                    <a href="../pages/boeken-items/boek-4.html"><img alt="" src="../images/boeken/boek-04.jpg"></a>
+                    <p>&euro; 20,-</p>
+                </div>
+                <div>
+                    <div>
+                        <h4>uitgelicht</h4>
+                        <h3>Sweet</h3>
+                        <p>Yotam Ottolenghi</p>
+                    </div>
+                    <p>In Sweet keert Yotam Ottolenghi terug naar waar het begon.</p>
+                    <a href="../pages/boeken-items/boek-5.html"><img alt="" src="../images/boeken/boek-05.jpg"></a>
+                    <p>&euro; 20,-</p>
+                </div>
+                <div>
+                    <div>
+                        <h4>uitgelicht</h4>
+                        <h3>Nigella Express</h3>
+                        <p>Nigella Lawson</p>
+                    </div>
+                    <p>In Nigella Express helpt Nigella ons op fabuleuze wijze tijd te besparen.</p>
+                    <a href="../pages/boeken-items/boek-2.html"><img alt="" src="../images/boeken/boek-02.jpg"></a>
+                    <p>&euro;19,-</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="book-container2">
+                <div>
+                    <h2>categorieën</h2>
+                    <ul>
+                        <li id="allesbtn">alles</li>
+                        <li id="jamiebtn">jamie oliver</li>
+                        <li id="nigellabtn">nigella lawson</li>
+                        <li id="gordonbtn">gordon ramsay</li>
+                        <li id="yotambtn">yotam ottolenghi</li>
+                        <li id="nlbtn">nederlands</li>
+                        <li id="enbtn">engels</li>
+                    </ul>
+                </div>
+                <div class="bookswrapper">
+                    <div class="all nigella nl">
+                        <div>
+                            <h3>Bij mij aan tafel</h3>
+                            <p>Nigella Lawson</p>
+                        </div>
+                        <p>Voor Nigella Lawson, de koningin van de thuiskeuken, draait eten om herinneringen.</p>
+                        <a href="../pages/boeken-items/boek-1.html"><img alt="" src="../images/boeken/boek-01.jpg"></a>
+                        <p>&euro; 20,-</p>
+                    </div>
+                    <div class="all nigella nl">
+                        <div>
+                            <h3>Nigella Express</h3>
+                            <p>Nigella Lawson</p>
+                        </div>
+                        <p>In Nigella Express helpt Nigella ons op fabuleuze wijze tijd te besparen.</p>
+                        <a href="../pages/boeken-items/boek-2.html"><img alt="" src="../images/boeken/boek-02.jpg"></a>
+                        <p>&euro;19,-</p>
+                    </div>
+                    <div class="all nigella nl">
+                        <div>
+                            <h3>Simply Nigella</h3>
+                            <p>Nigella Lawson</p>
+                        </div>
+                        <p>In Simply Nigella brengt Nigella Lawson het oprechte plezier en kalme comfort terug in onze keuken.</p>
+                        <a href="../pages/boeken-items/boek-3.html"><img alt="" src="../images/boeken/boek-03.jpg"></a>
+                        <p>&euro; 20,-</p>
+                    </div>
+                    <div class="all jamie nl">
+                        <div>
+                            <h3>Jamie's Family Super Food</h3>
+                            <p>Jamie Oliver</p>
+                        </div>
+                        <p>Jamie's Family Super Food, een kookboek vol superfood-recepten voor het hele gezin.</p>
+                        <a href="../pages/boeken-items/boek-4.html"><img alt="" src="../images/boeken/boek-04.jpg"></a>
+                        <p>&euro;29,-</p>
+                    </div>
+                    <div class="all yotam nl">
+                        <div>
+                            <h3>Sweet</h3>
+                            <p>Yotam Ottolenghi</p>
+                        </div>
+                        <p>In Sweet keert Yotam Ottolenghi terug naar waar het begon.</p>
+                        <a href="../pages/boeken-items/boek-5.html"><img alt="" src="../images/boeken/boek-05.jpg"></a>
+                        <p>&euro; 32,-</p>
+                    </div>
+                    <div class="all jamie nl">
+                        <div>
+                            <h3>Jamie's 5 ingrediënten</h3>
+                            <p>Jamie Oliver</p>
+                        </div>
+                        <p>Snel &amp; simpel koken laat Jamie Oliver zien hoe je met slechts 5 ingrediënten elke dag heerlijk en healthy kunt eten.</p>
+                        <a href="../pages/boeken-items/boek-6.html"><img alt="" src="../images/boeken/boek-06.jpg"></a>
+                        <p>&euro;29,-</p>
+                    </div>
+                    <div class="all jamie nl">
+                        <div>
+                            <h3>Jamie kookt Italië</h3>
+                            <p>Jamie Oliver</p>
+                        </div>
+                        <p>Jamie kookt Italië bevat meer dan 140 van de allerbeste Italiaanse recepten, die allemaal aan de Jamie-standaard voldoen.</p>
+                        <a href="../pages/boeken-items/boek-7.html"><img alt="" src="../images/boeken/boek-07.jpg"></a>
+                        <p>&euro;29,-</p>
+                    </div>
+                    <div class="all gordon en">
+                        <div>
+                            <h3>Ultimate Fit Food</h3>
+                            <p>Gordon Ramsay</p>
+                        </div>
+                        <p>Blijf fit met het nieuwste boek van Gordon Ramsay.</p>
+                        <a href="../pages/boeken-items/boek-8.html"><img alt="" src="../images/boeken/boek-08.jpg"></a>
+                        <p>&euro; 27,-</p>
+                    </div>
+                    <div class="all gordon en">
+                        <div>
+                            <h3>Ultimate Home Cooking</h3>
+                            <p>Gordon Ramsay</p>
+                        </div>
+                        <p>Heerlijke en simpele gerechten van een van Engelands beste koks.</p>
+                        <a href="../pages/boeken-items/boek-9.html"><img alt="" src="../images/boeken/boek-09.jpg"></a>
+                        <p>&euro; 25,-</p>
+                    </div>
+                    <div class="all gordon en">
+                        <div>
+                            <h3>Wereldgerechten</h3>
+                            <p>Gordon Ramsay</p>
+                        </div>
+                        <p>Voor Wereldgerechten heeft Gordon Ramsay zijn favoriete recepten uit de hele wereld bij elkaar gezocht.</p>
+                        <a href="../pages/boeken-items/boek-10.html"><img alt="" src="../images/boeken/boek-10.jpg"></a>
+                        <p>&euro; 14,-</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo">
+            <ul>
+                <li><a href="../pages/campagne.html">campagne</a></li>
+                <li><a href="../pages/recepten.html">recepten</a></li>
+                <li><a href="../pages/nieuws.html">nieuws</a></li>
+                <li><a href="../pages/over-ons.html">over ons</a></li>
+                <li><a href="../pages/contact.html">contact</a></li>
+                <li><a href="../pages/shop.html">shop</a></li>
+            </ul>
+        </div>
+        <p>Cuisine B.V. copyright 2018</p>
+        <div>
+            <div id="socialmedia-icons">
+                <a href="https://www.facebook.com"><img src="../images/logo-en-icons/socialmedia/facebook-icon.png" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img src="../images/logo-en-icons/socialmedia/twitter-icon.png" alt="twitter"></a>
+                <a href="https://www.youtube.com"><img src="../images/logo-en-icons/socialmedia/youtube-icon.png" alt="youtube"></a>
+            </div>
+            <address>
+                Cuisine B.V.<br>
+                Egelenburg 150-152<br>
+                1081 GK | Amsterdam
+            </address>
+        </div>
+    </footer>
+
+
+    <!-- koppelingen met javascript-bestanden en -bibliotheken -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/shop.js"></script>
+</body></html>

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* css reset tbv uniforme weergave in alle browsers */
+@import url("normalize.css");
+/* het inladen van de gebruikte fonts */
+@import url("fonts.css");
+/* de custom styles van de desktop-weergave */
+@import url("desktop.css");
+/* de custom styles van de tablet-weergave */
+@import url("tablet.css");
+/* de custom styles van de mobile-weergave */
+@import url("mobile.css");

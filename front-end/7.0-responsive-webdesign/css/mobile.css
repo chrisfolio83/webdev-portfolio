@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/* styles van mobile */
+
+@media screen and (max-width: 480px) {
+
+	/* product-card-hover-menu en header-logo in mobiele weergave laten verdwijnen */
+	header .container img,
+	.product-hover-menu {
+		display: none;
+	}
+
+
+	/* BEGIN stijlen hamburger-menu */
+	/* label wegtoveren */
+	header .container nav #showMenuLabel {
+		display: none;
+	}
+
+	/* hier komt de hamburger-menu-knop */
+	header .container nav #showMenu {
+		display: initial;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		position: absolute;
+		top: 1.0rem;
+		right: 3%;
+		width: 2rem;
+		height: 2rem;
+		outline: 0;
+		cursor: pointer;
+		z-index: 100;
+	}
+
+	/* het uiterlijk van de hamburger-menu-knop aanpassen */
+	header .container nav #showMenu::after {
+		color: #684F40;
+		display: block;
+		content: "\2630";
+		font-size: 1.4rem;
+		text-align: center;
+		border-radius: 2px;
+		background-color: #F4F3F1;
+		border: 1px solid white;
+		width: 1.7rem;
+		height: 2rem;
+		padding: 0 0.1rem;
+		box-shadow: 1px 1px 2px 1px #999;
+	}
+
+	/* verspringing hamburger-menu-knop wanneer aangeklikt */
+	header .container nav #showMenu:active {
+		transform: translateY(3px);		
+	}
+
+	/* hoogte menu wanneer uitgeklapt */
+	header .container nav #showMenu:checked + ul {
+		height: 20.5rem;
+	}
+
+	/* het uitklap-menu animeren */
+	header .container nav ul {
+		height: 0;
+		transition-property: height;
+		transition-duration: 400ms;
+	}
+
+	/* positionering en schaling van de individuele menu-items */
+	header .container nav ul li {
+		margin: 0 auto;
+		width: 100%;
+		padding: 15px 0;
+		border-right:0;
+	}
+
+	/* extra marge boven het menu */
+	header .container nav ul li:nth-of-type(1) {
+		margin-top: 20px;
+	}
+
+	/* letter-grootte van de individuele menu-items instellen */
+	header .container nav ul li a {
+		font-size: 1rem;		
+	}
+
+	/* EINDE stijlen hamburger-menu */
+
+
+
+	/* resetten waarden van de header nav en container */
+	header > nav,
+	header,
+	header > .container {
+		padding-top: 0;
+		border-top: 0;
+		font-size: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	/* witte balk boven op jumbotron */
+	main > section:nth-of-type(1) .overlaymobile {
+		display: block;
+		width: 100%;
+		height: 70px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	/* jumbotron-logo op witte balk */
+	main > section:nth-of-type(1) .overlaymobile img {
+		display: block;
+		position: relative;
+		width: 20vw;
+		height: auto;
+		transform: translateY(-50%);
+		top: 50%;
+		left: 10px;
+	}
+
+	/* aanpassingen weergave en positionering jumbotron voor mobiele weergave */
+	main > section:nth-of-type(1) {
+		position: relative;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 300px;
+		border: 0;
+	}
+
+	/* styles en positionering jumbotron overlay */
+	main section:nth-of-type(1) .overlay {
+		height: 300px;
+		background-color: rgba(0, 0, 0, 0.2);
+		position: absolute;
+	}
+
+	/* verandering in positionering teksten bovenop jumbotron */
+	main > section:nth-of-type(1) > h2,
+	main > section:nth-of-type(1) > p {
+		transform: translateY(-40px);
+	}
+
+	/* weghalen animatie op jumbotron-h2 in mobiele weergave */
+	main > section:nth-of-type(1) > h2 {
+		animation: none;
+	}
+
+	/* het laten verdwijnen van alle latest-bakery-product-cards behalve de eerste */
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(2),
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(3),
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(4),
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(5),
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(6) {
+		display: none;
+	}
+
+	/* aanpassing en tonen van alleen de eerste product-card */
+	main section:nth-of-type(2) .product-cards > div a > img {
+		width: auto;
+		max-width: 85vw;
+	}
+
+	/* responsive tekst latest-products-section-subtekst */
+	main > section:nth-of-type(2) > p {
+		font-size: 3vw;
+		max-width: 350px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	/* breedte testimonials-section naar 100% */
+	main section:nth-of-type(3) {
+		max-width: 100%;
+	}
+
+
+	/* aanpassing naambordje Jean Fletcher naar titel */
+	main section:nth-of-type(3) > div + h2 + p {
+		background-color: initial;
+		color: #684F40;
+		text-transform: capitalize;
+		font-size: 1.6rem;
+		top: 100px;
+		right: 10px;
+		text-align: right;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* responsive testimonial-tekst o.b.v. viewport */
+	main section:nth-of-type(3) div + h2 + p + p {
+		transform: translateY(110px);
+		width: 90vw;
+		right: 10px;
+	}
+
+	/* positionering en styling van de cards-teksten in de main-services-sectie */
+	main section:nth-of-type(4) .cards-container div p {
+		width: 85vw;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	/* responsive tekst main-services-section-subtekst */
+	main > section:nth-of-type(4) > p {
+		font-size: 3vw;
+		max-width: 350px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 30px
+	}
+
+	/* uitlijnen paragraafteksten about-en-subscribe-sectie */
+	main > section:nth-of-type(5) p {
+		text-align: left;
+	}
+
+	/* flex-ruimte breder maken */
+	main > section:nth-of-type(5) {
+		flex-basis: 90vw;
+		padding: 20px 0;
+	}
+
+	/* uitlijnen titels about-en-subscribe-sectie */
+	main > section:nth-of-type(5) h3 {
+		text-align: left;
+	}
+
+	/* het laten verdwijnen van het bakery-logo in de about-en-subscribe-sectie */
+	main > section:nth-of-type(5) div:nth-of-type(2) {
+		display: none;
+	}
+
+	/* andere positionering invoerveld about-en-subscribe-sectie */
+	main > section:nth-of-type(5) div:nth-of-type(3) input {
+		margin-top: 60px;
+		width: 100%;
+	}
+
+	/* de subscribe-button de volledige breedte van de container geven */
+	main > section:nth-of-type(5) div:nth-of-type(3) a {
+		display: block;
+	}
+
+	/* achtergrond-aanpassing footer-container */
+	footer .container {
+		background-size: 200px;
+		background-position: top right;
+		margin: 5;
+		padding: 20px 30px;
+	}
+
+	/* footer-cards flex-wrappen naar 1 kolom */
+	footer .container > div {
+		width: 95%;
+		padding: 15px 0;
+		margin-bottom: 30px;
+		flex-basis: 90vw;
+	}
+}

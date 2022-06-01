@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- primair gevoerde taal op pagina -->
+
+<html lang="nl">
+
+<head>
+    <!-- character set UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- meta-stuff t.b.v. goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welkom bij Cuisine - Contact</title>
+    <!-- koppeling met de hoofd-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="../css/cuisine.css" type="text/css" rel="stylesheet">
+
+
+</head>
+
+<body id="contact">
+    <header>
+        <!-- niet weergegeven verplichte h1 t.b.v. document outline -->
+        <h1>cuisine cookbooks and more</h1>
+        <!-- het cuisine logo -->
+        <div>
+            <a href="../index.html"><img class="animateLogo" id="logo3" src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a>
+        </div>
+        <!-- begin topmenu -->
+        <nav>
+            <!-- menuknop mobile en tablet weergave -->
+            <label for="showMenu" id="showMenuLabel">Show menu</label>
+            <!-- vangt de actie op om menu weer te geven -->
+            <input type="checkbox" id="showMenu" role="button">
+            <ul>
+                <li><a href="../pages/campagne.html">campagne</a></li>
+                <li><a href="../pages/recepten.html">recepten</a></li>
+                <li><a href="../pages/nieuws.html">nieuws</a></li>
+                <li id="menulogo"><a href="../index.html"><img class="animateLogo" src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a></li>
+                <li><a href="../pages/over-ons.html">over ons</a></li>
+                <li><a href="../pages/contact.html" id="active">contact</a></li>
+                <li><a href="../pages/shop.html">shop</a></li>
+            </ul>
+            <!-- account en winkelwagentje icons -->
+            <div class="user-icons">
+                <a href="../pages/account.html"><img src="../images/logo-en-icons/user-icon.png" alt="gebruiker"></a>
+                <a href="../pages/winkelwagen.html"><img src="../images/logo-en-icons/cart-icon.png" alt="winkelwagentje"></a>
+            </div>
+        </nav>
+        <!-- einde topmenu -->
+    </header>
+
+
+
+
+    <main>
+        <section>
+            <h2>contact</h2>
+            <div class="container">
+                <form id="contactform" name="contactform" method="post" action="../php/submit.php">
+                    <p>Naam*:</p>
+                    <input type="text" name="naamveld" id="naam" autofocus>
+                    <p>Email*:</p>
+                    <input type="text" name="emailveld" id="email">
+                    <p>Bericht*:</p>
+                    <textarea name="berichtveld" id="bericht"></textarea>
+                    <br>
+                    <input name="nieuwsbrief" type="checkbox" value="nieuwsbrief" id="nieuwsbrief"><label for="nieuwsbrief">Nieuwsbrief</label>
+
+                    <input type="" value="verstuur" id="verstuurbtn">
+
+                    <noscript>
+                        <p style="color:red;font-weight:bold">het formulier kan niet worden verzonden omdat Javascript is uitgeschakeld..
+                        </p>
+                    </noscript>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="../images/logo-en-icons/cuisine-logo.png" alt="cuisine logo">
+            <ul>
+                <li><a href="../pages/campagne.html">campagne</a></li>
+                <li><a href="../pages/recepten.html">recepten</a></li>
+                <li><a href="../pages/nieuws.html">nieuws</a></li>
+                <li><a href="../pages/over-ons.html">over ons</a></li>
+                <li><a href="../pages/contact.html">contact</a></li>
+                <li><a href="../pages/shop.html">shop</a></li>
+            </ul>
+        </div>
+        <p>Cuisine B.V. copyright 2018</p>
+        <div>
+            <div id="socialmedia-icons">
+                <a href="https://www.facebook.com"><img src="../images/logo-en-icons/socialmedia/facebook-icon.png" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img src="../images/logo-en-icons/socialmedia/twitter-icon.png" alt="twitter"></a>
+                <a href="https://www.youtube.com"><img src="../images/logo-en-icons/socialmedia/youtube-icon.png" alt="youtube"></a>
+            </div>
+            <address>
+                Cuisine B.V.<br>
+                Egelenburg 150-152<br>
+                1081 GK | Amsterdam
+            </address>
+        </div>
+    </footer>
+
+
+    <!-- koppelingen met javascript-bestanden en -bibliotheken -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+    <script>
+        function verstuurBtnActief() {
+            var verstuurBtn = document.getElementById("verstuurbtn")
+            verstuurBtn.setAttribute("type", "submit");
+        };
+        verstuurBtnActief();
+    </script>
+</body></html>

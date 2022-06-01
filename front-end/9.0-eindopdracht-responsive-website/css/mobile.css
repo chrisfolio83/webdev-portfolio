@@ -1,0 +1,430 @@
+/* === BEGIN SHEET mobilestijlen vanaf schermbreedte 375px en lager =========== */
+
+@media screen and (max-width: 375px) {
+
+    /* ===== BEGIN - homepage stijlen mobile ======================*/
+
+    /* logo altijd in bovenbalk laten zien in mobiele weergave */
+    #logo3 {
+        width: 45px !important;
+        display: block !important;
+    }
+
+    /* begin mobilestijlen header =====================================*/
+
+    /* weghalen logo3 */
+    header #logo3 {
+        display: none;
+    }
+
+    /* aanpassing navmenu */
+    header nav {
+        padding-top: 0;
+        min-height: 60px;
+    }
+
+    /* hoogte mobile-menu */
+    header nav #showMenu:checked + ul {
+        height: 27rem;
+    }
+
+    /* einde mobilestijlen header ================================= */
+
+
+
+    /* begin mobilestijlen nieuwste boeken ==============================*/
+    /* flexen naar kolomrichting */
+    section:nth-of-type(2) div.container {
+        flex-direction: column;
+    }
+
+    /* einde mobilestijlen nieuwste boeken ============================== */
+
+
+
+    /* begin mobilestijlen nieuwste boeken ============================ */
+    /* flexen naar kolomrichting */
+    section:nth-of-type(4) div.container {
+        flex-direction: column;
+    }
+
+    /* einde mobilestijlen nieuwste boeken =============================== */
+
+
+
+    /* begin mobilestijlen het laatste nieuws ========================= */
+    /* weghalen marge */
+    section:nth-of-type(3) div.container > div {
+        margin: 0
+    }
+
+    /* breedte en fontgrootte buttons aanpassen */
+    section:nth-of-type(3) div.container .button p {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    /* einde mobilestijlen het laatste nieuws ============================= */
+    /* ========= EINDE - homepage stijlen mobile =================== */
+
+
+
+    /* === BEGIN mobilestijlen campagne ======================================= */
+
+    /* aanpassen verschalingen hero image */
+    #campagne section:nth-of-type(1) .hero2 div.foto img {
+        width: 100%;
+        z-index: -100;
+        height: 100vw;
+        object-fit: cover;
+    }
+
+    /* aanpassen titels-styling*/
+    #campagne h2 {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-left: 10px;
+    }
+
+    /* extra marge op container */
+    #campagne .container2 {
+        margin-bottom: 60px
+    }
+
+    /* verwijderen padding en border van video-container */
+    #campagne .container2 video {
+        padding: 0;
+        border: 0;
+    }
+
+    /* kleinere padding rechts en links van video-container */
+    #campagne .container2 > div:nth-of-type(2) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* linkermarge aanpassen p-tekst */
+    #campagne .container2 > div p {
+        margin-left: 10px;
+    }
+
+    /* grootte en verplaatsing aanpassen van nigella's handtekening */
+    #campagne .container2 > div > img {
+        width: 90%;
+        margin: auto 20px;
+        padding: 0;
+        transform: translateX(-2.5%)
+    }
+
+    /* marges opheffen over-nigella-sectie */
+    #campagne section:nth-of-type(5) {
+        margin: 0;
+    }
+
+    /* padding opheffen over-nigella-sectie */
+    #campagne section:nth-of-type(5) div.container > div#overnigella {
+        padding: 0
+    }
+
+    /* === EINDE moiblestijlen campagne ======================================= */
+
+
+
+    /* === BEGIN .nieuws-item stijlen ============================================= */
+    /* aanpassen artikel-titel */
+    #nieuws .nieuws-item section:nth-of-type(3) h2 {
+        margin-left: 5px;
+        font-size: 1.5rem;
+        line-height: 1.8rem
+    }
+
+    /* padding aanpassen onder artikel-container */
+    #nieuws .nieuws-item section:nth-of-type(3) .container {
+        padding-bottom: 20px;
+    }
+
+    /* aanpassen nieuws-image */
+    #nieuws .nieuws-item section:nth-of-type(3) .container > div img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    /* aanpassen marge terugknop */
+    #nieuws .nieuws-item section:nth-of-type(3) a > p {
+        margin-left: 5px;
+    }
+
+    /* bottommarge opheffen tussen artikel en terugknop */
+    #nieuws .nieuws-item section:nth-of-type(3) .container div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    /* === EINDE .nieuws-item stijlen ============================================= */
+
+
+
+    /* === BEGIN #over-ons stijlen recepten-pagina ================================*/
+    /* weghalen hero */
+    #over-ons .hero2 .fotoover {
+        display: none;
+    }
+
+    /* aanpassing marge en fontgrootte titel */
+    #over-ons section:nth-of-type(5) h2 {
+        margin-left: 5px;
+        font-size: 1.5rem;
+    }
+
+    /* aanpassing marge en breedte plaatje over cuisine */
+    #over-ons section:nth-of-type(5) .container > div:first-of-type {
+        margin-top: 30px;
+        width: 97%;
+    }
+
+    /* aanpassen marge, padding en interlinie tekstkolom */
+    #over-ons section:nth-of-type(5) .container > div:nth-of-type(2) {
+        margin: 30px 0;
+        padding: 0 5px;
+        line-height: 1.5rem
+    }
+
+    /* === EINDE #over-ons recepten-pagina ================================*/
+
+
+
+    /* === BEGIN mobilestijlen recepten-pagina ================================*/
+    /* begin recepten hoofdpagina stijlen */
+
+    /* padding top aanpassen */
+    #recepten section:nth-of-type(4) {
+        padding-top: 10px;
+    }
+
+    /* receptenfilter naar kolom flexen */
+    #recepten section:nth-of-type(4) .receptenfilter {
+        padding: 30px 0;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+        flex-direction: column
+    }
+
+    /* aanpassen positionering tweede helft receptenfilter */
+    #recepten section:nth-of-type(4) .receptenfilter > div:nth-of-type(2) {
+        position: static;
+        margin-top: 10px;
+    }
+
+    /* marge aanpassen receptenfilter en uitlijnen aan onderkant */
+    #recepten section:nth-of-type(4) .receptenfilter > div {
+        margin-left: 20px;
+        vertical-align: bottom;
+    }
+
+
+    /* == einde recepten hoofdpagina stijlen ================*/
+
+
+
+    /* == begin recepten subpage stijlen ====================*/
+
+    /* marges recepttitel aanpassen */
+    #recepten .recept-item section:nth-of-type(4) h2 {
+        margin: 15px 5px;
+    }
+
+    /* weghalen hero */
+    #recepten .recept-item section:nth-of-type(4) div.recepthero {
+        display: none;
+    }
+
+    /* marge en padding aanpassen recept-container */
+    #recepten .recept-item section:nth-of-type(4) .container {
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    /* extra topmarge op subtitel ingrediënten */
+    #recepten .recept-item section:nth-of-type(4) .container > div:nth-of-type(2) .subtitel {
+        margin-top: 50px
+    }
+
+    /* padding aanpassen van individuele divs in receptcontainer */
+    #recepten .recept-item section:nth-of-type(4) .container > div:first-of-type,
+    #recepten .recept-item section:nth-of-type(4) .container > div:nth-of-type(2) {
+        padding: 10px 8px
+    }
+
+    /* recept-image aanpassen */
+    #recepten .recept-item section:nth-of-type(4) .container > div:first-of-type img {
+        float: none;
+        width: 100%;
+        margin: 0
+    }
+
+    /* icon-container aanpassen */
+    #recepten .recept-item section:nth-of-type(4) .container > div > .icons {
+        margin: 0;
+        float: none;
+    }
+
+    /* marge terugknop aanpassen */
+    #recepten .recept-item section:nth-of-type(4) a > p {
+        margin-left: 10px;
+    }
+
+    /* einde recepten subpage stijlen */
+    /* === EINDE stijlen recepten-pagina =================================== */
+
+
+
+
+    /* === BEGIN stijlen nieuwspagina ======================================= */
+
+    /* top-padding opheffen */
+    #nieuws main {
+        padding-top: 0;
+    }
+
+    /* marges onder nieuws-items */
+    #nieuws .container > div {
+        margin-bottom: 30px;
+    }
+
+    /* === EINDE stijlen nieuwspagina ======================================= */
+
+
+
+
+    /* === BEGIN #shop mobilestijlen ========================================= */
+
+    /* weghalen hero image */
+    #shop section:nth-of-type(1) .shophero {
+        display: none;
+    }
+
+    /* marge links op titel */
+    #shop section:nth-of-type(2) h2 {
+        margin-left: 15px;
+    }
+
+    /* aanpassing marge en padding kolom */
+    #shop section:nth-of-type(2) {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* extra marge boekencontainer */
+    #shop section:nth-of-type(2) .book-container2 {
+        margin: 10px
+    }
+
+    /* het weghalen van het boekenfilter */
+    #shop section:nth-of-type(2) .book-container,
+    #shop section:nth-of-type(2) .book-container2 > div:first-of-type {
+        display: none;
+    }
+
+    /* aanpassing flexbreedte, padding en marge boekencards */
+    #shop section:nth-of-type(2) .book-container2 .bookswrapper > div {
+        flex-basis: 100%;
+        padding: 0;
+        margin: 10px;
+    }
+
+    /* geen lijntje onder laatste boek-item */
+    #shop section:nth-of-type(2) .book-container2 .bookswrapper > div:last-of-type {
+        border: 0
+    }
+
+    /* flex-breedte maincontent-container */
+    #shop .boek-item section:nth-of-type(2) .container3 {
+        flex-basis: 100%;
+    }
+
+    /* breedte begeleidend plaatje aanpassen */
+    #shop .boek-item section:nth-of-type(2) .container3 > div:nth-of-type(2) img {
+        max-width: 155%;
+    }
+
+    /* aanpassing andere-boeken-wrapper */
+    #shop .boek-item section:nth-of-type(2) .book-container2 .bookswrapper {
+        display: block;
+        margin: 0;
+    }
+
+    /* === EINDE #shop mobilestijlen ============================================ */
+
+
+
+    /* === BEGIN mobilestijlen #winkelwagen ======================================*/
+
+    /* flexen naar volledige kolombreedte en marges aanpassen */
+    #winkelwagen main section:first-of-type .containerww .wwitem > div {
+        flex-basis: 100%;
+        margin: 10px
+    }
+
+    /* aanpassingen totaalprijs-div */
+    #winkelwagen main section:first-of-type .containerww .wwitem:nth-last-of-type(2) > div:nth-of-type(4) {
+        order: 1;
+        position: relative;
+        z-index: -10;
+        top: -60px;
+        text-align: right;
+        padding-top: 0;
+    }
+
+    /* aanpassing padding aanpassen afrekenen-button */
+    #winkelwagen .containerww .wwitem:last-of-type .button {
+        padding: 10px 10vw;
+    }
+
+    /* === EINDE mobilestijlen #winkelwagen ======================================*/
+
+
+
+    /* === BEGIN mobilestijlen footer ============================================*/
+    /* footer flexrichting naar kolom */
+    footer {
+        flex-direction: column;
+        justify-content: left;
+        padding-bottom: 0;
+        padding-left: 20px
+    }
+
+    /* content naar 100% breedte van de flexcontainer */
+    footer > div,
+    footer p,
+    footer #socialmedia-icons,
+    footer address {
+        width: 100%
+    }
+
+    /* aanpassen marge en volgorde socialmedia-iconcontainer */
+    footer #socialmedia-icons {
+        margin-left: 0;
+        order: 2;
+    }
+
+    /* aanpassen uitlijning en volgorde adres */
+    footer address {
+        text-align: left;
+        order: 3;
+    }
+
+    /* aanpassen uitlijning en volgorde copyright */
+    footer > p {
+        order: 4;
+        text-align: left;
+        position: static;
+    }
+
+    /* === EINDE mobilestijlen footer =========================================*/
+
+
+}
+
+/* === EINDE SHEET mobilestijlen vanaf schermbreedte 375px en lager ========== */

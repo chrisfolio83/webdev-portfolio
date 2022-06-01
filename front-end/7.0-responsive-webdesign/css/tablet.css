@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* styles van tablet */
+
+@media screen and (max-width: 818px) {
+
+	/* maximaal aantal weergegeven product-cards inperken tot 6 */
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(7),
+	main > section:nth-of-type(2) .product-cards > div:nth-of-type(8) {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/* het laten verdwijnen van het origineel geplaatste header-logo */
+	header .container nav ul img {
+		display: none;
+	}
+
+	/* extra border in nav-menu terug krijgen */
+	header nav ul li:nth-of-type(4) {
+		border-right: 1px solid #ccc;
+	}
+
+	/* header-logo omhoog verplaatsen */
+	header > div > img {
+		font-size: 0;
+		display: block;
+		margin: 0 auto;
+		width: 80px;
+		height: auto;
+	}
+
+	/* nav-menu-items meeschalen met viewport */
+	header div nav ul li a {
+		font-size: 2vw;
+	}
+
+	/* responsive padding op menu-items */
+	header div nav ul li {
+		padding: 2vw;
+	}
+
+	/* jumbotron titel meeschalen met viewport */
+	main > section:nth-of-type(1) > h2 {
+		font-size: 6vw;
+	}
+
+	/* jumbotron subtekst meeschalen met viewport */
+	main > section:nth-of-type(1) > p {
+		font-size: 3vw;
+	}
+
+	/* responsiveness latest-products subtekst */
+	main > section:nth-of-type(2) > p {
+		font-size: 2vw;
+		max-width: 80vw;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 30px 0;
+	}
+
+	/* aanpassing testimonial-tekst Jean Fletcher */
+	main section:nth-of-type(3) div + h2 + p + p {
+		width: 50vw;
+		top: 10vw;
+		right: 20px
+	}
+
+	/* relatieve positionering naambordje Jean Fletcher */
+	main section:nth-of-type(3) div + h2 + p {
+		left: 30vw;
+	}
+
+	/* relatieve positionering foto Jean Fletcher */
+	main section:nth-of-type(3) div + h2 + p + p + img {
+		left: 5vw;
+	}
+
+	/* responsiveness main-services-sectie subtekst */
+	main > section:nth-of-type(4) > p {
+		font-size: 2vw;
+		max-width: 80vw;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 30px 0;
+	}
+
+	/* cards flex-wrappen naar kolom */
+	main section:nth-of-type(4) .cards-container {
+		flex-wrap: wrap;
+	}
+
+	/* positionering van de individuele cards in de main-services-sectie */
+	main section:nth-of-type(4) .cards-container > div {
+		margin-bottom: 40px
+	}
+
+	/* margin weghalen laatste card */
+	main section:nth-of-type(4) .cards-container > div:last-of-type {
+		margin-bottom: unset;
+	}
+
+	/* positionering en het flexen van de about-en-subscribe-sectie */
+	main section:nth-of-type(5) {
+		flex-direction: column
+	}
+
+	/* weergave about-card in about-en-subscribe-sectie */
+	main section:nth-of-type(5) div:nth-of-type(1) {
+		padding: 30px;
+		width: auto;
+		text-align: center
+	}
+
+	/* weergave logo-card in about-en-subscribe-sectie */
+	main section:nth-of-type(5) div:nth-of-type(2) {
+		padding: 30px;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	/* weergave subscribe-card in about-en-subscribe-sectie */
+	main section:nth-of-type(5) div:nth-of-type(3) {
+		padding: 30px;
+		width: auto;
+		text-align: center
+	}
+
+	/* styling van het input-veld in de about-en-subscribe-sectie */
+	main section:nth-of-type(5) input {
+		width: 45vw;
+	}
+
+	/* styling van de SUBSCRIBE-button */
+	main section:nth-of-type(5) a {
+		padding: 1vw 1vw;
+	}
+
+	/* aanpassing indeling flex-container */
+	footer > .container {
+		padding: 0 20px;
+		flex-wrap: wrap;
+		height: auto;
+		background-size: 270px;
+	}
+
+	/* positionering individuele footer-cards */
+	footer .container > div {
+		width: 50%;
+		padding: 15px 0 15px 5;
+	}
+}
+
+/* begin extra breekpunt tussen tablet en phone */
+@media screen and (max-width: 685px) {
+
+	/* verplaatsing van foto Jean Fletcher */
+	main section:nth-of-type(3) div + h2 + p + p + img {
+		width: 30vw;
+		height: 40vw;
+		object-fit: cover;
+	}
+
+	/* clipping bovenkant foto opheffen */
+	main section:nth-of-type(3) {
+		overflow: visible;
+	}
+
+	/* positionering naambordje */
+	main section:nth-of-type(3) div + h2 + p {
+		position: absolute;
+		left: 8vw;
+		bottom: 10vw;
+	}
+}
+
+/* einde extra breekpunt tussen tablet en phone */

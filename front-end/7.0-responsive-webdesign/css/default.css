@@ -1,0 +1,837 @@
+@charset "utf-8";
+
+/* begin @font-face koppelingen */
+
+/* code om Montserrat weer te geven */
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url("../fonts/montserrat/montserrat-bold-webfont.eot");
+	/* IE9 */
+	src: url("../fonts/montserrat/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"),
+		url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff"),
+		url("../fonts/montserrat/Montserrat-bold-webfont.ttf") format("truetype"),
+		url("../fonts/montserrat/montserrat-bold-webfont.svg") format("svg");
+}
+
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url("../fonts/montserrat/montserrat-regular-webfont.eot");
+	/* IE9 */
+	src: url("../fonts/montserrat/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"),
+		url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff"),
+		url("../fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype"),
+		url("../fonts/montserrat/montserrat-regular-webfont.svg") format("svg");
+}
+
+/* code om Open Sans weer te geven */
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("../fonts/open-sans/opensans-bold-webfont.eot");
+	/* IE9 */
+	src: url("../fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+		url("../fonts/open-sans/opensans-bold-webfont.woff") format("woff"),
+		url("../fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"),
+		url("../fonts/open-sans/opensans-bold-webfont.svg") format("svg");
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url("../fonts/open-sans/opensans-regular-webfont.eot");
+	/* IE9 */
+	src: url("../fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
+		url("../fonts/open-sans/opensans-regular-webfont.woff") format("woff"),
+		url("../fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"),
+		url("../fonts/open-sans/opensans-regular-webfont.svg") format("svg");
+}
+
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url("../fonts/open-sans/opensans-light-webfont.eot");
+	/* IE9 */
+	src: url("../fonts/open-sans/opensans-light-webfont.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../fonts/open-sans/opensans-light-webfont.woff2") format("woff2"),
+		url("../fonts/open-sans/opensans-light-webfont.woff") format("woff"),
+		url("../fonts/open-sans/opensans-light-webfont.ttf") format("truetype"),
+		url("../fonts/open-sans/opensans-light-webfont.svg") format("svg");
+}
+
+@font-face {
+	font-family: "OpenSans-Semibold";
+	src: url("../fonts/open-sans/opensans-semibold-webfont.eot");
+	/* IE9 */
+	src: url("../fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */
+		url("../fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"),
+		url("../fonts/open-sans/opensans-semibold-webfont.woff") format("woff"),
+		url("../fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"),
+		url("../fonts/open-sans/opensans-semibold-webfont.svg") format("svg");
+}
+
+/* einde @font-face koppelingen */
+
+
+/* van toepassing op alle elementen */
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+/* het centreren en maximum breedte van de body */
+body {
+	max-width: 1400px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+/* het onzichtbaar maken van hoofdtitel "The Bakery: The country's largest en best bakery!" */
+header h1 {
+	display: none;
+}
+
+/* positionering header-menu */
+header {
+	text-align: center;	
+	margin: 20px auto;
+	max-width: 95vw;
+}
+
+/* extra spaties in header-menu opheffen */
+header nav ul {
+	font-size: 0;
+}
+
+/* het onzichtbaar maken van de checkbox en label t.b.v. het mobile-hamburger-menu */
+header nav > input,
+header nav > label {
+	display: none;
+}
+
+/* styles header-menu */
+header nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: "Montserrat-Bold";
+	font-weight: normal;
+	padding: 10px 12.5px;
+	height: 35px;
+	border-right: 1px solid #ccc;
+}
+
+/* style voor het gehoverde menu-item */
+header nav ul li a:hover {
+	color: #AAA;	
+}
+
+/* style oranje kleur voor het actieve menu-item */
+header nav ul li .active {
+	color: #FDB822;
+}
+
+/* header-image t.b.v. tablet-view wegtoveren */
+header > div > img {
+	display: none;
+}
+
+/* padding header-menu links opheffen */
+header nav ul li:first-of-type,
+nav:first-of-type,
+nav ul:first-of-type {
+	padding-left: 0;
+}
+
+/* padding header-menu rechts opheffen */
+header nav ul li:last-of-type {
+	padding-right: 0;
+}
+
+/* lijntjes header-menu-items opheffen */
+header nav ul li:nth-of-type(4),
+header nav ul li:nth-of-type(8) {
+	border-right: 0;
+}
+
+/* styles en uitlijning individuele header-menu-items */
+header nav ul li a {
+	color: #684F40;
+	font-size: 1rem;
+	vertical-align: middle;
+}
+
+/* schaling en uitlijning header-menu-logo */
+header nav ul img {
+	vertical-align: middle;
+	width: 5vw;
+}
+
+/* styles en positionering jumbotron */
+main section:nth-of-type(1) {
+	background-image: url(../images/sliders/m-slide-2.jpeg);
+	height: 400px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-clip: content-box;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 2px solid #684F40;
+	border-bottom: 2px solid #684F40;
+	overflow: hidden;
+}
+
+/* styles en positionering jumbotron overlay */
+main section:nth-of-type(1) .overlay {
+	width: 100%;
+	height: 376px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	position: absolute;
+}
+
+/* styles jumbotron titel en instellingen animatie */
+main section:nth-of-type(1) h2 {
+	text-align: center;
+	position: relative;
+	font-family: "Montserrat-Regular";
+	top: 170px;
+	font-size: 3rem;
+	color: white;
+	z-index: 100;
+	animation: .8s knockKnock;
+	animation-iteration-count: 1;
+}
+
+/* het animeren van de jumbotron-titel */
+@keyframes knockKnock {
+	0% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(1.1);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+
+	60% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* styles jumbrotron subtekst */
+main section:nth-of-type(1) p {
+	text-align: center;
+	position: relative;
+	font-family: "OpenSans-Light";
+	top: 180px;
+	color: white;
+	z-index: 100;
+}
+
+main > section:nth-of-type(1) .overlaymobile,
+main > section:nth-of-type(1) .overlaymobile img {
+	display: none;
+}
+
+/* breedte en uitlijning sectie 'our latest bakery products' */
+main section:nth-of-type(2) {
+	margin: 0 auto;
+}
+
+/* styles en positionering titel van 'our latest bakery products'-sectie */
+main section:nth-of-type(2) h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 40px;
+	font-family: "Montserrat-Bold";
+	color: #684F40
+}
+
+/* tussenlijn grijs gedeelte 'our latest bakery products'-sectie */
+main section:nth-of-type(2) .line {
+	height: 2px;
+	width: 150px;
+	background-color: #CCC;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin: 20px auto;
+}
+
+/* tussenlijn oranje gedeelte 'our latest bakery products'-sectie */
+main section:nth-of-type(2) .line div {
+	height: 2px;
+	width: 50px;
+	background-color: #FDB822;
+	margin: 10px auto;
+}
+
+/* styles en positionering subtekst 'our latest bakery products'-sectie */
+main section:nth-of-type(2) p {
+	text-align: center;
+	font-family: "OpenSans-SemiBold";
+	font-size: 0.8rem;
+	color: #696969;
+}
+
+/* extra marge subtekst 'our latest bakery products'-sectie */
+main section:nth-of-type(2) > p {
+	margin: 30px 0;
+}
+
+/* positionering en het flexboxen van de productcards */
+main section:nth-of-type(2) .product-cards {
+	max-width: 1000px;
+	width: 96vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 40px auto;
+	justify-content: center;
+	position: relative;
+}
+
+/* begin positionering en styling van individuele product-cards */
+main section:nth-of-type(2) .product-cards > div a > img {
+	width: 25vw;
+	height: 25vw;
+	max-width: 180px;
+	max-height: 300px;
+	min-width: 150px;
+	min-height: 250px;
+	object-fit: cover;
+	padding: 7px;
+	border: 2px solid #684F40;
+}
+
+/* extra marge op de product-card-containers */
+main section:nth-of-type(2) .product-cards > div {
+	margin: 1vw;
+}
+
+/* styling van de productcard-hover-overlay */
+main section:nth-of-type(2) .product-cards > div a > div {
+	background: linear-gradient(to top, #FDB822, #FDB822 50%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0)) no-repeat;
+	background-origin: content-box;
+	background-clip: content-box;
+	position: absolute;
+	bottom: 12px;
+	left: 9px;
+	width: 90%;
+	height: 92.5%;
+	background-size: contain;
+}
+
+/* styling font-awesome-icons */
+main section:nth-of-type(2) .product-cards .product-hover-menu > nav .fa {
+	background-color: white;
+	position: relative;
+	color: #FDB822;
+	padding: 7.4%;
+	border-radius: 90px;
+	border: 2px solid #FDB822;
+	margin-right: 4%;
+	font-size: 90%;
+}
+
+/* styling font-awesome-icons bij hover */
+main section:nth-of-type(2) .product-cards .product-hover-menu > nav .fa:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+}
+
+/* styling font-awesome-icons bij click */
+main section:nth-of-type(2) .product-cards .product-hover-menu > nav .fa:active {
+	background-color: #FDB822;
+}
+
+/* weghalen rechter-marge van shoppingcart t.b.v. betere plaatsing */
+main section:nth-of-type(2) .product-cards .product-hover-menu > nav .fa-shopping-cart {
+	margin-right: 0;
+}
+
+/* absolute positionering van het icon-menu in de productcard-hover-overlay */
+main section:nth-of-type(2) .product-cards > div > a > .product-hover-menu nav {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 43%;
+	margin: 0 auto;
+	max-width: 130px;
+}
+
+/* styling van de titels op de productcard-hover-overlays */
+main section:nth-of-type(2) .product-cards > div > a > .product-hover-menu h3 {
+	color: white;
+	font-family: "Montserrat-Regular";
+	font-size: 0.8rem;
+	position: absolute;
+	max-width: 112px;
+	bottom: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* styling van de categorieën op de productcard-hover-overlays */
+main section:nth-of-type(2) .product-cards > div > a > .product-hover-menu p:first-of-type {
+	color: white;
+	font-family: "OpenSans-Regular";
+	font-size: 0.7rem;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 50px;
+}
+
+/* styling van de prijzen op de productcard-hover-overlays */
+main section:nth-of-type(2) .product-cards > div > a > .product-hover-menu p:last-of-type {
+	color: white;
+	font-family: "OpenSans-Bold";
+	font-size: 1rem;
+	position: absolute;
+	max-width: 80px;
+	bottom: 7%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* de productcard-hover-overlay verbergen en de transition instellen */
+main section:nth-of-type(2) .product-cards div a .product-hover-menu {
+	opacity: 0;
+}
+
+/* de productcard-hover-overlay tevoorschijn toveren bij hover */
+main section:nth-of-type(2) .product-cards div:hover a .product-hover-menu {
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
+}
+
+/* relatieve positionering van de parent t.b.v. absolute plaatsing van de ribbons */
+main section:nth-of-type(2) > .product-cards > div {
+	position: relative;
+}
+
+/* styles voor de ribbon-bovenkant */
+main section:nth-of-type(2) > .product-cards > div > .ribbon {
+	text-align: center;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #d00202;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 10;
+}
+
+/* styles voor de ribbon-onderkant */
+main section:nth-of-type(2) .product-cards .ribbon:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -10px;
+	width: 0;
+	height: 0;
+	border-width: 0px 25px 10px 25px;
+	border-style: solid;
+	border-color: #d00202 #d00202 transparent #d00202;
+	z-index: 10;
+}
+
+/* styles voor de ribbon-tekst */
+main section:nth-of-type(2) .product-cards .ribbon p {
+	position: relative;
+	top: 20px;
+	margin: 0 auto;
+	width: 30px;
+	color: #FFF;
+	font-family: "OpenSans-SemiBold";
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+/* positionering en styling van de 'see all our products'-button */
+main section:nth-of-type(2) > a {
+	display: block;
+	clear: both;
+	margin: 0px auto 60px;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #684F40;
+	padding: 15px 30px;
+	border: 2px solid #684F40;
+	font-family: "Montserrat-Bold";
+}
+
+main section:nth-of-type(2) > a:hover {
+	color: #FDB822;
+	border: 2px solid #FDB822;
+}
+
+/* styling en positionering achtergrond testimonials-sectie */
+main section:nth-of-type(3) {
+	margin-top: 20px;
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/bg-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -100px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* positionering en styling oranje overlay testimonials-sectie */
+main section:nth-of-type(3) .overlay2 {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	background-color: rgba(253, 184, 34, 0.8);
+	z-index: 10;
+	position: absolute;
+}
+
+/* verbergen testimonials-titel */
+main section:nth-of-type(3) h2 {
+	font-size: 0;
+}
+
+/* positionering en styling naambordje Jean Fletcher */
+main section:nth-of-type(3) div + h2 + p {
+	text-transform: uppercase;
+	font-family: "Montserrat-Bold";
+	font-size: 0.8rem;
+	z-index: 100;
+	position: absolute;
+	color: white;
+	bottom: 10px;
+	left: 330px;
+	padding: 15px 25px;
+	background-color: #684F40;
+}
+
+/* positionering en styling testimonial tekst */
+main section:nth-of-type(3) div + h2 + p + p {
+	font-family: "Montserrat-Regular";
+	line-height: 25px;
+	z-index: 100;
+	position: absolute;
+	display: block;
+	width: 40vw;
+	text-align: right;
+	top: 100px;
+	right: 80px;
+	color: #333;
+}
+
+/* positionering en styling foto Jean Fletcher */
+main section:nth-of-type(3) img {
+	transform: rotate(-5deg);
+	height: 400px;
+	width: 270px;
+	position: absolute;
+	top: -30px;
+	left: 100px;
+	border: 6px solid white;
+	object-fit: cover;
+	object-position: center;
+	z-index: 15;
+}
+
+/* positionering en schaling main-services-sectie */
+main section:nth-of-type(4) {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+/* positionering en styles main-services titel */
+main section:nth-of-type(4) h2 {
+	font-family: "Montserrat-Bold";
+	color: #684F40;
+	text-transform: uppercase;
+	text-align: center;
+	color: saddlebrown;
+	margin-top: 50px;
+}
+
+/* positionering en styles lijntje main-services-sectie grijs gedeelte */
+main section:nth-of-type(4) .line2 {
+	height: 2px;
+	width: 150px;
+	background-color: #CCC;
+	margin: 20px auto;
+}
+
+/* positionering en styles lijntje main-services-sectie oranje gedeelte */
+main section:nth-of-type(4) .line2 div {
+	height: 2px;
+	width: 50px;
+	background-color: #FDB822;
+	margin: 0 auto;
+}
+
+/* positionering en styles subtekst main-services-sectie */
+main section:nth-of-type(4) > p {
+	font-family: "OpenSans-SemiBold";
+	font-size: 0.8rem;
+	margin-bottom: 50px;
+	margin-top: 25px;
+	color: #696969;
+	text-align: center;
+	clear: both;
+}
+
+/* positionering van de flex container in de main-services-sectie */
+main section:nth-of-type(4) .cards-container {
+	display: flex;
+	justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* positionering van de individuele cards in de main-services-sectie */
+main section:nth-of-type(4) .cards-container > div:nth-of-type(n+1) {
+	width: 250px;
+	text-align: center;
+}
+
+/* positionering en styling van de cards-icons in de main-services-sectie */
+main section:nth-of-type(4) .cards-container > div > img {
+	height: 90px;
+	width: 90px;
+	border: 2px saddlebrown solid;
+	border-radius: 90px;
+	padding: 20px;
+}
+
+/* positionering en styling van de cards-titels in de main-services-sectie */
+main section:nth-of-type(4) .cards-container div h3 {
+	font-family: "Montserrat-Bold";
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: saddlebrown;
+}
+
+/* positionering en styling van de oranje cards-lijntjes in de main-services-sectie */
+main section:nth-of-type(4) .cards-container div:nth-of-type(n+1) > div {
+	height: 2px;
+	width: 70px;
+	margin: 0 auto;
+	background-color: orange;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/* positionering en styling van de cards-teksten in de main-services-sectie */
+main section:nth-of-type(4) .cards-container div p {
+	font-family: "OpenSans-SemiBold";
+	color: #696969;
+	font-size: 0.7rem;
+	line-height: 20px;
+	padding: 0 15px;
+}
+
+/* positionering en het flexen van de about-en-subscribe-sectie */
+main section:nth-of-type(5) {
+	background-color: #333;
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 40px
+}
+
+/* weergave about-card in about-en-subscribe-sectie */
+main section:nth-of-type(5) div:nth-of-type(1) {
+	padding: 30px;
+	width: 40%
+}
+
+/* weergave logo-card in about-en-subscribe-sectie */
+main section:nth-of-type(5) div:nth-of-type(2) {
+	padding: 30px;
+	width: auto;
+}
+
+/* weergave subscribe-card in about-en-subscribe-sectie */
+main section:nth-of-type(5) div:nth-of-type(3) {
+	padding: 30px;
+	width: 40%
+}
+
+/* het verbergen van de hoofdtitel in de about-en-subscribe-sectie*/
+main section:nth-of-type(5) h2 {
+	font-size: 0;
+}
+
+/* styling van de titels in de about-en-subscribe-sectie */
+main section:nth-of-type(5) h3 {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-family: "Montserrat-Regular";
+}
+
+/* styling van de korte teksten in de about-en-subscribe-sectie */
+main section:nth-of-type(5) p {
+	font-family: "OpenSans-Regular";
+	font-size: 0.8rem;
+	line-height: 20px;
+}
+
+/* styling van het input-veld in de about-en-subscribe-sectie */
+main section:nth-of-type(5) input {
+	background-color: #333;
+	border-color: #CCC;
+	margin: 10px 3px 10px 0;
+	padding: 4px 0;
+	color: white;
+	text-indent: 4px;
+	font-family: "Montserrat-Regular";
+}
+
+/* styling van de SUBSCRIBE-button */
+main section:nth-of-type(5) a {
+	color: #333;
+	text-transform: uppercase;
+	padding: 5px 50px;
+	background-color: #CCC;
+	font-family: "Montserrat-Bold";
+}
+
+/* styling van de SUBSCRIBE-button bij hover */
+main section:nth-of-type(5) a:hover {
+	color: #000;
+	background-color: #FFF;
+}
+
+/* positionering en achtergrondkleur footer */
+footer {
+	background-color: #111;
+	color: white;
+	height: auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+/* positionering en het flexen van de footer container*/
+footer > .container {
+	max-width: 1360px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 0 60px;
+	background-image: url(../images/icons-and-logos/logo-footer-background.png);
+	background-repeat: no-repeat;
+	background-size: 160px;
+	background-position: right bottom;
+	background-color: #111;
+}
+
+/* het verbergen van de footer-titel */
+footer .container h2 {
+	font-size: 0;
+}
+
+/* het wit maken van de links in de footer */
+footer .container a {
+	color: white;
+}
+
+/* positionering individuele footer-cards */
+footer .container > div {
+	width: 25%;
+	padding: 20px;
+}
+
+/* styling van de footer-card-titels */
+footer .container > div h3 {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-family: "Montserrat-Regular";
+}
+
+/* styling van de footer-card-teksten */
+footer .container > div p {
+	font-family: "OpenSans-Regular";
+	font-size: 0.8rem;
+	line-height: 20px;
+}
+
+/* het schuingedrukt maken van de werktijden */
+footer .container div time {
+	font-style: italic;
+}
+
+/* het naast elkaar zetten van de footer-social-media-icons */
+footer .container #footerSocMed {
+	display: inline-block;
+}
+
+/* styling footer-social-media-icons */
+footer .container #footerSocMed li {
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 90px;
+	text-align: center;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* verschaling van de contact-us-tekst */
+footer .container > div:nth-of-type(4) {
+	font-size: 0.8rem;
+	line-height: 20px;
+}
+
+/* styling van de contact-details */
+footer .container > div:nth-of-type(4) span {
+	font-family: "OpenSans-Regular";
+}
+
+/* positionering bakerytheme.com URL */
+footer .container > div:nth-of-type(4) li:nth-of-type(4) {
+	display: block;
+	margin-top: 2px;
+}
+
+/* styling van de terug-omhoog-pijl */
+footer .fa-arrow-up {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	border: 1px solid white;
+	text-align: center;
+	padding: 5px;
+	border-radius: 90px;
+	color: white;
+	opacity: 0.6;
+	font-size: 2rem;
+}
+
+/* verspringing up-arrow wanneer erover gehoverd wordt */
+footer .fa-arrow-up:hover {
+	transform: translateY(3px);
+}

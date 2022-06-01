@@ -1,0 +1,83 @@
+/* max-breedte, het centreren en achtergrondsettings van de main content */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(../images/rp-sub-bg-r.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 20vw;
+    overflow-y: scroll;
+}
+
+/* marges van de main content */
+main {
+    margin: 20px 50px 50px 50px;
+}
+
+/* marge en max-breedte van het raspberry Pi plaatje */
+main img {
+    margin-top: 5px;
+    max-width: 100%;
+}
+
+/* hoogte imagecontainer */
+main #imgcontainer {
+    height: 450px;
+}
+
+/* lettertype, gewicht en uitspringing van de top-header */
+main h1 {
+    font-family: "Montserrat-Regular";
+    font-weight: 100;
+    left: -10px
+}
+
+/* lettertype en gewicht van de paragrafen en subheaders */
+main small,
+main h2,
+main p,
+main div:nth-of-type(2) > a {
+    font-family: "OpenSans-Regular";
+    font-weight: 100;
+}
+
+/* de margin van small text aanpassen */
+main small {
+    margin-bottom:0;
+}
+
+/* lettergrootte go back link */
+main div:nth-of-type(2) > a {
+    font-size: 12px
+}
+
+/* linkkleur altijd zwart */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+}
+
+/* max-breedte en interlinie van de paragrafen */
+main p {
+    max-width: 600px;
+    line-height: 26px;
+}
+
+/* style tbv de graceful degredation (laat bij het initialiseren van JS een div met alle content verdwijnen) */
+.degrade {
+    display: none;
+}
+
+
+/* ##############################  
+   ###     @MEDIA QUERIES     ###   
+   ############################## */
+
+/* Meebewegen tekst met verschaling responsive imagemap */
+@media (max-width:680px) {
+    main #imgcontainer {
+        height: 67vw;
+    }
+}

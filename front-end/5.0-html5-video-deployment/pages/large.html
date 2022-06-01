@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to the new Lion King trailer website</title>
+<!-- CSS t.b.v. video-js plugin -->
+	<link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+<!-- CSS Reset van Eric Mayer: Dit document reset alle browser defaults -->
+	<link href="../css/css-reset.css" rel="stylesheet" type="text/css">
+<!-- CSS t.b.v. Soleil-font -->
+	<link href="https://use.typekit.net/deb7oyg.css" rel="stylesheet" type="text/css">
+<!-- CSS t.b.v. mijn custom styles -->
+	<link href="../css/mystyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- begin main article -->
+<main> <img id="background" src="../images/lion-king-background.jpg" width="1200" height="960" alt="" />
+<!-- achtergrond navbar -->  
+  <div id="nav-bg"></div>
+<!-- begin video large met fallback stack -->
+  <video id="video-large" class="video-js video-js vjs-big-play-centered" width="1136" height="600" poster="../images/poster-large.jpg" muted controls loop preload="auto" data-setup="{}">
+    <source src="../video/the-lion-king-trailer-large.mp4" type="video/mp4">
+    <source src="../video/the-lion-king-trailer-large.webm" type="video/webm">
+    <source src="../video/the-lion-king-trailer-large.ogv" type="video/ogg">
+    <p id="fallback-text">Your browser does not support video</p>
+  </video>
+<!-- einde video large met fallback stack -->
+<!-- begin bottom navbar -->
+  <nav> <a href="small.html">
+    <p id="small-button">small</p>
+    </a> <a href="medium.html">
+    <p id="medium-button">medium</p>
+    </a> <a href="large.html">
+    <p class="active" id="large-button">large</p>
+    </a> </nav>
+<!-- einde bottom navbar -->
+</main>
+<!-- einde main article -->
+<!-- script t.b.v. video-js plugin -->
+<script src="https://vjs.zencdn.net/7.4.1/video.js"></script>
+</body>
+</html>

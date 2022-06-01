@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- primair gevoerde taal op pagina -->
+
+<html lang="nl">
+
+<head>
+    <!-- character set UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- meta-stuff t.b.v. goedwerkende responsiviteit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welkom bij Cuisine</title>
+    <!-- koppeling met de hoofd-stylesheet met hierin alle @imports van de sub-stylesheets -->
+    <link href="css/cuisine.css" type="text/css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- niet weergegeven verplichte h1 t.b.v. document outline -->
+        <h1>cuisine cookbooks and more</h1>
+        <!-- het cuisine logo -->
+        <div>
+            <a href="index.html"><img class="animateLogo" id="logo3" src="images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a>
+        </div>
+        <!-- begin topmenu -->
+        <nav>
+            <!-- menuknop mobile en tablet weergave -->
+            <label for="showMenu" id="showMenuLabel">Show menu</label>
+            <!-- vangt de actie op om menu weer te geven -->
+            <input type="checkbox" id="showMenu" role="button">
+            <ul>
+                <li><a href="pages/campagne.html">campagne</a></li>
+                <li><a href="pages/recepten.html">recepten</a></li>
+                <li><a href="pages/nieuws.html">nieuws</a></li>
+                <li id="menulogo"><a href="/index.html"><img class="animateLogo" src="images/logo-en-icons/cuisine-logo.png" alt="cuisine logo"></a></li>
+                <li><a href="pages/over-ons.html">over ons</a></li>
+                <li><a href="pages/contact.html">contact</a></li>
+                <li><a href="pages/shop.html">shop</a></li>
+            </ul>
+            <!-- account en winkelwagentje icons -->
+            <div class="user-icons">
+                <a href="pages/account.html"><img src="images/logo-en-icons/user-icon.png" alt="gebruiker"></a>
+                <a href="pages/winkelwagen.html"><img src="images/logo-en-icons/cart-icon.png" alt="winkelwagentje"></a>
+            </div>
+        </nav>
+        <!-- einde topmenu -->
+    </header>
+
+
+    <main>
+        <section>
+            <h2 class="hideme">image carrousel</h2>
+            <div class="rotator">
+                <div class="foto"><img src="images/hero-en-slider/hero-slide-01.jpg" alt=""></div>
+                <div class="foto"><img src="images/hero-en-slider/hero-slide-04.jpg" alt=""></div>
+                <div class="foto"><img src="images/hero-en-slider/hero-slide-08.jpg" alt=""></div>
+                <div class="foto"><img src="images/hero-en-slider/hero-slide-09.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>nieuwste boeken</h2>
+            <div class="container">
+                <div>
+                    <div>
+                        <p>"Relaxt, inspirerend en om te watertanden"</p>
+                        <hr>
+                        <p>Simply Nigella</p>
+                        <div class="button">
+                            <a href="pages/boeken-items/boek-3.html">
+                                <p>simply Nigella</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>In Sweet keert Yotam Ottolenghi terug naar waar het begon</p>
+                        <hr>
+                        <p>In de patisserie</p>
+                        <div class="button">
+                            <a href="pages/boeken-items/boek-5.html">
+                                <p>sweet</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Super food voor elke dag is het nieuwste kookboek</p>
+                        <hr>
+                        <p>van Jamie Oliver</p>
+                        <div class="button">
+                            <a href="pages/boeken-items/boek-4.html">
+                                <p>Jamie's superfood</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Blijf fit met het nieuwste boek van Gordon Ramsay</p>
+                        <hr>
+                        <p>van Gordon Ramsay</p>
+                        <div class="button">
+                            <a href="pages/boeken-items/boek-8.html">
+                                <p>Ultimate Fit Food</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>het laatste nieuws</h2>
+            <div class="container">
+                <div>
+                    <h3>Welk deel van de koe?</h3>
+                    <p>Lees waar de steak, entrecote, ossenhaas en ribeye precies vandaan komen. Elk deel van de koe heeft zijn eigen malsheid en stevigheid. Ontdek welk stuk vlees de slager het liefst voor zichzelf houdt…</p>
+                    <div class="background-image1">
+                        <div class="button">
+                            <a href="pages/nieuws.html">
+                                <p>meer over de koe</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Waarom een appel per dag écht gezond is</h3>
+                    <p>‘An apple a day keeps the doctor away’, zeggen ze altijd. Blijkbaar schuilt er ook een kern van waarheid in. Wetenschappers hebben aangetoond dat mensen die dagelijks appels eten minder risico lopen om te sterven door kanker of een hartaandoening.</p>
+                    <div class="background-image2">
+                        <div class="button">
+                            <a href="pages/nieuws-items/nieuws-2.html">
+                                <p>meer over appels</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>nieuwe recepten</h2>
+            <div class="container">
+                <div>
+                    <h3>Super steak</h3>
+                    <div class="icons">
+                        <img src="images/logo-en-icons/koekenpan-icon.png" alt="gekookt">
+                        <img src="images/logo-en-icons/vlees-icon.png" alt="vlees">
+                        <div>
+                            <img src="images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">10 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>2 T-bone steaks</li>
+                        <li>olijfolie</li>
+                        <li>peper</li>
+                        <li>zout</li>
+                        <li>bbq sauce</li>
+                    </ul>
+                    <img src="images/recepten/recept-01.jpg" alt="bami soep">
+                    <div class="button">
+                        <a href="pages/recepten-items/recept-1.html">
+                            <p>super steak maken</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Carpet bag steak</h3>
+                    <div class="icons">
+                        <img src="images/logo-en-icons/koekenpan-icon.png" alt="gekookt">
+                        <img src="images/logo-en-icons/vlees-icon.png" alt="kip">
+                        <div>
+                            <img src="images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">15 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>haasbiefstukken</li>
+                        <li>8 oesters</li>
+                        <li>4 repen bacon</li>
+                        <li>neutrale olie</li>
+                        <li>200 g boter</li>
+                    </ul>
+                    <img src="images/recepten/recept-02.jpg" alt="thaise kip">
+                    <div class="button">
+                        <a href="pages/recepten-items/recept-2.html">
+                            <p>Carpet bag steak maken</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bakken deegwaren">
+                    <h3>bananenbrood</h3>
+                    <div class="icons">
+                        <img src="images/logo-en-icons/oven-icon.png" alt="gekookt">
+                        <img src="images/logo-en-icons/graan-icon.png" alt="kip">
+                        <div>
+                            <img src="images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">105 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>75 ml whisky of water</li>
+                        <li>100 g rozijnen</li>
+                        <li>125 g boter</li>
+                        <li>150 g suiker</li>
+                        <li>3 eieren, etc.</li>
+
+                    </ul>
+                    <img src="images/recepten/recept-03.jpg" alt="bananenbrood">
+                    <div class="button">
+                        <a href="pages/recepten-items/recept-3.html">
+                            <p>bananenbrood maken</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Eendenborst met bramensaus</h3>
+                    <div class="icons">
+                        <img src="images/logo-en-icons/hogepan-icon.png" alt="gekookt">
+                        <img src="images/logo-en-icons/broodbeleg-icon.png" alt="graan">
+                        <div>
+                            <img src="images/logo-en-icons/klok-icon.png" alt="kooktijd">
+                            <p class="kooktijd">20 min</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>2 grote eendenborsten</li>
+                        <li>2 el bramenjam</li>
+                        <li>2 tl mosterd</li>
+                        <li>100 ml rode wijn</li>
+                        <li>stukje bouillontablet</li>
+                    </ul>
+                    <img src="images/recepten/recept-07.jpg" alt="tagliatelle">
+                    <div class="button">
+                        <a href="pages/recepten-items/recept-7.html">
+                            <p>eendenborst maken</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>over cuisine</h2>
+            <div class="container">
+                <div>
+                </div>
+                <div>
+                    <p>Cuisine geeft al kookboeken uit sinds 1977. In de webwinkel zijn kookboeken te vinden in alle categorieën en uit alle delen van de wereld, in verschillende talen.</p>
+                    <div class="button">
+                        <a href="pages/over-ons.html">
+                            <p>lees verder over cuisine</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo-en-icons/cuisine-logo.png" alt="cuisine logo">
+            <ul>
+                <li><a href="pages/campagne.html">campagne</a></li>
+                <li><a href="pages/recepten.html">recepten</a></li>
+                <li><a href="pages/nieuws.html">nieuws</a></li>
+                <li><a href="pages/over-ons.html">over ons</a></li>
+                <li><a href="pages/contact.html">contact</a></li>
+                <li><a href="pages/shop.html">shop</a></li>
+            </ul>
+        </div>
+        <p>Cuisine B.V. copyright 2018</p>
+        <div>
+            <div id="socialmedia-icons">
+                <a href="https://www.facebook.com"><img src="images/logo-en-icons/socialmedia/facebook-icon.png" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img src="images/logo-en-icons/socialmedia/twitter-icon.png" alt="twitter"></a>
+                <a href="https://www.youtube.com"><img src="images/logo-en-icons/socialmedia/youtube-icon.png" alt="youtube"></a>
+            </div>
+            <address>
+                Cuisine B.V.<br>
+                Egelenburg 150-152<br>
+                1081 GK | Amsterdam
+            </address>
+        </div>
+    </footer>
+
+
+    <!-- koppelingen met javascript-bestanden en -bibliotheken -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
