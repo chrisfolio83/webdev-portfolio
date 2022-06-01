@@ -1,0 +1,45 @@
+/* lettertype gehele pagina */
+* {
+	font-family: monospace;
+}
+
+/* maximum breedte body */
+body div {
+	max-width:750px;
+}
+
+/* styling, schaling en positionering van de image */
+body div img {	
+	float: left;
+	margin-right: 15px;
+	max-height: 200px;
+	max-width: 200px;
+	object-position: center;
+	object-fit: cover;
+}
+
+/* aanpassingen nav-menu */
+nav, nav ul {
+	text-align: left;	
+	margin: 0;
+	padding: 0; 
+}
+
+/* marges en uitlijning individuele menu-items */
+nav ul li{
+	display:inline-block;
+	margin-right: 25px;
+}
+
+/* BEGIN styling van de notificaties mbt bestand-upload */
+/* ongeldig bestand */
+body form p.ongeldig {
+	display: inline;
+	color: red;
+}
+/* geldig bestand */
+body form p.geldig {
+	display: inline;
+	color: green;
+}
+/* EINDE styling van de notificaties mbt bestand-upload */

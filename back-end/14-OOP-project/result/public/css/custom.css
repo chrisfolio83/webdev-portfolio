@@ -1,0 +1,124 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* kleur en padding van de blockquote */
+.pet-list-item blockquote {
+    color: #999;
+    padding: 0 10px;
+}
+
+/* grootte en marge van het plaatje */
+.pet-list-item img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+/* grootte en marge van het plaatje */
+.my_picture {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+/* alle h1-tekst eerst lowercase maken */
+h1 {
+    text-transform: lowercase;
+
+}
+
+/* daarna de eerste letter uppercase maken */
+h1::first-letter {
+    text-transform: uppercase;
+}
+
+/* behalve die met id #header_title */
+#header_title::first-letter {
+    text-transform: lowercase;
+}
+
+/* styling en positionering van de welkomtekst indien ingelogd */
+p.welkomtekst {
+    color:white; 
+    padding-top:10px; 
+    font-size:25px;
+}
+
+/* hoogte vd headercontainer wanneer er is ingelogd */
+.when-ingelogd-container{
+    height: 50px;
+}
+
+/* het inline plaatsen van de header-text wanneer ingelogd */
+.when-ingelogd-container p {    
+    display:inline-block;
+}
+
+/* het inline plaatsen van de header-items wanneer ingelogd */
+.when-ingelogd-container form {
+   display: inline;
+}
+
+/* de uitloggen-button naar rechts laten floaten */
+.when-ingelogd-btn {
+    float:right;
+    margin-top:15px;
+    margin-left:10px;
+}
+
+/* max hoogte en overflow vd bericht-card */
+.bericht {
+   max-height: 250px;
+   overflow: hidden;
+}
+
+/* haal padding weg op de footer container */
+footer.container {
+    padding-left: 0;
+}
+
+/* positionering van de menuknoppen */
+.inlineknop {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+/* styling van de annuleren-knop */
+.annuleren {
+    margin-left: 10px;
+}
+
+/* de styles voor de textareas */
+textarea {
+    margin-bottom: 20px;
+}
+
+/* styling van de bericht inhoud */
+textarea.bericht-inhoud {
+    height: 300px;
+    overflow:auto;
+}
+
+/* styling van de bericht titel */
+textarea.bericht-titel {
+    max-height: 40px;
+    overflow:auto;
+}
+
+
+/***************************/
+/*      MEDIA QUERIES      */
+/***************************/
+
+/* bij kleiner dan 775px de boven-padding van de jumbotron vergroten */
+@media screen and (max-width:775px) {
+   
+   .jumbotron {
+        padding-top: 150px;
+    }
+    
+}

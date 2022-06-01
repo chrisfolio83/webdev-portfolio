@@ -1,0 +1,32 @@
+/* op alle elementen van toepassing */
+* {
+  font-family: monospace;
+  padding:10px;
+}
+
+/* titel stijl */
+h1 {
+  font-size: 16px;
+}
+
+/* tabelstijl */
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* tabelheader link stijl */
+th a {
+  color: black;
+  font-size: 14px;      
+}
+
+/* row stijl bij row hover */
+tr:hover {
+  background-color: #ddd;
+} 
+
+/* row stijl bij header hover */
+tr th:hover {
+  background-color: #aaa;
+}

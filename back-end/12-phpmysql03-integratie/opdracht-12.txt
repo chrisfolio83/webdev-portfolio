@@ -1,0 +1,34 @@
+Opdracht PHP-MySQL 01 - Integratie
+(opdracht 12)
+
+
+Doel
+Als bezoeker van de website wil kunnen zoeken in een auto lijst zodat ik invloed kan hebben op de html pagina.
+
+Uitgangspunten
+1. Werk op basis van het sql bestand autos.sql
+2. Werk in een los php bestand waar je de complete functionaliteit en html in plaatst.
+
+Werkwijze
+Er mogen in het eind product geen errors zijn.
+Zorg dat alle variabelen bestaan voordat je ze gebruikt.
+Vertrouw nooit de input van de gebruiker, sanitize values. ( http://php.net/manual/en/filter.filters.sanitize.php )
+
+D.O.D.
+1. Op een url zie ik een lijst met alle autos met merk en land.
+2. Op dezelfde pagina staat een html formulier.
+3. Als ik een merk of type invul dan zullen alleen types van dat merk of type zichtbaar zijn.
+
+Opdracht
+1. Maak een extra tabel waar alle landen in staan.
+2. Link nu elk merken aan een van deze landen.
+3. Haal alle merken, auto’s en landen op en geef deze weer op de pagina.
+4. Maak een html formulier met een zoek veld.
+5. Als ik een zoek query ingeef dan moet het resultaat aangepast worden.
+6. De zoek term moet zichtbaar blijven in het input veld.
+7. Als er geen resultaten zijn dan moet dit met een melding weergegeven worden.
+
+Extra:
+1. Als ik een gedeelte van een merk of type ingeef dan wil ik ook resultaat hebben.
+2. Het zou fijn zijn als er ook een reset knop is waarmee ik alle data weer kan ophalen.
+3. Kun je ervoor zorgen dat de gebruiker de sortering kan aanpassen?

@@ -1,0 +1,31 @@
+Opdracht PHP 06 - Sessions
+(opdracht 10)
+
+
+Doel
+Als een gebruiker wil ik kunnen inloggen zodat mijn naam bovenaan elke pagina verschijnt.
+
+Uitgangspunten
+1. Werk op basis van het WD project.(van de vorige opdrachten)
+2. Maak een los bestand, bijvoorbeeld login.php dat je kunt includen in de header.php
+
+Werkwijze
+Maak gebruik van 1 php bestand waar alle code in komt te staan met betrekking tot het inloggen.
+Maak 1 functie die je kunt aanroepen om te controleren of je ingelogd bent, bv: logged_in();
+
+D.O.D.
+1. Als ik het WD project in de browser bekijk dan zie ik bovenaan een login formulier.
+2. Zodra je dit formulier invult dan ben je ingelogd.
+3. Het maakt niet uit wat je invult, er is geen controle of de gebruiker bestaat.
+4. Als ik na een andere pagina ga dan ben ik nog steeds ingelogd.
+
+Opdracht
+1. Maak één nieuw php bestand ( inloggen.php )
+2. Plaats hierin een HTML formulier met de benodigde velden.
+3. Als het formulier verstuurd is moet er een controle zijn of er wel of niet iets ingevuld is.
+4. Je bent alleen ingelogd als je een gebruikersnaam en wachtwoord invult.
+5. Geef in de header op alle pagina’s de ingevulde gebruikersnaam weer als je ingelogd bent.
+6. Als je niet bent ingelogd zie je dus overal het login scherm.
+
+Extra
+1. Ik wil ook kunnen uitloggen

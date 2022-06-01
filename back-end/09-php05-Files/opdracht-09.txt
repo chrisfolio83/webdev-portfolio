@@ -1,0 +1,29 @@
+Opdracht PHP 05 - Bestanden
+(opdracht 9)
+
+
+Doel
+Als een gebruiker wil ik de foto op de over-mij pagina kunnen vervangen zodat ik deze up to date blijft.
+
+Uitgangspunten
+1. Begin met een lege php pagina
+2. Het php bestand zal een combinatie zijn van php en html
+
+Werkwijze
+Verdeel de functionaliteit voor het uploaden en de over-mij tekst pagina over 2 pagina’s
+
+D.O.D.
+1. In de browser kan ik een over-mij pagina oproepen
+2. Op deze pagina staat een tekstje en een foto
+3. Op een andere pagina staat een HTML formulier
+4. In dit formulier kan ik een bestand uploaden
+5. Als het bestand op de server geplaatst is zie ik een bevestiging
+6. De over-mij pagina heeft nu een nieuwe foto
+
+Opdracht
+1. Maak twee nieuwe php bestanden
+2. Plaats op de over-mij pagina een tekstje en een <image>
+3. Plaats op de formulier pagina een HTML formulier met een input-file element
+4. Zorg ervoor dat het bestand door php opgevangen wordt
+5. Bewaar het bestand alleen als het een jpg of png is
+6. Laat een melding zien met het resultaat of het wel of niet gelukt is

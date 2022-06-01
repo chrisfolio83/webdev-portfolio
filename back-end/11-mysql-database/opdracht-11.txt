@@ -1,0 +1,31 @@
+Opdracht MySQL 01 - Database
+(opdracht 11)
+
+
+Doel
+Als een MySQL gebruiker wil ik informatie zien die uit de database komt.
+
+Uitgangspunten
+1. Werk op basis van het sql bestand groentewinkel.sql
+2. In een los bestand sla je alle queries op
+
+Werkwijze
+Per opdracht nummer moet 1 mysql query geschreven worden die los uitgevoerd kan worden.
+
+D.O.D.
+1. Als ik elke query los kan uitvoeren en het verwachte resultaat zie
+
+Opdracht
+1. Importeer de groentewinkel data
+2. Maak een nieuwe row aan in de fruit tabel (nieuw fruitsoort)
+3. Maak nieuwe rows in de stock tabel aan en link deze naar dit nieuwe fruit (nieuwe fruit-types)
+4. Hoeveel verschillende soorten fruit zijn er?
+5. Hoeveel fruit is er in totaal in voorraad? (totaal aantal items)
+6. Hoeveel aardbeien zijn er in voorraad?
+7. Welk fruit is het duurst? (item)
+8. Welk item is het goedkoopst?
+9. Laat per fruitsoort alle types zien
+10. Laat alle fruitsoorten zien en alle fruit-types, zorg ervoor dat er geen dubbele zijn
+11. Maak een query om de complete voorraad van alle aardbeien te verwijderen
+12. Plaats drie nieuwe aardbeien regels in de voorraad (items)
+13. Maak een query om alle aardbeien te veranderen in kersen

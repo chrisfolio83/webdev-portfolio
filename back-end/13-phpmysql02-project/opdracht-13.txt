@@ -1,0 +1,37 @@
+Opdracht PHP-MySQL 02 - Project
+(opdracht 13)
+
+
+Doel
+Als bezoeker van mijn nieuws website wil ik berichten uit de database kunnen zien.
+
+Uitgangspunten
+1. Werk op basis van het WD project.
+2. Maak gebruik van de database die je vorige keer gemaakt hebt.
+3. Maak minimaal één los php bestand dat de nieuwsberichten ophaalt.
+4. Je moet de berichten lijst kunnen laden binnen de index.php
+
+Werkwijze
+Zorg dat de database instellingen op een algemene locatie staan, bijvoorbeeld in het settings.php document.
+Haal eerst alle berichten op voor op de home pagina.
+
+D.O.D.
+1. Ik zie alle nieuws berichten uit de database op de index pagina.
+2. De vormgeving is hetzelfde als de originele index.html, alleen zijn er nu meer berichten.
+
+Opdracht
+1. Plaats de database instellingen op een algemene locatie
+2. Maak een nieuwsberichten.php waar je de volgende stappen doet:
+	a. Verbinding maken met de mysql server
+	b. MySQL query maken
+	c. Data op halen
+	d. Alle nieuwsbericht titels, intro’s en datums weergeven
+	e. Eventuele errors opvangen met duidelijke meldingen, als er bijvoorbeeld geen berichten zijn.
+3. Include deze nieuwsberichten pagina in de index.php
+4. Stuur elk bericht door naar bericht.php als je op de Details knop drukt
+5. Op de bericht.php pagina laat je het bericht zien op basis van de ID
+	a. Dit kun je doen door het path er zo uit te laten zien /bericht.php?id=2
+
+Extra
+1. Haal het bericht op basis van het url veld uit de database op.
+2. Als ik ingelogd ben wil ik bij elk bericht een edit knopje zien.

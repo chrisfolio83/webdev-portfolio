@@ -1,0 +1,31 @@
+Opdracht OOP - Project
+(opdracht 14)
+
+
+Doel
+Als beheerder van mijn nieuws website wil ik berichten kunnen toevoegen en bewerken zodat de site up to data blijft.
+
+Uitgangspunten
+1. Werk op basis van het WD project.
+2. Maak gebruik van de database die je al gekoppeld hebt bij opdracht 13.
+3. Gebruik de OOP benadering voor het ophalen van een nieuwsbericht.
+4. Laat een controller de acties uitvoeren zoals opslaan en ophalen van gegevens uit de database.
+
+Werkwijze
+Hou je code overzichtelijk en denk aan de SOA / MVC structuur bij het structureren van je bestanden.
+
+D.O.D.
+1. Als ik ingelogd ben dan heb ik de mogelijkheid om een bericht toe te voegen via een HTML formulier.
+2. Als ik ingelogd ben dan heb ik de mogelijkheid om een bericht te bewerken via een HTML formulier.
+3. Zodra ik een bericht is toegevoegd of aangepast zal dit bericht opgeslagen worden in de database.
+
+Opdracht
+1. Maak een Library folder waarin een MVC , SOA of combinatie structuur zichtbaar is.
+2. In deze Library folder staat een losse settings folder of file.
+3. Zorg dat de inlog functionaliteit in een functie of class zit zodat ik op elke op pagina kan zien of ik ingelogd ben door
+isIngelogd() of $login-> isIngelogd() aan te roepen.
+4. Als ik ingelogd ben dan wil ik de mogelijkheid hebben om een bericht aan te passen.
+5. Op dezelfde manier moet ook een bericht toegevoegd kunnen worden.
+
+Extra
+1. Maak gebruik van DI om de mysql verbinding door te geven aan het Nieuwsbericht object.

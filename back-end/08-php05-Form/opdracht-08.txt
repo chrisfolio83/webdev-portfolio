@@ -1,0 +1,32 @@
+Opdracht PHP 05 - HTML formulier
+(opdracht 8)
+
+
+Doel
+Als bezoeker wil ik een formulier kunnen invullen en versturen zodat mijn naam en auto zichtbaar zijn op een pagina.
+
+Uitgangspunten
+1. Begin met een lege php pagina
+2. Het php bestand zal een combinatie zijn van php en html
+
+Werkwijze
+Maak gebruik van 1 php bestand waar alle code in komt
+
+D.O.D.
+1. In de browser kan een pagina benaderd worden
+2. Op deze pagina staat een HTML formulier
+3. In dit formulier kan ik een tekst invullen
+4. In dit formulier kan ik een auto selecteren uit een dropdown list
+5. Als ik een tekst invul en het formulier verstuur dan verschijnt de ingevulde tekst in de titel en in het input veld.
+
+Opdracht
+1. Maak één nieuw php bestand
+2. Plaats hierin een HTML formulier met een input veld, select element en een button
+3. Het select element moet minstens 3 opties bevatten uit een Array
+4. Als het formulier verstuurd is moet de verstuurde text zichtbaar zijn het input veld
+5. Als het formulier verstuurd is moet de geselecteerde optie weer geselecteerd zijn in het select element
+6. Als het formulier verstuurd is moet de verstuurde waarde boven het formulier weergegeven worden.
+
+Extra
+1. Als ik de eerste keer op deze pagina kom dan wil ik een default waarde zien op de plek waar straks de variabele
+tekst weergegeven wordt.

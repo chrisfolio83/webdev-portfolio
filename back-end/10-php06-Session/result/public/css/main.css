@@ -1,0 +1,70 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* style de blockquote */
+.pet-list-item blockquote {
+    color: #999;
+    padding: 0 10px;
+}
+
+/* image clownfish aanpassen */
+.pet-list-item img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+/* mijn profilepic */
+.my_picture {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+/* alle h1-tekst eerst lowercase maken */
+h1 {
+    text-transform: lowercase;
+}
+
+/* daarna de eerste letter uppercase maken */
+h1::first-letter {
+    text-transform: uppercase;
+}
+
+/* behalve die met id #header_title */
+#header_title::first-letter {
+    text-transform: lowercase;
+}
+
+/* styling en positionering van de welkomtekst indien ingelogd */
+p.welkomtekst {
+    color:white; 
+    padding-top:10px; 
+    font-size:25px;
+}
+
+/* de uitloggen-button naar rechts laten floaten */
+p.uitlogbtn {
+    float:right;
+}
+
+/* styling van de uitloggen-button */
+p.uitlogbtn a {
+    color:white; 
+    text-decoration:none;
+}
+
+
+/*************************************************/
+/*               MEDIA QUERIES                   */
+/*************************************************/
+
+/* bij kleiner dan 775px de boven-padding van de jumbotron vergroten */
+@media screen and (max-width:775px) {
+    .jumbotron {
+        padding-top: 150px;
+    }
+}
