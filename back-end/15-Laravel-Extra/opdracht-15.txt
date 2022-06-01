@@ -1,0 +1,28 @@
+Opdracht AJAX - Laravel Project
+(opdracht 15)
+
+
+Doel
+Als bezoeker wil ik dat de berichten op de home pagina via AJAX geladen worden zodat de website sneller aanvoelt.
+
+Uitgangspunten
+1. Werk op basis van het Laravel project.
+2. Zorg ervoor dat je minimaal 5 berichten in je nieuws database tabel hebt
+3. Maak gebruik van de jQuery library voor het verwerken van de AJAX call omdat dit al geladen is
+
+Werkwijze
+Laad de berichten pas binnen als de complete pagina geladen is, dus niet in de header.
+
+D.O.D.
+1. Als ik JavaScript uitzet dan zie ik geen berichten op de home pagina.
+2. Als ik JavaScript aanzet dan zie ik 3 berichten op de home pagina.
+
+Opdracht
+1. Maak een endpoint (route), waar alle berichten in JSON formaat geëxporteerd worden.
+	1. Bv: http://cmmproject.localhost/ajax/news/
+2. Haal via JavaScript deze AJAX pagina binnen
+	1. Geef een extra parameter ( data ) mee met de hoeveelheid berichten die je nodig hebt.
+3. Maak een loop in jQuery om door de resultaten heen te lopen en elk bericht weer te geven op de begin pagina.
+
+Extra
+1. Laat een loader animatie zien tijdens het laden
