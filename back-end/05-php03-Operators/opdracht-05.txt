@@ -1,0 +1,34 @@
+Opdracht PHP 03 - Operators
+(opdracht 5)
+
+
+Doel
+Los een aantal sommen op
+
+Uitgangspunten
+1. Maak gebruik van verschillende operators
+2. Elke berekening op een losse regel weergeven.
+
+Werkwijze
+Maak een nieuwe pagina aan voor deze oefening.
+Per opdracht geef je je de berekening én het resultaat weer in HTML
+
+D.O.D.
+In de browser is het volgende zichtbaar:
+1. Per opdracht een regel van de berekening inclusief het antwoord
+2. Bijvoorbeeld
+3 x 5 = 15
+( 2 x 5 ) + 2 = 12
+etc.
+
+Opdracht
+Los de sommen op door de X in te vullen of het resultaat te berekenen.
+1. ( -2 + 4 ) * ( 25 * 9 + 26 ) + 25 * X = 652;
+2. -2 + 4 * 25 * 9 + 26 + 25 * 6 = X
+3. negen maal 758
+4. 14 gedeeld door 58
+5. 345 maal 2 plus 7, waarbij eerst 2 en 7 opgeteld worden
+6. 40 minus het resultaat van 3 maal drie
+7. 2 tot de macht 12
+8. De som van het resultaat van 2,4 tot de macht 2 en het resultaat van 5 maal 1,9
+9. De som van 100 en het resultaat van negen en een half gedeeld door drieëndertig

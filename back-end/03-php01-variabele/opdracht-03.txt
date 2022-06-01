@@ -1,0 +1,28 @@
+Opdracht PHP 01 - Variabele
+(opdracht 03)
+
+
+Doel
+Geef de inhoud en het type van een variabele weer.
+
+Uitgangspunten
+1. Maak gebruik van php
+2. Gebruik voor het determineren van het variabele type de interne php functie: getType()
+
+Werkwijze
+Maak een nieuwe pagina aan, je wordt niet beoordeeld op design. Het gaat erom dat de website functioneel is.
+Zorg ervoor dat je de code van je project commit naar jouw eigen repository zodat je deze tijdens de les weer kunt
+ophalen.
+
+D.O.D.
+1. Op een pagina is een combinatie van een string en een variabele zichtbaar
+2. Op dezelfde pagina is een zichtbaar van welk type de variabele is
+
+Opdracht
+1. Maak een php pagina
+2. Definieer de variabele $myVar
+3. Zorg dat de php pagina een output heeft in de vorm van de string: ‘De inhoud van mijn variabele is: ‘
+4. Zorg dat hierachter de inhoud van deze variabele wordt weergegeven
+5. Geef op een tweede regel weer: ‘Het type van mijn variabele is: ’ mat daarachter het type
+6. Zorg er nu voor dat de variabele en het type in bold weergegeven worden
+7. Test dit in je browser.

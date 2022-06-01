@@ -1,0 +1,32 @@
+Opdracht PHP 03 - Project
+(opdracht 7)
+
+
+Doel
+Maak het WebDeveloper project iets dynamischer
+
+Uitgangspunten
+1. Het web project is de basis
+2. Deze folder bevat de start als uitgangspunt voor deze opdracht.
+
+Werkwijze
+Zorg ervoor dat je public_html geordend blijft.
+
+D.O.D.
+1. De webpagina’s van het project zijn goed te zien in de browser
+2. De php source is overzichtelijk
+
+Opdracht
+1. Maak één header.php in een speciale ‘includes’ folder
+2. Maak één footer.php in een speciale ‘includes’ folder
+3. Zorg dat deze in de alle andere bestanden van dit project geladen worden.
+4. Maak een instellingen of settings bestand en zorg dat deze op elke pagina beschikbaar is
+5. Maak een bestand waar je alle functies in gaat plaatsen en zorg dat deze op elke pagina beschikbaar zijn
+6. Formatteer de titels in de header van elke pagina op dezelfde manier: geen kapitalen en geen spaties
+7. Formatteer de H1 titels overal op dezelfde manier: Een kapitaal aan het begin van de zin.
+8. Maak een functie die één bericht weergeeft: titel, omschrijving en datum
+9. Laat nu 8 berichten zien op de home pagina, dit mogen dezelfde zijn
+10. Als je klikt op een bericht dan ga je naar bericht.php waar je een statische demo tekst ziet
+
+Extra
+1. Zorg ervoor dat het jaartal dynamisch weergegeven wordt

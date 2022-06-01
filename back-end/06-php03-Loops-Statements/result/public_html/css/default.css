@@ -1,0 +1,42 @@
+/* lettertype en algemene marge */
+* { 
+	font-family : monospace ;
+	margin : 8px;						
+}
+
+/* titel styling */
+h1 {
+	margin-bottom: 20px;
+}
+
+/* borders van de tabel weghalen */
+table {	
+	border-collapse:collapse;	
+}
+
+/* uitlijnen en cursor */
+table td {
+	text-align: right;
+	padding: 2px;
+	cursor: text;
+	padding-left: 0;
+} 	
+
+/* styling en transformatie bij mouseover op rij */
+table tr:hover {
+	color:blue;
+	transform: scale(2);
+	transform-origin: left;
+}
+
+/* de oneven rijen rood kleuren */
+tr:nth-of-type(odd) {
+	color : red;
+}
+
+/* output vet-gedrukt en italic weergeven */
+span.bold {
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 0;
+}

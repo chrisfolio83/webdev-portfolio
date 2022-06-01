@@ -1,0 +1,23 @@
+/*******************************************/
+/* BEGIN styles t.b.v. betere leesbaarheid */ 
+/*******************************************/
+
+/* marge en font van alle elementen aanpassen */
+* {	
+	margin 		: 2px		;
+	font-family : monospace ;						
+}
+
+/* marge onder h1 en formulieren aanpassen */
+h1, form {
+	margin-bottom: 15px;
+}
+
+/* data in tabel rechts uitlijnen */
+td {
+	text-align: right;
+} 	
+
+/*******************************************/
+/* EINDE styles t.b.v. betere leesbaarheid */
+/*******************************************/

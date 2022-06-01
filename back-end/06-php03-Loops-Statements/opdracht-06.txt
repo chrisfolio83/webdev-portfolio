@@ -1,0 +1,40 @@
+Opdracht PHP 03 - Statements
+(opdracht 6)
+
+
+Doel
+Geef de tafel van X weer.
+
+Uitgangspunten
+1. Zorg dat de tafel die je weergeeft een variabele is
+2. Het vanaf getal is een variabele
+3. Het tot en met getal is een variabele
+
+Werkwijze
+Maak een nieuwe pagina aan voor deze oefening.
+Laat de complete berekening zien.
+Gebruik een loop functie
+
+D.O.D.
+In de browser is het volgende zichtbaar
+1. Ik zie welke tafel er weergegeven wordt
+2. Ik zie maximaal 67 regels onder elkaar met het volgende
+33 x 12 = 396
+34 x 12 = 408
+etc.
+
+Opdracht
+1. Definieer de tafel die je gaat weergeven in een variabele
+2. Geef de inhoud weer van de variabele $tafel
+3. Maak 67 regels aan waarbij de som wordt berekend van de tafel maal de regel
+4. De tafel die je weergeeft is 12
+5. Begin bij 33
+6. Sla de weergave over als het resultaat 420 is
+7. Sla de weergave over als het maal getal 41 is
+8. Stop de weergave als het resultaat groter is dan 790
+9. Hoeveel regels heb je weergegeven ( laat dit zien )
+
+Extra
+1. Zorg ervoor dat bij de weergave alle getallen recht onder elkaar komen
+2. Geef elke oneven regel een andere kleur
+3. Gebruik zelfgemaakte functies bijv: function toonTable(...){...}

@@ -1,0 +1,28 @@
+Web Developer Project
+(opdracht 2 - 303)
+
+
+Doel
+De ‘lees meer’ knop in ons project moet verwijzen naar een bestaande ‘over mij’ pagina.
+
+Uitgangspunten
+1. Tijdens de les hebben jullie toegang gekregen tot de Notes repository.
+2. In de /Homework/2-web-developer-project/Start/ folder vind je het uitgangspunt voor deze opdracht.
+3. Er is momenteel maar 1 .html pagina
+
+Werkwijze
+Maak een nieuwe pagina aan, je wordt niet beoordeeld op design. Het gaat erom dat de website functioneel is.
+Zorg ervoor dat je de code van je project commit naar jouw eigen repository zodat je deze tijdens de les weer kunt
+ophalen.
+
+Beoordeling
+De opdracht zal beoordeeld worden op de volgende punten:
+1. Is het menu aangepast
+2. Werkt de link
+3. Kan ik ook weer terug naar de eerste pagina
+
+Opdracht
+1. In het voorbeeld project is in de jumbotron een tekst te zien met een knop ‘Lees meer over mij’
+2. Deze knop moet linken naar een 2e pagina
+3. Op deze pagina moet een aangepaste tekst staan met een afbeelding
+4. In het menu moet de juiste pagina actief zijn.

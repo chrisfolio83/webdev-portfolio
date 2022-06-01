@@ -1,0 +1,37 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.pet-list-item blockquote {
+    color: #999;
+    padding: 0 10px;
+}
+
+.pet-list-item img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+.my_picture {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+/* alle h1-tekst eerst lowercase maken */
+h1 {
+    text-transform: lowercase;
+}
+
+/* daarna de eerste letter uppercase maken */
+h1::first-letter {
+    text-transform: uppercase;
+}
+
+/* behalve die met id #header_title */
+#header_title::first-letter {
+    text-transform: lowercase;
+}

@@ -1,0 +1,32 @@
+Opdracht PHP 02 - Multiply
+(opdracht 04)
+
+
+Doel
+Geef de tafel van X weer.
+
+Uitgangspunten
+1. Maak gebruik van php
+2. De X van welke tafel je weergeeft moet eenvoudig aangepast kunnen worden
+
+Werkwijze
+Maak een nieuwe pagina aan, je wordt niet beoordeeld op design. Het gaat erom dat de website functioneel is.
+Zorg ervoor dat je de code van je project commit naar jouw eigen repository zodat je deze tijdens de les weer kunt
+ophalen.
+
+D.O.D.
+In de browser is het volgende zichtbaar
+1. Ik zie welke tafel er weergegeven wordt
+2. Ik zie 10 regels onder elkaar met het volgende
+1 x 5 = 5
+2 x 5 = 10
+etc.
+
+Opdracht
+1. Definieer de tafel die je weergeeft
+2. Geef de inhoud weer van de variabele $tafel
+3. Maak 10 regels aan waarbij de som wordt berekend van de tafel maal de regel
+
+Extra
+1. Zorg ervoor dat bij de weergave alle getallen recht onder elkaar komen
+2. Plaats bij elk stuk code een commentaar wat je doet en waarom

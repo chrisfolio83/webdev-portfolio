@@ -1,0 +1,31 @@
+UserStory
+(opdracht 1)
+
+
+Doel
+Maak een User Story voor inlog functionaliteit op een website.
+
+Uitgangspunten
+1. Het voorbeeld project zit in de voorbeeld folder in de public_html folder.
+2. In de index.html is bovenaan de pagina een login formulier te zien.
+3. Op basis van de les Agile heeft de cursist genoeg kennis om een UserStory te maken.
+
+Werkwijze
+Tijdens de eerst volgende les zal elke userstory besproken en zullen er Story Points gegeven worden op basis van de
+kennis die iedereen heeft.
+Na een aantal lessen zal dezelfde UserStory opnieuw ingeschat worden omdat de kennis van elke cursist op dat
+moment anders is.
+
+Beoordeling
+De opdracht zal beoordeeld worden op de volgende punten:
+1. Titel, voldoet deze aan het Scrum format ( Als [rol], wil ik [functionaliteit], zodat ik [reden] )?
+2. Is er een omschrijving?
+3. Is de omschrijving compleet?
+4. Is de Definition of Done sluitend?
+5. Zijn er goede Steps to Test beschreven?
+
+Opdracht
+In het voorbeeld project is een login formulier te zien, dit formulier heeft nog geen functionaliteit. In de loop van de
+opleiding gaan wij dit formulier werkend maken.
+Het is de bedoeling dat je omschrijft wat er gedaan moet worden om dit formulier te kunnen ontwikkelen.
+Je moet niet uitschrijven hoe je dit gaat ontwikkelen, je moet aangeven wat de gebruiker verwacht.
