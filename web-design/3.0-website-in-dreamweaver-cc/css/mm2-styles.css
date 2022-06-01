@@ -1,0 +1,425 @@
+@charset "UTF-8";
+* { /* Schaling obv content + padding + border */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%; /* Font-size van het root-element opgeven, zodat we kunnen rekenen met de REM-unit. 100% komt overeen met 14 à 16 pixels */
+}
+
+body { /* De achtergrondkleur */
+	background-color: #000;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	clear: both; /* Floatgedrag opheffen voor elementen die na .container komen. */
+	overflow: hidden; /* Height collapse tegengaan van .container, indien alle childs gefloat zijn. */
+	background-color: #111;
+}
+
+header .logo    {  /* Opmaak logo in de linker bovenhoek */
+	width: 74px;
+	height: 65px;
+	margin-left: 11px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+	display: inline;
+	margin-right: 11px;
+}
+
+header .topmenu {  /* Top-menu-gedrag */
+	display: inline-block;
+	float: right;
+}
+
+header .topmenu li   {  /* Dit zet de UL om naar een inline-block-menu */
+	display: inline-block;
+}
+
+ul li a { /* Opmaak voor de afzonderlijke top-menu-items */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial;
+	color: #fef6ea;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-right: 19px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-top: 32px;
+	padding-bottom: 36px;
+}
+
+nav {  /* Positionering top-menu */
+	margin-top: 27px;
+	margin-right: 39px;
+}
+
+#pushleft {  /* Ruimte tussen de twee delen van het top-menu */
+	display: inline-block;
+	margin-right: 205px;
+}
+
+article img.full    { /* Absolute positionering artikel-image */
+	position: absolute;
+	width: 960px;
+	height: 389px;
+}
+
+.naarvoren   { /* Verplaatst de tekst op de jumbotron naar voren toe */
+	z-index: 1;
+	margin-top: 77px;
+	margin-left: 85px;
+}
+
+article section p {  /* Opmaak standaard paragraaf-tekst */
+	width: 243px;
+	font-family: "Soleil", sans-serif;
+	color: #fef6ea;
+	font-size: 16px;
+	font-weight: 300;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.71);
+	line-height: 22px;
+}
+
+main article { /* Dit zorgt ervoor dat de childs van het article 100% hoog worden, ongeacht hoogte verschil van de childs (zie de aside-tag). */
+	display: flex; 
+}
+
+main article .content { /* Dit zorgt voor een correct samenspel tussen de verschillende block-elementen */
+	width: 100%;
+	padding: 1rem;
+	float: left;  
+}
+
+p.inschrijven {  /* Styling voor de nu-inschrijven-knop */
+	width: 155px;
+	height: 35px;
+	border-radius: 3px;
+	background-color: #fef6ea;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.71);
+	text-transform: uppercase;
+	font-family: "Arial",sans-serif;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-left: 105px;
+	padding-top: 7px;
+	text-align: center;
+	color: #111;
+	text-shadow: 0px 0px;
+	font-size: 12px;
+}
+
+p.inschrijven:hover { /* Styling voor de nu-inschrijven-knop wanneer de muis erboven zweeft */
+	width: 155px;
+	height: 35px;
+	border-radius: 3px;
+	background-color: #fef6ea;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.71);
+	text-transform: uppercase;
+	font-family: "Arial",sans-serif;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-left: 105px;
+	padding-top: 7px;
+	text-align: center;
+	color: #111;
+	text-shadow: 0px 0px;
+	font-size: 13px;
+}
+
+p.inschrijven:active { /* Styling voor de nu-inschrijven-knop wanneer aangeklikt */
+	width: 155px;
+	height: 35px;
+	border-radius: 3px;
+	background-color: #fef6ea;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.71);
+	text-transform: uppercase;
+	font-family: "Arial",sans-serif;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-left: 105px;
+	padding-top: 7px;
+	text-align: center;
+	color: #111;
+	text-shadow: 0px 0px;
+	font-size: 12px;
+}
+
+.jumbotronheight { /* Hoogte jumbotron */
+	height: 389px;
+}
+
+.bgfull { /* Positionering en hoogte jumbotron */
+	position: absolute;
+	height: 389px;
+}
+
+#article1 { /* Dimensies en achtergrond van artikel */
+	width: 960px;
+	height: 712px;
+	background-image: url(../images/achtergrond-middelgroot.jpg);
+}
+
+.thumbnail  { /* Positionering van de artikel-thumbnails */
+	margin-left: 12px;
+	margin-top: 12px;
+	float: left;
+}
+
+.thumbtext  { /* Opmaak van de artikel-thumbnails */
+	width: 214px;
+	height: 80px;
+	font-family: Soleil;
+	color: #fef6ea;
+	font-size: 12px;
+	font-weight: lighter;
+	margin-top: 14px;
+	margin-right: 18px;
+	line-height: 15px;
+	float: right;
+}
+
+.nieuwscard  { /* Opmaak, grootte en positionering nieuws-cards */
+	width: 342px;
+	height: 104px;
+	background-color: #111;
+	margin-top: 41px;
+	margin-left: 82px;
+}
+
+.nieuwscard:hover  { /* Opmaak, grootte en positionering nieuws-cards wanneer de muis erover zweeft */
+	width: 342px;
+	height: 104px;
+	background-color: #000;
+	margin-top: 41px;
+	margin-left: 82px;
+}
+
+.nieuwscard:active  { /* Opmaak, grootte en positionering nieuws-cards wanneer aangeklikt */
+	width: 342px;
+	height: 104px;
+	background-color: #111;
+	margin-top: 41px;
+	margin-left: 82px;
+}
+
+.newsheader { /* Opmaak van de titel boven de nieuws-artikelen-kolom */
+	font-family: Arial;
+	color: #fef6ea;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 80px;
+	opacity: 0.1;
+	position: relative;
+	top: 7px;
+	width: 125px;
+}
+
+.productsheader { /* Opmaak van de titel boven de producten-artikelen-kolom */
+	font-family: Arial;
+	color: #fef6ea;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 80px;
+	opacity: 0.1;
+	position: relative;
+	top: 7px;
+	width: 196px;
+}
+
+#productscolumn { /* Positionering producten-kolom */
+	float: right;
+	margin-top: 30px;
+	padding-right: 0px;
+}
+
+.footer { /* Opmaak footer en footer-tekst */
+	width: 960px;
+	height: 60px;
+	background-color: #FEF6EA;
+	font-family: Soleil;
+	color: #111;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 18px;
+	padding-top: 19px;
+	margin: 0 auto;
+	padding-left: 85px;
+}
+
+li>a:hover { /* Opmaak menu-items wanneer de muis erboven zweeft */
+	position: relative;
+	text-shadow: 0px 0px 13px;
+}
+
+img.cart:hover { /* Opmaak nieuws-cards wanneer de muis erboven zweeft */
+	position: relative;
+	bottom: 3px;
+}
+
+.up { /* Positionering up-arrow */
+	float: right;
+	margin-top: -63px;
+	margin-right: 15px;
+}
+
+.up:hover { /* Positionering up-arrow wanneer de muis erboven zweeft */
+	float: right;
+	margin-top: -60px;
+	margin-right: 15px;
+}
+
+#article2 { /* Hoogte en achtergrond nieuws-hoofdpagina */
+	height: 712px;
+	background-image: url(../images/achtergrond-middelgroot.jpg);
+}
+
+#newscolumn { /* Positionering en dimensies van de nieuws-kolom */
+	height: auto;
+	width: 441px;
+	margin-top: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#newsindexnewscol { /* Positionering en dimensies van de nieuws-kolom */
+	height: 320px;
+	margin-top: 342px;
+	float: left;
+	clear: left;
+	margin-right: -225px;
+	width: 355px;
+	display: block;
+	position: relative;
+}
+
+#newsindexnewscol2 { /* Positionering en dimensies van de nieuws-kolom */
+	height: 320px;
+	margin-top: 725px;
+	float: left;
+	clear: left;
+	margin-right: -225px;
+	width: 355px;
+	display: block;
+	position: relative;
+}
+
+#newsindexproductscol { /* Positionering en dimensies van de producten-kolom */
+	height: 320px;
+	margin-top: 341px;
+	margin-left: 318px;
+}
+
+#newsindexproductscol2 { /* Positionering en dimensies van de producten-kolom */
+	height: 320px;
+	margin-top: 725px;
+	margin-left: 318px;
+}
+
+.mainarticle { /* Positionering en opmaak grote card */
+	width: 790px;
+	height: 287px;
+	background-color: #111;
+	position: absolute;
+	margin-top: 43px;
+	margin-left: 82px;
+}
+
+.mainarticle:hover { /* Positionering, dimensies en opmaak grote card wanneer de muis erover zweeft */
+	width: 790px;
+	height: 287px;
+	background-color: #000;
+	position: absolute;
+	margin-top: 43px;
+	margin-left: 82px;
+}
+
+.mainarticle2 { /* Positionering, dimensies en achtergrondkleur hoofd-artikel */
+	width: 790px;
+	height: 679px;
+	background-color: #111;
+	position: absolute;
+	margin-top: 43px;
+	margin-left: 82px;
+}
+
+.mainarticlepic { /* Positionering hoofdartikel-afbeelding */
+	margin-top: 20px;
+	margin-left: 16px;
+	margin-bottom: 9px;
+}
+
+.mainarticletext { /* Positionering en opmaak van de hoofdartikel-tekst */
+	float: right;
+	clear: both;
+	width: 413px;
+	height: auto;
+	font-family: "Soleil", sans-serif;
+	color: #fef6ea;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 22px;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.71);
+	line-height: 22px;
+	margin-right: 21px;
+}
+
+.article3 { /* Grootte en achtergrond van de producten-pagina-artikelen */
+	height: 1100px;
+	background-image: url(../images/achtergrond-groot.jpg);
+}
+
+.maintextnews { /* Opmaak artikeltekst */
+	font-family: "Soleil", sans-serif;
+	color: #fef6ea;
+	font-size: 16px;
+	font-weight: 300;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.71);
+	line-height: 22px;
+	width: 755px;
+	display: block;
+	margin-left: 18px;
+	margin-top: 15px;
+	height: 43px;
+}
+
+.active { /* Highlight-state menu d.m.v. tab */
+	margin-right: 19px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-top: 32px;
+	padding-bottom: 29px;
+	color: #111;
+	background-color: #FEF6EA;
+	text-align: center;
+	text-shadow: 0px 0px 0px;
+	border-bottom: thick solid #123947;
+}
+
+.active:hover { /* Opmaak menu-item wanneer de muis erboven zweeft */
+	margin-right: 19px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-top: 32px;
+	padding-bottom: 29px;
+	color: #111;
+	background-color: #FEF6EA;
+	text-align: center;
+	text-shadow: 0px 0px 0px;
+	border-bottom: thick solid #123947;
+}
+.newssitecolor {
+	background-color: #2F6E80;
+}
+.productsitecolor {
+	background-color: #6E233F;
+}

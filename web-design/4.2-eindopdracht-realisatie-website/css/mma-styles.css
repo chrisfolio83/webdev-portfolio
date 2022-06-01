@@ -1,0 +1,888 @@
+@charset "UTF-8";
+/* CSS tbv hele pagina */
+body {
+	background-color: #282828;
+	margin: 0 auto;
+	width: 960px;
+}
+/* highlight het menu-item dat bij de huidig weergegeven pagina hoort */
+#active {
+	color: #EFC571;
+	text-shadow: 0px 0px 0px;
+}
+/* achtergrond van top-menu */
+.nav-bg {
+	background-color: #121720;
+	height: 100px;
+	position: relative;
+	border-bottom: 2px solid #FFFFFF;
+}
+/* styling en positionering inloggen-link */
+.inloggen-link {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 0.8rem;
+	display: inline-block;
+	position: absolute;
+	right: 75px;
+	top: 12px;
+}
+/* hover-state-opmaak van inloggen-link */
+.nav-bg .inloggen-link:hover {
+	text-shadow: 0px 0px 3px #FFFFFF;
+}
+/* positionering winkelwagen-icon */
+.winkelwagen-icon {
+	position: absolute;
+	right: 32px;
+	top: 9px;
+	display: inline-block;
+}
+/* hover-state winkelwagen-icon */
+.winkelwagen-icon:hover {
+	position: absolute;
+	right: 32px;
+	top: 7px;
+	display: inline-block;
+}
+/* positionering webshop-top-menu */
+.menu-list {
+	position: absolute;
+	width: 578px;
+	height: 26px;
+	top: 11px;
+	left: 364px;
+}
+/* highlight-hover-state top-menu-items */
+.nav-bg .menu-list li:hover {
+	text-shadow: 0px 0px 3px #FFFFFF;
+	text-decoration: none !important;
+}
+/* styling top-menu-items */
+.nav-bg li {
+	list-style-type: none;
+	display: inline-block;
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	text-transform: uppercase;
+	margin-left: 13px;
+	margin-top: 49px;
+	margin-right: 6px;
+	font-weight: 300;
+	text-decoration: none !important;
+}
+/* positionering logo */
+.logo {
+	margin-top: 14px;
+	margin-left: 18px;
+	float: left;
+}
+/* positionering en opmaak hoofd-titel chrisfoto.nl*/
+.hoofdtitel {
+	float: left;
+	color: #ffffff;
+	font-family: "Soleil", 'Soleil Bk', 'Soleil Lt', 'Soleil SB', 'Soleil Xb', 'sans-serif';
+	font-size: 51px;
+	font-weight: 400;
+	transform: scale(0.829, 0.829);
+	margin-left: -12px;
+	margin-top: 32px;
+	margin-right: 6px;
+}
+/* hoverstate-opmaak hoofdtitel */
+.hoofdtitel:hover {
+	float: left;
+	color: #ffffff;
+	font-family: "Soleil", 'Soleil Bk', 'Soleil Lt', 'Soleil SB', 'Soleil Xb', 'sans-serif';
+	font-size: 51px;
+	font-weight: 400;
+	transform: scale(0.829, 0.829);
+	margin-left: -12px;
+	margin-top: 32px;
+	margin-right: 6px;
+	text-shadow: 0px 0px 3px;
+}
+/* extra opmaak hoofdtitel */
+#up .hoofdtitel a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+	width: 263px;
+	height: 59px;
+}
+/* block-positionering en opmaak 'winter wondere wereld' */
+.wi-wo-we {
+	height: 515px;
+	background-image: url(../images/homepage/zwaan-bg.jpg);
+	border-bottom: 2px solid #FFFFFF;
+	position: relative;
+}
+/* opmaak en positionering bookcover 'winter wondere wereld' */
+.wi-wo-we .bookcover {
+	margin-top: 83px;
+	margin-left: 59px;
+	border: 2px solid #FFFFFF;
+}
+/* opmaak en positionering bij begeleidende tekst bookcover */
+.wi-wo-we .www-tekst {
+	font-family: Soleil, "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	width: 270px;
+	position: absolute;
+	margin-left: 213px;
+	margin-top: -202px;
+	line-height: 22px;
+}
+/* opmaak titel bij bookcover */
+.wi-wo-we .www-tekst h2 {
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+}
+/* extra opmaak en positionering bij begeleidende tekst bookcover */
+.wi-wo-we .www-tekst p {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: lighter;
+}
+/* achtergrondkleur-verandering bij klikken op button */
+.click:active {
+	background-color: #121720;
+}
+/* achtergrondkleur-verandering bij button-hover */
+.button-hover:hover {
+	color: #FEF2D8 !important;
+}
+/* opmaak en positionering webshop-button */
+.webshop-button {
+	height: 45px;
+	width: 205px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #212D3F;
+	border-radius: 4px;
+	position: absolute;
+	left: 210px;
+	top: 354px;
+}
+/* opmaak en positionering webshop-button-tekst */
+.webshop-button .tekst {
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	margin-top: 15px;
+	font-weight: normal;
+	font-size: 1rem;
+	margin-bottom: auto;
+}
+/* block-positionering en opmaak 'een onvergetelijk cadeau..' */
+.op-zoek {
+	height: 470px;
+	background-color: #FFFFFF;
+	position: relative;
+}
+/* posionering plaatjes rechts 'een onvergetelijk cadeau..' */
+.float-right {
+	float: right;
+	clear: both;
+	border-bottom: 3px solid #FFFFFF;
+}
+/* opmaak en poisionering tekst-blok 'een onvergetelijk cadeau..' */
+.op-zoek-tekst {
+	position: absolute;
+	margin-top: -438px;
+	margin-left: 388px;
+	width: 318px;
+	line-height: 20pt;
+}
+/* opmaak titel 'een onvergetelijk cadeau..' */
+h2.title {
+	font-weight: bold;
+	font-size: 20px;
+}
+/* opmaak paragraaf-tekst 'een onvergetelijk cadeau..' */
+.op-zoek-tekst .paragraph {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: lighter;
+}
+/* opmaak lijstje 'een onvergetelijk cadeau..' */
+.op-zoek-lijst {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: lighter;
+}
+/* opmaak boek-nu-button */
+.nu-boeken-button {
+	height: 45px;
+	width: 205px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 4px;
+	background-color: #212D3F;
+	position: absolute;
+	top: 345px;
+	left: 387px;
+}
+/* boek-nu-button tekst opmaak */
+.nu-boeken-button-tekst {
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	margin-top: 15px;
+	font-weight: normal;
+	font-size: 1rem;
+}
+/* opmaak en positionering small-print 'een onvergetelijk cadeau..' */
+.boek-nu-small-print {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	color: #000000;
+	font-weight: 200;
+	width: 255px;
+	position: absolute;
+	padding-top: 0px;
+	font-style: italic;
+	font-size: small;
+	line-height: 16px;
+	top: 424px;
+	left: 388px;
+}
+/* opmaak en positionering 'voor professionals-blok' */
+.voor-pros {
+	height: 525px;
+	background-color: #212D3F;
+	border-bottom: 2px solid #FFFFFF;
+	position: relative;    
+}
+.voor-pros > div {
+    display: flex;
+    justify-content: center;    
+}
+/* opmaak en positionering thumbnails */
+.thumbnails-raw {
+	margin: 180px 25px;	
+    border: 4px solid #FFFFFF;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    max-height: 150px;
+    max-width: 250px;        
+}
+/* opmaak en positionering titel 'voor professionals' */
+.voor-pros-header {
+	font-family: "Merriweather", serif;
+	color: #ffffff;
+	font-weight: 200;
+	font-size: 1rem;
+	position: absolute;
+	top: 38px;
+	left: 38px;
+}
+/* opmaak en positionering paragraaftekst 'voor professionals' */
+.voor-pros-paragraph {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 61px;
+	left: 36px;
+}
+/* opmaak en positionering 'naar de webshop'-button */
+.naar-de-webshop-button {
+	height: 33px;
+	width: 216px;
+	text-align: center;
+	border-radius: 4px;
+	text-transform: uppercase;
+	position: absolute;
+	border: thin solid #FFFFFF;
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	padding-top: 18px;
+	padding-left: 0px;
+	background-color: #212D3F;
+	padding-bottom: 0px;
+	top: 412px;
+	left: 35px;
+}
+/* opmaak en positionering aanklikken 'naar de webshop'-button */
+.naar-de-webshop-button:active {
+	height: 33px;
+	width: 216px;
+	text-align: center;
+	border-radius: 4px;
+	text-transform: uppercase;
+	border: thin solid #FFFFFF;
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	padding-top: 18px;
+	padding-left: 0px;
+	background-color: #000000;
+	padding-bottom: 0px;
+}
+/* opmaak en positionering 'naar de webshop'-button-tekst */
+.naar-de-webshop-button-tekst {
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	margin-top: 14px;
+}
+/* opmaak en positionering block 'specifieke wensen' */
+.specifieke-wensen {
+	height: 160px;
+	background-color: #FEF2D8;
+	position: relative;
+}
+/* opmaak en positionering titel 'specifieke wensen' */
+.specifieke-wensen-header {
+	font-family: "Merriweather", serif;
+	width: 340px;
+	position: absolute;
+	font-size: 1.5rem;
+	top: 68px;
+	left: 84px;
+}
+/* opmaak en positionering contact-button */
+.contact-button {
+	color: #FFFFFF;
+	padding-top: 18px;
+	padding-left: 0px;
+	position: absolute;
+	height: 33px;
+	width: 216px;
+	text-align: center;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #212D3F;
+	padding-bottom: 0px;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	top: 54px;
+	left: 602px;
+}
+/* opmaak en positionering contact-button hover-state */
+.contact-button:hover {
+	padding-top: 18px;
+	padding-left: 0px;
+	height: 33px;
+	width: 216px;
+	text-align: center;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #212D3F;
+	padding-bottom: 0px;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+}
+/* opmaak en positionering contact-button clicked */
+.contact-button:active {
+	color: #FFFFFF;
+	padding-top: 18px;
+	padding-left: 0px;
+	height: 33px;
+	width: 216px;
+	text-align: center;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #000000;
+	padding-bottom: 0px;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+}
+/* opmaak en positionering footer block */ 
+footer {
+	height: 341px;
+	background-color: #FFFFFF;
+	position: relative;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	line-height: 8px;
+	font-size: 0.8rem;
+}
+/* footer - opmaak voor de dikgedrukte titels */
+h3.bold {
+	font-weight: 800;
+}
+/* footer - ruimte tussen lijst-elementen */
+a li {
+	margin-top: 32px;
+	margin-bottom: 25px;
+}
+/* footer-lijst 'home' positionering */
+.list-home {
+	position: absolute;
+	left: 77px;
+}
+/* footer-lijst 'webshop' positionering */
+.list-webshop {
+	position: absolute;
+	left: 209px;
+}
+/* footer-lijst 'over-mij' positionering */
+.list-over-mij {
+	position: absolute;
+	left: 379px;
+}
+/* footer-lijst 'tips-tricks' positionering */
+.list-tips-tricks {
+	position: absolute;
+	left: 524px;
+}
+/* footer-lijst 'gallery' positionering */
+.list-gallery {
+	position: absolute;
+	left: 678px;
+}
+/* footer-lijst 'contact' positionering */
+.list-contact {
+	position: absolute;
+	left: 678px;
+	top: 102px;
+}
+/* opmaak en positionering verdelende horizontale lijn footer */
+.hr-footer {
+	position: absolute;
+	width: 803px;
+	top: 273px;
+	right: 81px;
+}
+/* opmaak en positionering claimer, link en discaimer */
+.footer-tekst {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	color: #000000;
+	font-weight: 400;
+	font-size: 0.7rem;
+	position: absolute;
+	left: 74px;
+	top: 292px;
+}
+/* opmaak links */
+footer a {
+	text-decoration: none;
+	color: inherit;
+}
+/* opmaak links wanneer gehoverd */
+footer a:hover {
+	text-decoration: underline;
+	color: inherit;
+}
+/* opmaak en positionering social media icons */
+.social-media {
+	position: absolute;
+	right: 82px;
+	top: 293px;
+}
+/* opmaak en positionering social media icons wanneer gehoverd*/
+.social-hover:hover {
+	position: relative;
+	top: -3px;
+}
+/* positionering terug naar begin icon */
+.up-icon {
+	position: absolute;
+	right: 8px;
+	top: 151px;
+}
+/* positionering terug naar begin icon wanneer gehoverd */
+.up-icon:hover {
+	position: absolute;
+	top: 153px;
+	right: 8px;
+}
+/* positionering en opmaak van contactformulier */
+.contact-form {
+	background-color: #212D3F;
+	height: 596px;
+	position: relative;
+	background-image: url(../images/contact/contact-bg-image.jpg);
+	background-size: cover;
+}
+/* geen lijnen onder links */
+.none {
+	text-decoration: none !important;
+}
+/* positionering en opmaak van contactformulier paragraaftekst */
+.contact-form p {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	color: #FFFFFF;
+	font-size: 1rem;
+	font-weight: lighter;
+	margin-top: 25px;
+	margin-bottom: 7px;
+}
+/* positionering contactformulier */
+.form1 {
+	position: absolute;
+	top: 69px;
+	left: 506px;
+}
+/* positionering en opmaak contact-formulier verzenden-knop */
+.verzenden-knop-form1 {
+	position: absolute;
+	top: 395px;
+	width: 98px;
+	height: 31px;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	border-radius: 5px;
+}
+/* opmaak bericht-gebied contact-formulier */
+.textarea-form1 {
+	width: 345px;
+	height: 130px;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	text-indent: 5px;
+}
+/* paragraaf-tekst bij contact-formulier */
+.begeleidende-tekst-form1 {
+	font-weight: 100 !important;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	width: 295px;
+	position: absolute;
+	top: 255px;
+	left: 97px;
+	color: #FFFFFF;
+	line-height: 24px;
+}
+/* opmaak invoerveld */
+.input-field-form1 {
+	width: 345px;
+	height: 26px;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	text-indent: 5px;
+}
+/* positionering info-icon */
+.info-icon {
+	position: absolute;
+	top: 85px;
+	left: 89px;
+}
+/* positionering en opmaak over-mij block */
+.over-mij {
+	position: relative;
+	height: 821px;
+	background-color: #212D3F;
+	background-image: url(../images/over-mij/over-mij-bg-image.jpg);
+	background-size: cover;
+}
+/* opmaak en positionering over-mij titel */
+.over-mij h1 {
+	font-family: "Merriweather", serif;
+	color: #FFFFFF;
+	position: absolute;
+	top: 76px;
+	left: 54px;
+	font-size: 3rem;
+}
+/* opmaak en positionering over-mij wie ben ik sectie */
+.over-mij .wie-ben-ik {
+	width: 615px;
+	position: absolute;
+	top: 171px;
+	left: 58px;
+	text-shadow: 0px 0px;
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: 100;
+	line-height: 22px;
+	font-size: 15px;
+}
+/* opmaak en positionering over-mij wat doe ik sectie */
+.over-mij .wat-doe-ik {
+	width: 309px;
+	position: absolute;
+	top: 459px;
+	left: 78px;
+	text-shadow: 0px 0px;
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: lighter;
+	line-height: 22px;
+	font-size: 15px;
+}
+/* opmaak en positionering over-mij wat doe ik sectie lijst */
+.over-mij .wat-doe-ik li {
+	list-style-type: square;
+	margin-top: 17px;
+}
+/* opmaak en positionering over-mij portret */
+.over-mij .portret {
+	position: absolute;
+	top: 556px;
+	left: 713px;
+	border: 6px solid #FFFFFF;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* opmaak en positionering over-mij subtitel */
+.over-mij h2 {
+	margin-bottom: 19px;
+	font-family: "Merriweather", serif;
+	text-indent: 4px;
+}
+/* naar wie-sectie */
+#wie {
+}
+/* naar wat-sectie */
+#wat {
+}
+/* opmaak en positionering gallery-block */
+.gallery1 {
+	height: 1168px;
+	position: relative;
+	background-color: #212D3F;
+	padding-top: 80px;
+	padding-left: 57px;
+	background-image: url(../images/gallery/gallery-bg-image.jpg);
+	background-size: cover;
+}
+/* opmaak en positionering titel gallery-block */
+.gallery-h1 {
+	font-family: "Merriweather", serif;
+	color: #FFFFFF;
+	font-size: 3rem;
+	margin-bottom: 52px;
+}
+.gallery-h2 {
+	position: absolute;
+	font-family: Soleil, sans-serif;
+	color: #FFFFFF;
+	font-weight: 100;
+	top: 137px;
+	right: 500px;
+	font-size: 0.8rem;
+}
+
+/* opmaak en positionering images gallery-block */
+.gallery1 img {
+	border: 1px solid #FFFFFF;
+	margin-right: 9px;
+	margin-bottom: 33px;
+}
+/* opmaak en positionering webshop-button gallery-block */
+#gallery-webshop-button {
+	position: absolute;
+	top: 1109px;
+	left: 644px;
+}
+/* opmaak en positionering tips-en-tricks-block */
+.tips-en-tricks {
+	background-color: #212D3F;
+	position: relative;
+	height: 3254px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../images/tips-en-tricks/tips-en-tricks-bg-image.jpg);
+	background-size: cover;
+}
+/* opmaak en positionering titel tips-en-tricks-block */
+.tips-tricks-hoofdtitel {
+	font-family: "Merriweather", serif;
+	color: #FFFFFF;
+	position: absolute;
+	top: 76px;
+	left: 60px;
+	font-size: 3rem;
+}
+/* opmaak en positionering artikel tips-en-tricks-block */
+.article1 {
+	position: absolute;
+	top: 171px;
+	left: 63px;
+	width: 575px;
+}
+h2.tips-tricks-article-title {
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: 100;
+	font-size: 21px;
+	margin-bottom: 33px;
+}
+/* opmaak en positionering paragraaf-tekst tips-en-tricks-block */
+p.tips-tricks-paragraph {
+	text-shadow: 0px 0px;
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: 100;
+	line-height: 22px;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+/* opmaak en positionering subtitle tips-en-tricks-block */
+h3.tips-tricks-subtitle {
+	color: #FFFFFF;
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+	margin-top: 38px;
+	margin-bottom: 10px;
+}
+/* opmaak en positionering lees-meer-button tips-en-tricks-block */
+#lees-meer-button {
+	position: absolute;
+	top: 3147px;
+	left: 61px;
+	border: 1px solid #FFFFFF;
+}
+/* opmaak en positionering inloggen-block */
+.inloggen-section {
+	position: relative;
+	height: 474px;
+	background-color: #212D3F;
+	background-image: url(../images/inloggen/inloggen-bg-image.jpg);
+	background-size: cover;
+}
+/* opmaak en positionering titel inloggen-block */
+.inloggen-section h1 {
+	font-family: "Merriweather", serif;
+	color: #FFFFFF;
+	font-size: 2rem;
+	position: absolute;
+	top: 74px;
+	left: 60px;
+}
+/* opmaak en positionering inloggen-formulier in inloggen-block */
+.inloggen-section .inloggen-form {
+	position: absolute;
+	top: 142px;
+	left: 58px;
+}
+/* opmaak en positionering paragraaftekst inloggen-block */
+.inloggen-section .inloggen-form p {
+	font-family: "Soleil", "Soleil Bk", "Soleil Lt", "Soleil SB", "Soleil Xb", sans-serif;
+	color: #FFFFFF;
+	font-size: 1rem;
+	font-weight: lighter;
+	margin-top: 23px;
+	margin-bottom: 8px;
+}
+/* opmaak en positionering inloggen-button in inloggen-block */
+.inloggen-section .inloggen-form #inloggen-button {
+	position: absolute;
+	top: 201px;
+}
+/* verwijzing naar tricks-sectie in tips-en-tricks */
+#tricks {
+/* verwijzing naar tricks-sectie in tips-en-tricks */
+}
+#tips {
+}
+/* opmaak en positionering webshop-block */
+.webshop {
+	position: relative;
+	height: 695px;
+	background-color: #FFFFFF;
+}
+/* opmaak en positionering webshop-title */
+.webshop h1 {
+	font-family: Merriweather;
+	color: #121720;
+	font-size: 56px;
+	font-weight: 400;
+	position: absolute;
+	top: 66px;
+	left: 57px;
+}
+/* opmaak en positionering webshop-subtitle */
+.webshop h2 {
+	position: absolute;
+	font-family: Merriweather;
+	color: #121720;
+	font-size: 18px;
+	font-weight: 400;
+	top: 119px;
+	left: 73px;
+}
+/* positionering webshop-product-thumbnails-block */
+.webshop .webshop-product-images {
+	position: absolute;
+	top: 167px;
+	left: 69px;
+}
+/* positionering webshop-product-thumbnails individueel */
+.webshop .webshop-product-images .product-thumbnail {
+	margin-right: 71px;
+}
+/* positionering en opmaak webshop-product-thumbnails-texts-block */
+.webshop .product-thumbnail-texts {
+	font-family: Soleil;
+	font-size: 15.21px;
+	font-weight: 400;
+	color: #121720;
+	transform: scale(1.089, 1.089);
+	position: absolute;
+	top: 439px;
+	left: 103px;
+}
+/* positionering webshop-product-thumbnails-texts individueel */
+.webshop .product-thumbnail-texts .thumbnail-text {
+	display: inline-block;
+	width: 150px;
+	float: left;
+	margin-right: 51px;
+}
+/* positionering webshop-product-thumbnails-prices-block */
+.webshop .product-thumbnail-prices {
+	position: absolute;
+	top: 499px;
+	left: 72px;
+}
+/* positionering en opmaak webshop-product-thumbnails-prices individueel */
+.webshop .product-thumbnail-prices .thumbnail-price {
+	display: inline-block;
+	float: left;
+	margin-right: 95px;
+	font-family: Soleil;
+	font-size: 15.21px;
+	font-weight: 400;
+	color: #ff1720;
+	transform: scale(1.089, 1.089);
+	width: 124px;
+}
+/* positionering bestellen-buttons-block */
+.webshop .bestellen-buttons {
+	position: absolute;
+	top: 571px;
+	clear: both;
+	left: 66px;
+}
+/* positionering en opmaak bestellen-buttons individueel */
+.webshop .bestellen-buttons .bestel-knop {
+	display: inline-block;
+	float: left;
+	font-size: 0.8rem;
+	font-family: Soleil, sans-serif;
+	background-color: #212D3F;
+	color: #FFFFFF;
+	padding-top: 12px;
+	padding-right: 46px;
+	padding-bottom: 12px;
+	padding-left: 46px;
+	border-radius: 3px;
+	margin-right: 73px;
+	top: auto;
+}
+/* positionering en opmaak bestellen-buttons individueel wanneer aangeklikt */
+.webshop .bestellen-buttons .bestel-knop:active {
+	display: inline-block;
+	float: left;
+	font-size: 0.8rem;
+	font-family: Soleil, sans-serif;
+	background-color: #121720;
+	color: #FFFFFF !important;
+	border-radius: 3px;
+	margin-right: 73px;
+	top: auto;
+	padding-left: 46px;
+	padding-right: 46px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+/* opmaak van een link naar Amazon.com */
+.amazon-link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/* opmaak van een link naar Amazon.com wanneer de muis erboven zweeft*/
+.amazon-link:hover {
+	text-decoration: none;
+	color: #FEF2D8;
+}
